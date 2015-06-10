@@ -19,6 +19,6 @@ But you can also include us manually by dropping our `aar` into you `/libs` fold
 
 ## Documentation
 
-You can find the full [SDK Documentation](http://building.usebutton.com/button-android-public/index.html) here.
+You can find the full [SDK Documentation](http://building.usebutton.com/button-android-public/reference/com/usebutton/sdk/Button.html) here.
 
 ## Changes
