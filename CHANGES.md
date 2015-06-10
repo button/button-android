@@ -1,4 +1,9 @@
 ### 0.9.12
+* Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+* Sed quia consequuntur magni dolores 
+* Eos qui ratione voluptatem sequi nesciunt
+
+### 0.9.12
 * Qui in ea voluptate velit esse quam nihil molestiae consequatu
 * Quis autem vel eum iure reprehenderit 
 
