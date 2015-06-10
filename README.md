@@ -22,6 +22,9 @@ But you can also include us manually by dropping our `aar` into you `/libs` fold
 You can find the full [SDK Documentation](http://building.usebutton.com/button-android-public/reference/com/usebutton/sdk/Button.html) here.
 
 ## Change Log
+### 0.9.12
+* Quis autem vel eum iure reprehenderit 
+* Qui in ea voluptate velit esse quam nihil molestiae consequatu
 ### 0.9.11
 * Nemo enim ipsam voluptatem 
 * Quia voluptas sit aspernatur aut odit aut fugit

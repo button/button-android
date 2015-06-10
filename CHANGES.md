@@ -1,3 +1,6 @@
+### 0.9.12
+* Quis autem vel eum iure reprehenderit 
+* Qui in ea voluptate velit esse quam nihil molestiae consequatu
 ### 0.9.11
 * Nemo enim ipsam voluptatem 
 * Quia voluptas sit aspernatur aut odit aut fugit
