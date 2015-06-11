@@ -39,3 +39,5 @@ You can find the full [SDK Documentation](http://building.usebutton.com/button-a
 ## Samples
 
 You can find relevant example code in our [button-android-sample](https://github.com/usebutton/button-android-samples) repository.
+
+## Release notes

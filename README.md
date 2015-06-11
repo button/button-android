@@ -40,6 +40,8 @@ You can find the full [SDK Documentation](http://building.usebutton.com/button-a
 
 You can find relevant example code in our [button-android-sample](https://github.com/usebutton/button-android-samples) repository.
 
+## Release notes
+
 ### [0.9.16 Docs](http://building.usebutton.com/button-android-public/history/0.9.16/reference/com/usebutton/sdk/Button.html)
 * Ut enim ad minima veniam
 * Quis nostrum exercitationem 
