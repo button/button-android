@@ -52,15 +52,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for sdk." />
+  <meta name="description" content="Javadoc API documentation for android-sdk." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
 <title>
 
-  PlacementContext.Location
+  Button
 
 
-| sdk
+| android-sdk
 
 </title>
 <link href="../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -92,7 +92,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">sdk</span>
+      <span id="masthead-title">android-sdk</span>
     
     </div>
     <div id="headerRight">
@@ -165,10 +165,10 @@
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-"><a href="../../../com/usebutton/sdk/Button.html">Button</a></li>
+          <li class="selected api apilevel-"><a href="../../../com/usebutton/sdk/Button.html">Button</a></li>
           <li class="api apilevel-"><a href="../../../com/usebutton/sdk/ButtonDropin.html">ButtonDropin</a></li>
           <li class="api apilevel-"><a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></li>
-          <li class="selected api apilevel-"><a href="../../../com/usebutton/sdk/PlacementContext.Location.html">PlacementContext.Location</a></li>
+          <li class="api apilevel-"><a href="../../../com/usebutton/sdk/PlacementContext.Location.html">PlacementContext.Location</a></li>
       </ul>
     </li>
               
@@ -213,6 +213,11 @@
 
 
   
+  
+  
+  
+
+  
    
   
   
@@ -233,10 +238,10 @@ Summary:
 
 
 
-  <a href="#pubctors">Ctors</a>
+
+
+  <a href="#pubmethods">Methods</a>
   
-
-
 
 
 
@@ -260,16 +265,20 @@ Summary:
 
 <div id="jd-header">
     public
-    static 
+     
      
     
     class
-<h1>PlacementContext.Location</h1>
+<h1>Button</h1>
 
 
 
   
-    extends <a href="http://d.android.com/reference/java/lang/Object.html">Object</a><br/>
+  
+  
+
+  
+    extends ButtonPrivate<br/>
   
   
   
@@ -289,7 +298,7 @@ Summary:
 
     <tr>
          	
-        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
+        <td colspan="3" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
     </tr>
     
 
@@ -297,7 +306,17 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.PlacementContext.Location</td>
+        <td colspan="2" class="jd-inheritance-class-cell">ButtonPrivate</td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;</td>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.Button</td>
     </tr>
     
 
@@ -360,9 +379,81 @@ Summary:
 
 
 
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
 
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            synchronized
+            
+            static
+            
+            <a href="../../../com/usebutton/sdk/Button.html">Button</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/Button.html#getButton(android.content.Context)">getButton</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</nobr>
+        
+        <div class="jd-descrdiv">Gets the shared Button instance & lazily instantiates if not yet created.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="http://d.android.com/reference/android/content/Context.html">Context</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/Button.html#getButtonContext()">getButtonContext</a></span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/Button.html#isStarted()">isStarted</a></span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/Button.html#logout()">logout</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Clears any session information and effectively creates a new customer.</div>
+  
+  </td></tr>
 
 
 	 
@@ -373,11 +464,49 @@ Summary:
             
             
             
-            </nobr>
+            void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.Location.html#PlacementContext.Location()">PlacementContext.Location</a></span>()</nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/Button.html#start()">start</a></span>()</nobr>
         
+        <div class="jd-descrdiv">Initializes Button in the host application.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/Button.html#stop()">stop</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Ceases all Button activity.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/Button.html#willDisplayPromotion(java.lang.String, com.usebutton.sdk.PlacementContext, com.usebutton.sdk.ButtonDropin.Listener)">willDisplayPromotion</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> placementId, <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a> context, <a href="../../../com/usebutton/sdk/ButtonDropin.Listener.html">ButtonDropin.Listener</a> listener)</nobr>
+        
+        <div class="jd-descrdiv">Easy way to check if a promotion will be filled given a placement ID and context.</div>
+  
   </td></tr>
 
 
@@ -390,14 +519,12 @@ Summary:
 
 
 
-
-
-
-
 <!-- ========== METHOD SUMMARY =========== -->
 <table id="inhmethods" class="jd-sumtable"><tr><th>
   <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
   <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
 
 
 <tr class="api apilevel-" >
@@ -630,24 +757,68 @@ From class
 <!-- Public ctors -->
 
 
+
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
-<h2>Public Constructors</h2>
+<!-- Protected ctors -->
 
 
 
-<A NAME="PlacementContext.Location()"></A>
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="getButton(android.content.Context)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
+        static 
          
          
-         
-         
-        
+        synchronized 
+        <a href="../../../com/usebutton/sdk/Button.html">Button</a>
       </span>
-      <span class="sympad">PlacementContext.Location</span>
+      <span class="sympad">getButton</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the shared Button instance & lazily instantiates if not yet created.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>Button the shared Button instance
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getButtonContext()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="http://d.android.com/reference/android/content/Context.html">Context</a>
+      </span>
+      <span class="sympad">getButtonContext</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
@@ -666,16 +837,170 @@ From class
 </div>
 
 
+<A NAME="isStarted()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isStarted</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>true if Button have been started. If false, please call .start()
+</li></ul>
+  </div>
+
+    </div>
+</div>
 
 
+<A NAME="logout()"></A>
 
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<!-- Protected ctors -->
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">logout</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Clears any session information and effectively creates a new customer.
+ Use when e.g. the user logs out or changes in the host application.
+</p></div>
+
+    </div>
+</div>
 
 
+<A NAME="start()"></A>
 
-<!-- ========= METHOD DETAIL ======== -->
-<!-- Public methdos -->
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">start</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Initializes Button in the host application.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="stop()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">stop</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Ceases all Button activity.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="willDisplayPromotion(java.lang.String, com.usebutton.sdk.PlacementContext, com.usebutton.sdk.ButtonDropin.Listener)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">willDisplayPromotion</span>
+      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> placementId, <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a> context, <a href="../../../com/usebutton/sdk/ButtonDropin.Listener.html">ButtonDropin.Listener</a> listener)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Easy way to check if a promotion will be filled given a placement ID and context.</p></div>
+
+    </div>
+</div>
+
+
 
 
 
