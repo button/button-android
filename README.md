@@ -20,7 +20,7 @@ Latest version: ![Download](https://api.bintray.com/packages/button/Public/andro
 
 ```
 dependencies {
-    // Add the Button SDK to your app, 
+    // Add the Button SDK dependency to the list of dependencies, 
     // you can see the latest version in the badge above
     // Replace + with this number, e.g. 1.0.0
     compile 'com.usebutton:android-sdk:+'
