@@ -16,9 +16,12 @@ repositories {
 }
 ```
 
+Latest version: ![Download](https://api.bintray.com/packages/button/Public/android-sdk/images/download.svg).
+
 ```
 dependencies {
-    // Add the Button SDK to your app, you can see the latest version in the download badge below. 
+    // Add the Button SDK to your app, 
+		// you can see the latest version in the badge above
 		// Replace + with this number, e.g. 1.0.0
     compile 'com.usebutton:android-sdk:+'
 }
