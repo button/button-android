@@ -21,8 +21,8 @@ Latest version: ![Download](https://api.bintray.com/packages/button/Public/andro
 ```
 dependencies {
     // Add the Button SDK to your app, 
-		// you can see the latest version in the badge above
-		// Replace + with this number, e.g. 1.0.0
+    // you can see the latest version in the badge above
+    // Replace + with this number, e.g. 1.0.0
     compile 'com.usebutton:android-sdk:+'
 }
 ```
@@ -35,12 +35,6 @@ But you can also include us manually by dropping our `aar` into you `/libs` fold
 ## Documentation
 
 You can find the full [SDK Documentation](http://building.usebutton.com/button-android-public/latest/reference/com/usebutton/sdk/Button.html) here.
-
-## Samples
-
-You can find relevant example code in our [button-android-sample](https://github.com/usebutton/button-android-samples) repository.
-
-## Change Log
 
 ### [0.9.16 Docs](http://building.usebutton.com/button-android-public/history/0.9.16/reference/com/usebutton/sdk/Button.html)
 * Ut enim ad minima veniam
