@@ -3,6 +3,7 @@
 Please head over to our [Dashboard](https://app.usebutton.com) for step by step instructions on how to include Button in your application in minutes.
 
 ## Download
+
 We highly recommend that you use our SDK with Gradle, simply add this dependency and make sure you jave `jcenter()` as one of the repositories in your project.
 
 ```
@@ -18,5 +19,9 @@ But you can also include us manually by dropping our `aar` into you `/libs` fold
 ## Documentation
 
 You can find the full [SDK Documentation](http://building.usebutton.com/button-android-public/latest/reference/com/usebutton/sdk/Button.html) here.
+
+## Samples
+
+You can find relevant example code in our [button-android-sample](https://github.com/usebutton/button-android-samples) repository.
 
 ## Change Log
