@@ -4,7 +4,7 @@ Please head over to our [Dashboard](https://app.usebutton.com) for step by step 
 
 ## Integrate
 
-### Gradle
+### Gradle integration
 
 We highly recommend that you use our SDK with Gradle, simply add our repository to your project and this dependency.
 
@@ -20,14 +20,14 @@ Latest version: ![Download](https://api.bintray.com/packages/button/Public/andro
 
 ```
 dependencies {
-    // Add the Button SDK to your app, 
+    // Add the Button SDK dependency to the list of dependencies, 
     // you can see the latest version in the badge above
     // Replace + with this number, e.g. 1.0.0
     compile 'com.usebutton:android-sdk:+'
 }
 ```
 
-### Manually
+### Manual integration
 
 But you can also include us manually by dropping our `aar` into you `/libs` folder, click [ ![Download](https://api.bintray.com/packages/button/Public/android-sdk/images/download.svg) ](https://bintray.com/button/Public/android-sdk/_latestVersion) to get the latest version.
 
