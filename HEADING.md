@@ -14,7 +14,7 @@ dependencies {
 
 But you can also include us manually by dropping our `aar` into you `/libs` folder, click Download to get the latest version.
 
-[![Download Button SDK](https://api.bintray.com/packages/button/Button/com.usebutton%3Aandroid-sdk/images/download.svg) ](https://bintray.com/button/Button/com.usebutton%3Aandroid-sdk/_latestVersion)
+[![Download Button SDK](https://api.bintray.com/packages/button/Public/com.usebutton%3Aandroid-sdk/images/download.svg) ](https://bintray.com/button/Public/com.usebutton%3Aandroid-sdk/_latestVersion)
 
 
 ## Documentation
