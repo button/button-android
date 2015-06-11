@@ -35,3 +35,7 @@ But you can also include us manually by dropping our `aar` into you `/libs` fold
 ## Documentation
 
 You can find the full [SDK Documentation](http://building.usebutton.com/button-android-public/latest/reference/com/usebutton/sdk/Button.html) here.
+
+## Samples
+
+You can find relevant example code in our [button-android-sample](https://github.com/usebutton/button-android-samples) repository.
