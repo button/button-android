@@ -54,7 +54,7 @@ But you can also include us manually by dropping our `aar` into you `/libs` fold
 2. Follow the [DeepLink Commerce Integration Guide](https://www.usebutton.com/sdk/deep-link-commerce-android/) to get DLC in your app!
 
 
-You can find the full [SDK Documentation](http://building.usebutton.com/button-android-public/latest/reference/com/usebutton/sdk/Button.html) here.
+You can find the full [SDK Documentation](http://building.usebutton.com/button-android/latest/reference/com/usebutton/sdk/Button.html) here.
 
 ## Samples
 
