@@ -57,7 +57,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
 <title>
 
-  com.usebutton.sdk
+  ButtonDropin.Listener
 
 
 | Button DLC SDK for Android v1.1.0
@@ -156,16 +156,16 @@
               
     <li><h2>Interfaces</h2>
       <ul>
-        <li class="api apilevel-"><a href="../../../com/usebutton/sdk/ButtonDropin.Listener.html">ButtonDropin.Listener</a></li>
+          <li class="selected api apilevel-"><a href="../../../com/usebutton/sdk/ButtonDropin.Listener.html">ButtonDropin.Listener</a></li>
       </ul>
     </li>
               
     <li><h2>Classes</h2>
       <ul>
-        <li class="api apilevel-"><a href="../../../com/usebutton/sdk/Button.html">Button</a></li>
-        <li class="api apilevel-"><a href="../../../com/usebutton/sdk/ButtonDropin.html">ButtonDropin</a></li>
-        <li class="api apilevel-"><a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></li>
-        <li class="api apilevel-"><a href="../../../com/usebutton/sdk/PlacementContext.Location.html">PlacementContext.Location</a></li>
+          <li class="api apilevel-"><a href="../../../com/usebutton/sdk/Button.html">Button</a></li>
+          <li class="api apilevel-"><a href="../../../com/usebutton/sdk/ButtonDropin.html">ButtonDropin</a></li>
+          <li class="api apilevel-"><a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></li>
+          <li class="api apilevel-"><a href="../../../com/usebutton/sdk/PlacementContext.Location.html">PlacementContext.Location</a></li>
       </ul>
     </li>
               
@@ -206,6 +206,14 @@
 <div class="g-unit" id="doc-content">
 
 <div id="api-info-block">
+
+
+
+
+<div class="sum-details-links">
+
+
+</div><!-- end sum-details-links -->
 <div class="api-level">
   
 
@@ -214,77 +222,234 @@
   
 
 </div>
-</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
 
 <div id="jd-header">
-  package
-  <h1>com.usebutton.sdk</h1>
+    public
+    static 
+     
+    
+    interface
+<h1>ButtonDropin.Listener</h1>
+
+
+
+  
+  
+  
+
+
 </div><!-- end header -->
 
 <div id="naMessage"></div>
 
 <div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
 
 
-
-
-
-
-  
-    <h2>Interfaces</h2>
-    <div class="jd-sumtable">
+    <tr>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.ButtonDropin.Listener</td>
+    </tr>
     
-  <table class="jd-sumtable-expando">
-        <tr class="alt-color api apilevel-" >
-              <td class="jd-linkcol"><a href="../../../com/usebutton/sdk/ButtonDropin.Listener.html">ButtonDropin.Listener</a></td>
-              <td class="jd-descrcol" width="100%">&nbsp;</td>
-          </tr>
-  </table>
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+
+
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonDropin.Listener.html#onPrepared(boolean)">onPrepared</a></span>(boolean willDisplay)</nobr>
+        
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="onPrepared(boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">onPrepared</span>
+      <span class="normal">(boolean willDisplay)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>willDisplay</td>
+          <td>will be called whenever a button is ready for display, with or
+                    without a promotion. willDisplay = true means that a button will
+                    be rendered. You can use this to e.g. show/hide UI components. This
+                    can be used per prepare call <code><a href="../../../com/usebutton/sdk/ButtonDropin.html#prepareForDisplayWithContext(com.usebutton.sdk.PlacementContext, com.usebutton.sdk.ButtonDropin.Listener)">prepareForDisplayWithContext(PlacementContext, Listener)</a></code>
+                    or for the view itself: <code><a href="../../../com/usebutton/sdk/ButtonDropin.html#setListener(com.usebutton.sdk.ButtonDropin.Listener)">setListener(Listener)</a></code>
+</td>
+        </tr>
+      </table>
+  </div>
+
     </div>
-  
+</div>
 
 
-  
-    <h2>Classes</h2>
-    <div class="jd-sumtable">
-    
-  <table class="jd-sumtable-expando">
-        <tr class="alt-color api apilevel-" >
-              <td class="jd-linkcol"><a href="../../../com/usebutton/sdk/Button.html">Button</a></td>
-              <td class="jd-descrcol" width="100%">Main entry point to the Button SDK.&nbsp;</td>
-          </tr>
-        <tr class=" api apilevel-" >
-              <td class="jd-linkcol"><a href="../../../com/usebutton/sdk/ButtonDropin.html">ButtonDropin</a></td>
-              <td class="jd-descrcol" width="100%">This is the only UI class that you will have to drop into your layout XML to display a Button.&nbsp;</td>
-          </tr>
-        <tr class="alt-color api apilevel-" >
-              <td class="jd-linkcol"><a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></td>
-              <td class="jd-descrcol" width="100%">Convenience class on top of JSONObject.&nbsp;</td>
-          </tr>
-        <tr class=" api apilevel-" >
-              <td class="jd-linkcol"><a href="../../../com/usebutton/sdk/PlacementContext.Location.html">PlacementContext.Location</a></td>
-              <td class="jd-descrcol" width="100%">&nbsp;</td>
-          </tr>
-  </table>
-    </div>
-  
 
 
-  
+
+<!-- ========= METHOD DETAIL ======== -->
 
 
-  
 
-
-  
-
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
 
 <div id="footer">
 Generated by <a href="http://code.google.com/p/doclava/">Doclava</a>.
 </div> <!-- end footer -->
 
-</div><!-- end jd-content -->
-</div><!-- doc-content -->
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
 
 </div> <!-- end body-content --> 
 

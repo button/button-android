@@ -57,7 +57,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
 <title>
 
-  LocationProvider
+  Arrays
 
 
 | Button DLC SDK for Android v1.1.0
@@ -162,9 +162,9 @@
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/Arrays.html">Arrays</a></li>
+          <li class="selected api apilevel-"><a href="../../../../com/usebutton/sdk/util/Arrays.html">Arrays</a></li>
           <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/LatLngPair.html">LatLngPair</a></li>
-          <li class="selected api apilevel-"><a href="../../../../com/usebutton/sdk/util/LocationProvider.html">LocationProvider</a></li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/LocationProvider.html">LocationProvider</a></li>
       </ul>
     </li>
               
@@ -263,7 +263,7 @@ Summary:
      
     
     class
-<h1>LocationProvider</h1>
+<h1>Arrays</h1>
 
 
 
@@ -296,7 +296,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.util.LocationProvider</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.util.Arrays</td>
     </tr>
     
 
@@ -310,17 +310,6 @@ Summary:
 
 <div class="jd-descr">
 
-
-<h2>Class Overview</h2>
-<p>Convenience class that will check all available (taking available permissions into account)
- for the <i>newest</i> location. Provided to quickly provide e.g. transportation to/from the user's location
- for use in creating a <code><a href="../../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></code> for
- <code><a href="../../../../com/usebutton/sdk/ButtonDropin.html#prepareForDisplayWithContext(com.usebutton.sdk.PlacementContext, com.usebutton.sdk.ButtonDropin.Listener)">prepareForDisplayWithContext(PlacementContext, ButtonDropin.Listener)</a></code> or
- <code><a href="../../../../com/usebutton/sdk/Button.html#willDisplayPromotion(java.lang.String, com.usebutton.sdk.PlacementContext, com.usebutton.sdk.ButtonDropin.Listener)">willDisplayPromotion(String, PlacementContext, ButtonDropin.Listener)</a></code>.
-
- Requires that either <code><a href="null#ACCESS_COARSE_LOCATION">ACCESS_COARSE_LOCATION</a></code> or
- <code><a href="null#ACCESS_FINE_LOCATION">ACCESS_FINE_LOCATION</a></code> is available in this app's AndroidManifest.xml.
-</p>
 
 
 
@@ -386,7 +375,7 @@ Summary:
             </nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/LocationProvider.html#LocationProvider(android.content.Context)">LocationProvider</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/Arrays.html#Arrays()">Arrays</a></span>()</nobr>
         
   </td></tr>
 
@@ -410,12 +399,44 @@ Summary:
             
             
             
+            static
             
-            
-            <a href="http://d.android.com/reference/android/location/Location.html">Location</a></nobr>
+            boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/LocationProvider.html#getBestLocation()">getBestLocation</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/Arrays.html#isEmpty(java.lang.Object[])">isEmpty</a></span>(<a href="http://d.android.com/reference/java/lang/Object.html">Object[]</a> objects)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/Arrays.html#isNotEmpty(java.lang.Object[])">isNotEmpty</a></span>(<a href="http://d.android.com/reference/java/lang/Object.html">Object[]</a> objects)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/Arrays.html#toString(java.lang.Object[])">toString</a></span>(<a href="http://d.android.com/reference/java/lang/Object.html">Object[]</a> objects)</nobr>
         
   </td></tr>
 
@@ -670,7 +691,7 @@ From class
 
 
 
-<A NAME="LocationProvider(android.content.Context)"></A>
+<A NAME="Arrays()"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -682,8 +703,8 @@ From class
          
         
       </span>
-      <span class="sympad">LocationProvider</span>
-      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
+      <span class="sympad">Arrays</span>
+      <span class="normal">()</span>
     </h4>
       <div class="api-level">
         <div>
@@ -716,20 +737,82 @@ From class
 
 
 
-<A NAME="getBestLocation()"></A>
+<A NAME="isEmpty(java.lang.Object[])"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
+        static 
          
          
          
-         
-        <a href="http://d.android.com/reference/android/location/Location.html">Location</a>
+        boolean
       </span>
-      <span class="sympad">getBestLocation</span>
-      <span class="normal">()</span>
+      <span class="sympad">isEmpty</span>
+      <span class="normal">(<a href="http://d.android.com/reference/java/lang/Object.html">Object[]</a> objects)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="isNotEmpty(java.lang.Object[])"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isNotEmpty</span>
+      <span class="normal">(<a href="http://d.android.com/reference/java/lang/Object.html">Object[]</a> objects)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="toString(java.lang.Object[])"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+      </span>
+      <span class="sympad">toString</span>
+      <span class="normal">(<a href="http://d.android.com/reference/java/lang/Object.html">Object[]</a> objects)</span>
     </h4>
       <div class="api-level">
         <div>

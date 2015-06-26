@@ -57,7 +57,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
 <title>
 
-  LocationProvider
+  LatLngPair
 
 
 | Button DLC SDK for Android v1.1.0
@@ -163,8 +163,8 @@
     <li><h2>Classes</h2>
       <ul>
           <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/Arrays.html">Arrays</a></li>
-          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/LatLngPair.html">LatLngPair</a></li>
-          <li class="selected api apilevel-"><a href="../../../../com/usebutton/sdk/util/LocationProvider.html">LocationProvider</a></li>
+          <li class="selected api apilevel-"><a href="../../../../com/usebutton/sdk/util/LatLngPair.html">LatLngPair</a></li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/LocationProvider.html">LocationProvider</a></li>
       </ul>
     </li>
               
@@ -207,6 +207,11 @@
 <div id="api-info-block">
 
 
+
+  
+  
+  
+  
 
   
    
@@ -263,12 +268,16 @@ Summary:
      
     
     class
-<h1>LocationProvider</h1>
+<h1>LatLngPair</h1>
 
 
 
   
-    extends <a href="http://d.android.com/reference/java/lang/Object.html">Object</a><br/>
+  
+  
+
+  
+    extends <any><br/>
   
   
   
@@ -288,7 +297,7 @@ Summary:
 
     <tr>
          	
-        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
+        <td colspan="3" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
     </tr>
     
 
@@ -296,7 +305,17 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.util.LocationProvider</td>
+        <td colspan="2" class="jd-inheritance-class-cell"><any></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;</td>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.util.LatLngPair</td>
     </tr>
     
 
@@ -312,14 +331,9 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p>Convenience class that will check all available (taking available permissions into account)
- for the <i>newest</i> location. Provided to quickly provide e.g. transportation to/from the user's location
- for use in creating a <code><a href="../../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></code> for
- <code><a href="../../../../com/usebutton/sdk/ButtonDropin.html#prepareForDisplayWithContext(com.usebutton.sdk.PlacementContext, com.usebutton.sdk.ButtonDropin.Listener)">prepareForDisplayWithContext(PlacementContext, ButtonDropin.Listener)</a></code> or
- <code><a href="../../../../com/usebutton/sdk/Button.html#willDisplayPromotion(java.lang.String, com.usebutton.sdk.PlacementContext, com.usebutton.sdk.ButtonDropin.Listener)">willDisplayPromotion(String, PlacementContext, ButtonDropin.Listener)</a></code>.
-
- Requires that either <code><a href="null#ACCESS_COARSE_LOCATION">ACCESS_COARSE_LOCATION</a></code> or
- <code><a href="null#ACCESS_FINE_LOCATION">ACCESS_FINE_LOCATION</a></code> is available in this app's AndroidManifest.xml.
+<p>Class representing a coordinate (latitude and longitude) for use in <code><a href="../../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></code>
+ that can be used to specify to/from locations for a ButtonDropin, see <code><a href="../../../../com/usebutton/sdk/ButtonDropin.html#prepareForDisplayWithContext(com.usebutton.sdk.PlacementContext)">prepareForDisplayWithContext(PlacementContext)</a></code>
+ and <code><a href="../../../../com/usebutton/sdk/Button.html#willDisplayPromotion(java.lang.String, com.usebutton.sdk.PlacementContext, com.usebutton.sdk.ButtonDropin.Listener)">willDisplayPromotion(String, PlacementContext, ButtonDropin.Listener)</a></code>
 </p>
 
 
@@ -386,7 +400,23 @@ Summary:
             </nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/LocationProvider.html#LocationProvider(android.content.Context)">LocationProvider</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/LatLngPair.html#LatLngPair(java.lang.Double, java.lang.Double)">LatLngPair</a></span>(<a href="http://d.android.com/reference/java/lang/Double.html">Double</a> latitude, <a href="http://d.android.com/reference/java/lang/Double.html">Double</a> longitude)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            </nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/LatLngPair.html#LatLngPair(android.location.Location)">LatLngPair</a></span>(<a href="http://d.android.com/reference/android/location/Location.html">Location</a> location)</nobr>
         
   </td></tr>
 
@@ -412,10 +442,26 @@ Summary:
             
             
             
-            <a href="http://d.android.com/reference/android/location/Location.html">Location</a></nobr>
+            double</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/LocationProvider.html#getBestLocation()">getBestLocation</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/LatLngPair.html#getLatitude()">getLatitude</a></span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            double</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/LatLngPair.html#getLongitude()">getLongitude</a></span>()</nobr>
         
   </td></tr>
 
@@ -433,6 +479,8 @@ Summary:
 <table id="inhmethods" class="jd-sumtable"><tr><th>
   <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
   <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
 
 
 <tr class="api apilevel-" >
@@ -670,7 +718,7 @@ From class
 
 
 
-<A NAME="LocationProvider(android.content.Context)"></A>
+<A NAME="LatLngPair(java.lang.Double, java.lang.Double)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -682,8 +730,39 @@ From class
          
         
       </span>
-      <span class="sympad">LocationProvider</span>
-      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
+      <span class="sympad">LatLngPair</span>
+      <span class="normal">(<a href="http://d.android.com/reference/java/lang/Double.html">Double</a> latitude, <a href="http://d.android.com/reference/java/lang/Double.html">Double</a> longitude)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="LatLngPair(android.location.Location)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">LatLngPair</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/location/Location.html">Location</a> location)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -716,7 +795,7 @@ From class
 
 
 
-<A NAME="getBestLocation()"></A>
+<A NAME="getLatitude()"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -726,9 +805,40 @@ From class
          
          
          
-        <a href="http://d.android.com/reference/android/location/Location.html">Location</a>
+        double
       </span>
-      <span class="sympad">getBestLocation</span>
+      <span class="sympad">getLatitude</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getLongitude()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        double
+      </span>
+      <span class="sympad">getLongitude</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
