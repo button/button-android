@@ -22,13 +22,11 @@ Add a `Button` to your app, pass it some `context` and it will render & display 
 
 ### Gradle integration
 
-We highly recommend that you use our SDK with Gradle, simply add our repository to your project and this dependency.
+We highly recommend that you use our SDK with Gradle, all you need to do is make sure you have `jcenter()` as one of your app's repositories.
 
 ```
 repositories {
-    maven {
-        url  "http://dl.bintray.com/button/Public" 
-    }
+    jcenter()
 }
 ```
 
