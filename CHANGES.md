@@ -1,4 +1,4 @@
-### [ Docs](http://building.usebutton.com/button-android/history//reference/com/usebutton/sdk/Button.html)
+### [1.2.0 Docs](http://building.usebutton.com/button-android/history//reference/com/usebutton/sdk/Button.html)
 * DLC Recipient Functionality (Production)
 * Button now supports localization for Turkish, Portuguese, Russian & Spanish
 * Custom font support for your Button
