@@ -57,7 +57,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
 <title>
 
-  LocationProvider
+  CompatHelpers.RippleBackground
 
 
 | Button DLC SDK for Android v1.3.0
@@ -164,9 +164,9 @@
       <ul>
           <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/Arrays.html">Arrays</a></li>
           <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.html">CompatHelpers</a></li>
-          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.RippleBackground.html">CompatHelpers.RippleBackground</a></li>
+          <li class="selected api apilevel-"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.RippleBackground.html">CompatHelpers.RippleBackground</a></li>
           <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/LatLngPair.html">LatLngPair</a></li>
-          <li class="selected api apilevel-"><a href="../../../../com/usebutton/sdk/util/LocationProvider.html">LocationProvider</a></li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/LocationProvider.html">LocationProvider</a></li>
       </ul>
     </li>
               
@@ -261,11 +261,11 @@ Summary:
 
 <div id="jd-header">
     public
-     
+    static 
      
     
     class
-<h1>LocationProvider</h1>
+<h1>CompatHelpers.RippleBackground</h1>
 
 
 
@@ -298,7 +298,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.util.LocationProvider</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.util.CompatHelpers.RippleBackground</td>
     </tr>
     
 
@@ -312,17 +312,6 @@ Summary:
 
 <div class="jd-descr">
 
-
-<h2>Class Overview</h2>
-<p>Convenience class that will check all available (taking available permissions into account)
- for the <i>newest</i> location. Provided to quickly provide e.g. transportation to/from the user's location
- for use in creating a <code><a href="../../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></code> for
- <code><a href="../../../../com/usebutton/sdk/ButtonDropin.html#prepareForDisplayWithContext(com.usebutton.sdk.PlacementContext, com.usebutton.sdk.ButtonDropin.Listener)">prepareForDisplayWithContext(PlacementContext, ButtonDropin.Listener)</a></code> or
- <code><a href="../../../../com/usebutton/sdk/Button.html#willDisplayPromotion(java.lang.String, com.usebutton.sdk.PlacementContext, com.usebutton.sdk.ButtonDropin.Listener)">willDisplayPromotion(String, PlacementContext, ButtonDropin.Listener)</a></code>.
-
- Requires that either <code><a href="null#ACCESS_COARSE_LOCATION">ACCESS_COARSE_LOCATION</a></code> or
- <code><a href="null#ACCESS_FINE_LOCATION">ACCESS_FINE_LOCATION</a></code> is available in this app's AndroidManifest.xml.
-</p>
 
 
 
@@ -388,7 +377,7 @@ Summary:
             </nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/LocationProvider.html#LocationProvider(android.content.Context)">LocationProvider</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.RippleBackground.html#CompatHelpers.RippleBackground()">CompatHelpers.RippleBackground</a></span>()</nobr>
         
   </td></tr>
 
@@ -412,12 +401,12 @@ Summary:
             
             
             
+            static
             
-            
-            <a href="http://d.android.com/reference/android/location/Location.html">Location</a></nobr>
+            <a href="http://d.android.com/reference/android/graphics/drawable/Drawable.html">Drawable</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/LocationProvider.html#getBestLocation()">getBestLocation</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.RippleBackground.html#fromColors(int, int)">fromColors</a></span>(int normalColor, int rippleColor)</nobr>
         
   </td></tr>
 
@@ -672,7 +661,7 @@ From class
 
 
 
-<A NAME="LocationProvider(android.content.Context)"></A>
+<A NAME="CompatHelpers.RippleBackground()"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -684,8 +673,8 @@ From class
          
         
       </span>
-      <span class="sympad">LocationProvider</span>
-      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
+      <span class="sympad">CompatHelpers.RippleBackground</span>
+      <span class="normal">()</span>
     </h4>
       <div class="api-level">
         <div>
@@ -718,20 +707,20 @@ From class
 
 
 
-<A NAME="getBestLocation()"></A>
+<A NAME="fromColors(int, int)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
+        static 
          
          
          
-         
-        <a href="http://d.android.com/reference/android/location/Location.html">Location</a>
+        <a href="http://d.android.com/reference/android/graphics/drawable/Drawable.html">Drawable</a>
       </span>
-      <span class="sympad">getBestLocation</span>
-      <span class="normal">()</span>
+      <span class="sympad">fromColors</span>
+      <span class="normal">(int normalColor, int rippleColor)</span>
     </h4>
       <div class="api-level">
         <div>

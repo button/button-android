@@ -57,7 +57,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
 <title>
 
-  LocationProvider
+  CompatHelpers
 
 
 | Button DLC SDK for Android v1.3.0
@@ -163,10 +163,10 @@
     <li><h2>Classes</h2>
       <ul>
           <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/Arrays.html">Arrays</a></li>
-          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.html">CompatHelpers</a></li>
+          <li class="selected api apilevel-"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.html">CompatHelpers</a></li>
           <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.RippleBackground.html">CompatHelpers.RippleBackground</a></li>
           <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/LatLngPair.html">LatLngPair</a></li>
-          <li class="selected api apilevel-"><a href="../../../../com/usebutton/sdk/util/LocationProvider.html">LocationProvider</a></li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/LocationProvider.html">LocationProvider</a></li>
       </ul>
     </li>
               
@@ -223,6 +223,8 @@
 
 Summary:
 
+  <a href="#nestedclasses">Nested Classes</a>
+  
 
 
 
@@ -231,7 +233,8 @@ Summary:
 
 
 
-  <a href="#pubctors">Ctors</a>
+
+  &#124; <a href="#pubctors">Ctors</a>
   
 
 
@@ -265,7 +268,7 @@ Summary:
      
     
     class
-<h1>LocationProvider</h1>
+<h1>CompatHelpers</h1>
 
 
 
@@ -298,7 +301,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.util.LocationProvider</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.util.CompatHelpers</td>
     </tr>
     
 
@@ -312,17 +315,6 @@ Summary:
 
 <div class="jd-descr">
 
-
-<h2>Class Overview</h2>
-<p>Convenience class that will check all available (taking available permissions into account)
- for the <i>newest</i> location. Provided to quickly provide e.g. transportation to/from the user's location
- for use in creating a <code><a href="../../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></code> for
- <code><a href="../../../../com/usebutton/sdk/ButtonDropin.html#prepareForDisplayWithContext(com.usebutton.sdk.PlacementContext, com.usebutton.sdk.ButtonDropin.Listener)">prepareForDisplayWithContext(PlacementContext, ButtonDropin.Listener)</a></code> or
- <code><a href="../../../../com/usebutton/sdk/Button.html#willDisplayPromotion(java.lang.String, com.usebutton.sdk.PlacementContext, com.usebutton.sdk.ButtonDropin.Listener)">willDisplayPromotion(String, PlacementContext, ButtonDropin.Listener)</a></code>.
-
- Requires that either <code><a href="null#ACCESS_COARSE_LOCATION">ACCESS_COARSE_LOCATION</a></code> or
- <code><a href="null#ACCESS_FINE_LOCATION">ACCESS_FINE_LOCATION</a></code> is available in this app's AndroidManifest.xml.
-</p>
 
 
 
@@ -349,6 +341,26 @@ Summary:
 
 
 <h2>Summary</h2>
+
+
+
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<table id="nestedclasses" class="jd-sumtable"><tr><th colspan="12">Nested Classes</th></tr>
+
+
+  
+    <tr class="alt-color api apilevel-" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        class</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.RippleBackground.html">CompatHelpers.RippleBackground</a></td>
+      <td class="jd-descrcol" width="100%">&nbsp;</td>
+    </tr>
+    
+    
 
 
 
@@ -388,7 +400,7 @@ Summary:
             </nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/LocationProvider.html#LocationProvider(android.content.Context)">LocationProvider</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.html#CompatHelpers()">CompatHelpers</a></span>()</nobr>
         
   </td></tr>
 
@@ -412,12 +424,44 @@ Summary:
             
             
             
+            static
             
-            
-            <a href="http://d.android.com/reference/android/location/Location.html">Location</a></nobr>
+            <a href="http://d.android.com/reference/android/os/Bundle.html">Bundle</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/LocationProvider.html#getBestLocation()">getBestLocation</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.html#createSceneTransition(android.app.Activity, java.lang.String, android.view.View)">createSceneTransition</a></span>(<a href="http://d.android.com/reference/android/app/Activity.html">Activity</a> activity, <a href="http://d.android.com/reference/java/lang/String.html">String</a> transitionName, <a href="http://d.android.com/reference/android/view/View.html">View</a> view)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.html#setBackground(android.view.View, android.graphics.drawable.Drawable)">setBackground</a></span>(<a href="http://d.android.com/reference/android/view/View.html">View</a> view, <a href="http://d.android.com/reference/android/graphics/drawable/Drawable.html">Drawable</a> drawable)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="http://d.android.com/reference/android/content/res/ColorStateList.html">ColorStateList</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.html#stateListFromPrimaryColor(int)">stateListFromPrimaryColor</a></span>(int primary)</nobr>
         
   </td></tr>
 
@@ -672,7 +716,7 @@ From class
 
 
 
-<A NAME="LocationProvider(android.content.Context)"></A>
+<A NAME="CompatHelpers()"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -684,8 +728,8 @@ From class
          
         
       </span>
-      <span class="sympad">LocationProvider</span>
-      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</span>
+      <span class="sympad">CompatHelpers</span>
+      <span class="normal">()</span>
     </h4>
       <div class="api-level">
         <div>
@@ -718,20 +762,82 @@ From class
 
 
 
-<A NAME="getBestLocation()"></A>
+<A NAME="createSceneTransition(android.app.Activity, java.lang.String, android.view.View)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
+        static 
          
          
          
-         
-        <a href="http://d.android.com/reference/android/location/Location.html">Location</a>
+        <a href="http://d.android.com/reference/android/os/Bundle.html">Bundle</a>
       </span>
-      <span class="sympad">getBestLocation</span>
-      <span class="normal">()</span>
+      <span class="sympad">createSceneTransition</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/app/Activity.html">Activity</a> activity, <a href="http://d.android.com/reference/java/lang/String.html">String</a> transitionName, <a href="http://d.android.com/reference/android/view/View.html">View</a> view)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="setBackground(android.view.View, android.graphics.drawable.Drawable)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setBackground</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/view/View.html">View</a> view, <a href="http://d.android.com/reference/android/graphics/drawable/Drawable.html">Drawable</a> drawable)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="stateListFromPrimaryColor(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="http://d.android.com/reference/android/content/res/ColorStateList.html">ColorStateList</a>
+      </span>
+      <span class="sympad">stateListFromPrimaryColor</span>
+      <span class="normal">(int primary)</span>
     </h4>
       <div class="api-level">
         <div>
