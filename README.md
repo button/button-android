@@ -34,7 +34,7 @@ Latest version: ![Download](https://api.bintray.com/packages/button/Public/andro
 
 ```
 dependencies {
-    // Add the Button SDK dependency to the list of dependencies,
+    // Add the Button SDK dependency to the list of dependencies, 
     // you can see the latest version in the badge above
     // Replace + with this number, e.g. 1.0.0
     compile 'com.usebutton:android-sdk:+'
@@ -59,11 +59,17 @@ You can find the full [SDK Documentation](http://building.usebutton.com/button-a
 You can find relevant example code and a fully working sample application in our [button-android-sample](https://github.com/usebutton/button-android-samples) repository.
 
 ## Release notes
-### [1.2.0 Docs](http://building.usebutton.com/button-android/history/1.2.0/reference/com/usebutton/sdk/Button.html)
-* Recipient Support (Production ready)
-* Localization support for Turkish, Portuguese, Russian & Spanish
-* Increased consistency between iOS & Android including event reporting & promotion caching
-* Added custom font support
+### [1.3.0 Docs](http://building.usebutton.com/button-android/history/1.3.0/reference/com/usebutton/sdk/Button.html)
+* New languages can now be switched on remotely
+* Buttons are now cached for fasting loading
+* SDK reporting and configuration behaviors can be updated remotely
+* Assorted minor performance improvements
+* Resolves issue where tapping on a card can cause a crash on Android 4.0
+
+### [1.2.0 Docs](http://building.usebutton.com/button-android/history//reference/com/usebutton/sdk/Button.html)
+* DLC Recipient Functionality (Production)
+* Button now supports localization for Turkish, Portuguese, Russian & Spanish
+* Custom font support for your Button
 
 ### [1.1.0 Docs](http://building.usebutton.com/button-android/history/1.1.0/reference/com/usebutton/sdk/Button.html)
 * DLC Recipient Functionality (BETA)
@@ -75,17 +81,3 @@ You can find relevant example code and a fully working sample application in our
 * Supports Uber ride picker
 * Supports generic promotions and install cards
 
-### [0.9.16 Docs](http://building.usebutton.com/button-android/history/0.9.16/reference/com/usebutton/sdk/Button.html)
-* Ut enim ad minima veniam
-* Quis nostrum exercitationem
-* Qullam corporis suscipit laboriosam
-
-### [0.9.14 Docs](http://building.usebutton.com/button-android/history/0.9.14/reference/com/usebutton/sdk/Button.html)
-* Ut enim ad minima veniam
-* Quis nostrum exercitationem
-* Qullam corporis suscipit laboriosam
-
-### [0.9.13 Docs](http://building.usebutton.com/button-android/history/0.9.13/reference/com/usebutton/sdk/Button.html)
-* Ut enim ad minima veniam
-* Quis nostrum exercitationem
-* Qullam corporis suscipit laboriosam
