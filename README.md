@@ -34,7 +34,7 @@ Latest version: ![Download](https://api.bintray.com/packages/button/Public/andro
 
 ```
 dependencies {
-    // Add the Button SDK dependency to the list of dependencies, 
+    // Add the Button SDK dependency to the list of dependencies,
     // you can see the latest version in the badge above
     // Replace + with this number, e.g. 1.0.0
     compile 'com.usebutton:android-sdk:+'
@@ -59,9 +59,6 @@ You can find the full [SDK Documentation](http://building.usebutton.com/button-a
 You can find relevant example code and a fully working sample application in our [button-android-sample](https://github.com/usebutton/button-android-samples) repository.
 
 ## Release notes
-### [ Docs](http://building.usebutton.com/button-android/history//reference/com/usebutton/sdk/Button.html)
-* Some change
-* Other change
 
 ### [1.3.1 Docs](http://building.usebutton.com/button-android/history/1.3.1/reference/com/usebutton/sdk/Button.html)
 * Fixed missing dialog background
@@ -87,4 +84,3 @@ You can find relevant example code and a fully working sample application in our
 * First public release of the DLC SDK
 * Supports Uber ride picker
 * Supports generic promotions and install cards
-
