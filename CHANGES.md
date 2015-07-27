@@ -1,3 +1,6 @@
+### [1.3.1 Docs](http://building.usebutton.com/button-android/history/1.3.1/reference/com/usebutton/sdk/Button.html)
+* Fixed missing dialog background
+
 ### [1.3.0 Docs](http://building.usebutton.com/button-android/history/1.3.0/reference/com/usebutton/sdk/Button.html)
 * New languages can now be switched on remotely
 * Buttons are now cached for fasting loading
