@@ -52,7 +52,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for Button DLC SDK for Android v1.2.0." />
+  <meta name="description" content="Javadoc API documentation for Button DLC SDK for Android v1.3.1." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
 <title>
@@ -60,7 +60,7 @@
   PlacementContext
 
 
-| Button DLC SDK for Android v1.2.0
+| Button DLC SDK for Android v1.3.1
 
 </title>
 <link href="../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -92,7 +92,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">Button DLC SDK for Android v1.2.0</span>
+      <span id="masthead-title">Button DLC SDK for Android v1.3.1</span>
     
     </div>
     <div id="headerRight">
@@ -543,9 +543,10 @@ android.os.Parcelable
             <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#with(java.lang.String, org.json.JSONObject)">with</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, <a href="http://d.android.com/reference/org/json/JSONObject.html">JSONObject</a> value)</nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#with(java.lang.String, java.lang.String)">with</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, <a href="http://d.android.com/reference/java/lang/String.html">String</a> value)</nobr>
         
-        <div class="jd-descrdiv">Add an arbitrary org.json.JSONObject <code>value</code> to the context for key <code>name</code>.</div>
+        <div class="jd-descrdiv">Add a String <code>value</code> to the context for key <code>name</code>, This will be added under
+ the vendor top-level key.</div>
   
   </td></tr>
 
@@ -561,10 +562,9 @@ android.os.Parcelable
             <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#with(java.lang.String, java.lang.String)">with</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, <a href="http://d.android.com/reference/java/lang/String.html">String</a> value)</nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#with(java.lang.String, org.json.JSONObject)">with</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, <a href="http://d.android.com/reference/org/json/JSONObject.html">JSONObject</a> value)</nobr>
         
-        <div class="jd-descrdiv">Add a String <code>value</code> to the context for key <code>name</code>, This will be added under
- the vendor top-level key.</div>
+        <div class="jd-descrdiv">Add an arbitrary org.json.JSONObject <code>value</code> to the context for key <code>name</code>.</div>
   
   </td></tr>
 
@@ -598,6 +598,24 @@ android.os.Parcelable
             <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#withEndLocation(android.location.Location)">withEndLocation</a></span>(<a href="http://d.android.com/reference/android/location/Location.html">Location</a> location)</nobr>
+        
+        <div class="jd-descrdiv">Adds an end location to this promotion context.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#withEndLocation(java.lang.String, com.usebutton.sdk.util.LatLngPair)">withEndLocation</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> locationName, <a href="../../../com/usebutton/sdk/util/LatLngPair.html">LatLngPair</a> coordinate)</nobr>
         
         <div class="jd-descrdiv">Add an end location to this context, this is useful for e.g.</div>
@@ -606,7 +624,43 @@ android.os.Parcelable
 
 
 	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            synchronized
+            
+            
+            
+            <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#withStartLocation(java.lang.String, com.usebutton.sdk.util.LatLngPair)">withStartLocation</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> locationName, <a href="../../../com/usebutton/sdk/util/LatLngPair.html">LatLngPair</a> coordinate)</nobr>
+        
+        <div class="jd-descrdiv">Creates a context with a freeform combination of location name and latitude/longitude pair as start location for a transportation pickup.</div>
+  
+  </td></tr>
+
+
+	 
     <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#withStartLocation(android.location.Location)">withStartLocation</a></span>(<a href="http://d.android.com/reference/android/location/Location.html">Location</a> location)</nobr>
+        
+        <div class="jd-descrdiv">Adds a start location to context.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -624,7 +678,7 @@ android.os.Parcelable
 
 
 	 
-    <tr class=" api apilevel-" >
+    <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -637,24 +691,6 @@ android.os.Parcelable
         <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#withStartLocation(com.usebutton.sdk.util.LatLngPair)">withStartLocation</a></span>(<a href="../../../com/usebutton/sdk/util/LatLngPair.html">LatLngPair</a> coordinate)</nobr>
         
         <div class="jd-descrdiv">Creates a context with <code>coordinate</code> as start location for a transportation pickup.</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            synchronized
-            
-            
-            
-            <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#withStartLocation(java.lang.String, com.usebutton.sdk.util.LatLngPair)">withStartLocation</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> locationName, <a href="../../../com/usebutton/sdk/util/LatLngPair.html">LatLngPair</a> coordinate)</nobr>
-        
-        <div class="jd-descrdiv">Creates a context with a freeform combination of location name and latitude/longitude pair as start location for a transportation pickup.</div>
   
   </td></tr>
 
@@ -1164,39 +1200,6 @@ From interface
 </div>
 
 
-<A NAME="with(java.lang.String, org.json.JSONObject)"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-        synchronized 
-        <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a>
-      </span>
-      <span class="sympad">with</span>
-      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, <a href="http://d.android.com/reference/org/json/JSONObject.html">JSONObject</a> value)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Add an arbitrary org.json.JSONObject <code>value</code> to the context for key <code>name</code>. This will be added under
- the vendor top-level key. <code>{"vendor": {:name: :value</code>}
-</p></div>
-
-    </div>
-</div>
-
-
 <A NAME="with(java.lang.String, java.lang.String)"></A>
 
 <div class="jd-details api apilevel-"> 
@@ -1223,6 +1226,39 @@ From interface
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Add a String <code>value</code> to the context for key <code>name</code>, This will be added under
+ the vendor top-level key. <code>{"vendor": {:name: :value</code>}
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="with(java.lang.String, org.json.JSONObject)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+        synchronized 
+        <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a>
+      </span>
+      <span class="sympad">with</span>
+      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, <a href="http://d.android.com/reference/org/json/JSONObject.html">JSONObject</a> value)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Add an arbitrary org.json.JSONObject <code>value</code> to the context for key <code>name</code>. This will be added under
  the vendor top-level key. <code>{"vendor": {:name: :value</code>}
 </p></div>
 
@@ -1276,6 +1312,42 @@ From interface
 </div>
 
 
+<A NAME="withEndLocation(android.location.Location)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a>
+      </span>
+      <span class="sympad">withEndLocation</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/location/Location.html">Location</a> location)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Adds an end location to this promotion context.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>same object, for nested calls.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
 <A NAME="withEndLocation(java.lang.String, com.usebutton.sdk.util.LatLngPair)"></A>
 
 <div class="jd-details api apilevel-"> 
@@ -1312,6 +1384,78 @@ From interface
         </tr>
       </table>
   </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>same object, for nested calls.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="withStartLocation(java.lang.String, com.usebutton.sdk.util.LatLngPair)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+        synchronized 
+        <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a>
+      </span>
+      <span class="sympad">withStartLocation</span>
+      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> locationName, <a href="../../../com/usebutton/sdk/util/LatLngPair.html">LatLngPair</a> coordinate)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Creates a context with a freeform combination of location name and latitude/longitude pair as start location for a transportation pickup.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>same object, for nested calls.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="withStartLocation(android.location.Location)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a>
+      </span>
+      <span class="sympad">withStartLocation</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/location/Location.html">Location</a> location)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Adds a start location to context.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>same object, for nested calls.
@@ -1384,42 +1528,6 @@ From interface
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p>Creates a context with <code>coordinate</code> as start location for a transportation pickup.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>same object, for nested calls.
-</li></ul>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="withStartLocation(java.lang.String, com.usebutton.sdk.util.LatLngPair)"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-        synchronized 
-        <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a>
-      </span>
-      <span class="sympad">withStartLocation</span>
-      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> locationName, <a href="../../../com/usebutton/sdk/util/LatLngPair.html">LatLngPair</a> coordinate)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Creates a context with a freeform combination of location name and latitude/longitude pair as start location for a transportation pickup.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>same object, for nested calls.

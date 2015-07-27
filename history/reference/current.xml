@@ -371,6 +371,19 @@
  deprecated="not deprecated"
  visibility="public"
 >
+<parameter name="location" type="android.location.Location">
+</parameter>
+</method>
+<method name="withEndLocation"
+ return="com.usebutton.sdk.PlacementContext"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
 <parameter name="coordinate" type="com.usebutton.sdk.util.LatLngPair">
 </parameter>
 </method>
@@ -387,6 +400,19 @@
 <parameter name="locationName" type="java.lang.String">
 </parameter>
 <parameter name="coordinate" type="com.usebutton.sdk.util.LatLngPair">
+</parameter>
+</method>
+<method name="withStartLocation"
+ return="com.usebutton.sdk.PlacementContext"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="location" type="android.location.Location">
 </parameter>
 </method>
 <method name="withStartLocation"
@@ -506,6 +532,100 @@
  visibility="public"
 >
 <parameter name="objects" type="java.lang.Object[]">
+</parameter>
+</method>
+</class>
+<class name="CompatHelpers"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="CompatHelpers"
+ type="com.usebutton.sdk.util.CompatHelpers"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="createSceneTransition"
+ return="android.os.Bundle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="transitionName" type="java.lang.String">
+</parameter>
+<parameter name="view" type="android.view.View">
+</parameter>
+</method>
+<method name="setBackground"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="drawable" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method name="stateListFromPrimaryColor"
+ return="android.content.res.ColorStateList"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="primary" type="int">
+</parameter>
+</method>
+</class>
+<class name="CompatHelpers.RippleBackground"
+ extends="java.lang.Object"
+ abstract="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="CompatHelpers.RippleBackground"
+ type="com.usebutton.sdk.util.CompatHelpers.RippleBackground"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="fromColors"
+ return="android.graphics.drawable.Drawable"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="normalColor" type="int">
+</parameter>
+<parameter name="rippleColor" type="int">
 </parameter>
 </method>
 </class>
