@@ -1,3 +1,6 @@
+### [1.3.2 Docs](http://building.usebutton.com/button-android/history/1.3.2/reference/com/usebutton/sdk/Button.html)
+* Removed obsolete permission 
+
 ### [1.3.1 Docs](http://building.usebutton.com/button-android/history/1.3.1/reference/com/usebutton/sdk/Button.html)
 * Fixed missing dialog background
 
