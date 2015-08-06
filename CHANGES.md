@@ -1,12 +1,8 @@
 ### [1.4.0 Docs](http://building.usebutton.com/button-android/history/1.4.0/reference/com/usebutton/sdk/Button.html)
 * Modest bug fixes and performance improvements
 
-### [ Docs](http://building.usebutton.com/button-android/history//reference/com/usebutton/sdk/Button.html)
-* Some change
-* Other change
-
 ### [1.3.2 Docs](http://building.usebutton.com/button-android/history/1.3.2/reference/com/usebutton/sdk/Button.html)
-* Removed obsolete permission 
+* Removed obsolete permission
 
 ### [1.3.1 Docs](http://building.usebutton.com/button-android/history/1.3.1/reference/com/usebutton/sdk/Button.html)
 * Fixed missing dialog background
