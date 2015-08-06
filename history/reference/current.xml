@@ -331,6 +331,36 @@
 <parameter name="longitude" type="double">
 </parameter>
 </method>
+<method name="forStartLocation"
+ return="com.usebutton.sdk.PlacementContext"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="locationName" type="java.lang.String">
+</parameter>
+<parameter name="location" type="android.location.Location">
+</parameter>
+</method>
+<method name="putPrivate"
+ return="com.usebutton.sdk.PlacementContext"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
 <method name="with"
  return="com.usebutton.sdk.PlacementContext"
  abstract="false"
@@ -359,6 +389,21 @@
 <parameter name="name" type="java.lang.String">
 </parameter>
 <parameter name="value" type="org.json.JSONObject">
+</parameter>
+</method>
+<method name="withEndLocation"
+ return="com.usebutton.sdk.PlacementContext"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="location" type="android.location.Location">
 </parameter>
 </method>
 <method name="withEndLocation"
@@ -402,6 +447,19 @@
 <parameter name="coordinate" type="com.usebutton.sdk.util.LatLngPair">
 </parameter>
 </method>
+<method name="withEndTime"
+ return="com.usebutton.sdk.PlacementContext"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="endTime" type="java.util.Date">
+</parameter>
+</method>
 <method name="withStartLocation"
  return="com.usebutton.sdk.PlacementContext"
  abstract="false"
@@ -412,6 +470,8 @@
  deprecated="not deprecated"
  visibility="public"
 >
+<parameter name="name" type="java.lang.String">
+</parameter>
 <parameter name="location" type="android.location.Location">
 </parameter>
 </method>
@@ -458,6 +518,19 @@
 <parameter name="locationName" type="java.lang.String">
 </parameter>
 <parameter name="coordinate" type="com.usebutton.sdk.util.LatLngPair">
+</parameter>
+</method>
+<method name="withStartTime"
+ return="com.usebutton.sdk.PlacementContext"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="startTime" type="java.util.Date">
 </parameter>
 </method>
 <method name="writeToParcel"
@@ -605,7 +678,7 @@
  deprecated="not deprecated"
  visibility="public"
 >
-<constructor name="CompatHelpers.RippleBackground"
+<constructor name="RippleBackground"
  type="com.usebutton.sdk.util.CompatHelpers.RippleBackground"
  static="false"
  final="false"
