@@ -1,3 +1,6 @@
+### [1.4.0 Docs](http://building.usebutton.com/button-android/history/1.4.0/reference/com/usebutton/sdk/Button.html)
+* Modest bug fixes and performance improvements
+
 ### [ Docs](http://building.usebutton.com/button-android/history//reference/com/usebutton/sdk/Button.html)
 * Some change
 * Other change
