@@ -1,3 +1,7 @@
+### [ Docs](http://building.usebutton.com/button-android/history//reference/com/usebutton/sdk/Button.html)
+* Some change
+* Other change
+
 ### [1.3.2 Docs](http://building.usebutton.com/button-android/history/1.3.2/reference/com/usebutton/sdk/Button.html)
 * Removed obsolete permission 
 
