@@ -59,6 +59,10 @@ You can find the full [SDK Documentation](http://building.usebutton.com/button-a
 You can find relevant example code and a fully working sample application in our [button-android-sample](https://github.com/usebutton/button-android-samples) repository.
 
 ## Release notes
+### [ Docs](http://building.usebutton.com/button-android/history//reference/com/usebutton/sdk/Button.html)
+* Some change
+* Other change
+
 ### [1.5.0 Docs](http://building.usebutton.com/button-android/history/1.5.0/reference/com/usebutton/sdk/Button.html)
 * Grouped inventory cards
 
