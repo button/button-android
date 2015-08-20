@@ -533,6 +533,21 @@
 <parameter name="startTime" type="java.util.Date">
 </parameter>
 </method>
+<method name="withSubjectLocation"
+ return="com.usebutton.sdk.PlacementContext"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="latitude" type="double">
+</parameter>
+<parameter name="longitude" type="double">
+</parameter>
+</method>
 <method name="writeToParcel"
  return="void"
  abstract="false"
