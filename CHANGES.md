@@ -1,3 +1,6 @@
+### [1.5.0 Docs](http://building.usebutton.com/button-android/history/1.5.0/reference/com/usebutton/sdk/Button.html)
+* Grouped inventory cards
+
 ### [1.4.1 Docs](http://building.usebutton.com/button-android/history/1.4.1/reference/com/usebutton/sdk/Button.html)
 * Delayed all SDK init until app foreground to support frequent BroadcastReceivers
 
