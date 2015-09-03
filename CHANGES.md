@@ -1,3 +1,9 @@
+### [2.0.0 Docs](http://building.usebutton.com/button-android/history/2.0.0/reference/com/usebutton/sdk/Button.html)
+* Debug logging to verify & debug Button integration
+* Full support for grouped inventory, stay tuned for new integrations!
+* btn_ namespace on all attributes to avoid collision. Note: breaking change from 1.n.n, see [Integration Docs](https://www.usebutton.com/developers/deep-link-commerce-android/) for details.
+
+
 ### [1.5.0 Docs](http://building.usebutton.com/button-android/history/1.5.0/reference/com/usebutton/sdk/Button.html)
 * Grouped inventory commerce card support.
 
