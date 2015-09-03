@@ -1,7 +1,3 @@
-### [ Docs](http://building.usebutton.com/button-android/history//reference/com/usebutton/sdk/Button.html)
-* Some change
-* Other change
-
 ### [1.5.0 Docs](http://building.usebutton.com/button-android/history/1.5.0/reference/com/usebutton/sdk/Button.html)
 * Grouped inventory commerce card support.
 
