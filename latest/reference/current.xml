@@ -1,4 +1,229 @@
 <api>
+<package name="android.support.v4.view"
+>
+<class name="PagerTabStripV22"
+ extends="android.support.v4.view.PagerTitleStripV22"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="PagerTabStripV22"
+ type="android.support.v4.view.PagerTabStripV22"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<constructor name="PagerTabStripV22"
+ type="android.support.v4.view.PagerTabStripV22"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<method name="getDrawFullUnderline"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTabIndicatorColor"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setDrawFullUnderline"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="drawFull" type="boolean">
+</parameter>
+</method>
+<method name="setTabIndicatorColor"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="color" type="int">
+</parameter>
+</method>
+<method name="setTabIndicatorColorResource"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="resId" type="int">
+</parameter>
+</method>
+</class>
+<class name="PagerTitleStripV22"
+ extends="android.view.ViewGroup"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="PagerTitleStripV22"
+ type="android.support.v4.view.PagerTitleStripV22"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<constructor name="PagerTitleStripV22"
+ type="android.support.v4.view.PagerTitleStripV22"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<method name="getTextSpacing"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="onLayout"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="changed" type="boolean">
+</parameter>
+<parameter name="l" type="int">
+</parameter>
+<parameter name="t" type="int">
+</parameter>
+<parameter name="r" type="int">
+</parameter>
+<parameter name="b" type="int">
+</parameter>
+</method>
+<method name="setGravity"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="gravity" type="int">
+</parameter>
+</method>
+<method name="setNonPrimaryAlpha"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="alpha" type="float">
+</parameter>
+</method>
+<method name="setTextColor"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="color" type="int">
+</parameter>
+</method>
+<method name="setTextSize"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="unit" type="int">
+</parameter>
+<parameter name="size" type="float">
+</parameter>
+</method>
+<method name="setTextSpacing"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="spacingPixels" type="int">
+</parameter>
+</method>
+</class>
+</package>
 <package name="com.usebutton.sdk"
 >
 <class name="Button"
@@ -9,6 +234,28 @@
  deprecated="not deprecated"
  visibility="public"
 >
+<method name="disableDebugLogging"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="enableDebugLogging"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
 <method name="getButton"
  return="com.usebutton.sdk.Button"
  abstract="false"
@@ -311,21 +558,6 @@
 >
 <parameter name="locationName" type="java.lang.String">
 </parameter>
-<parameter name="location" type="android.location.Location">
-</parameter>
-</method>
-<method name="forEndLocation"
- return="com.usebutton.sdk.PlacementContext"
- abstract="false"
- native="false"
- synchronized="false"
- static="true"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="locationName" type="java.lang.String">
-</parameter>
 <parameter name="latitude" type="double">
 </parameter>
 <parameter name="longitude" type="double">
@@ -343,7 +575,9 @@
 >
 <parameter name="locationName" type="java.lang.String">
 </parameter>
-<parameter name="location" type="android.location.Location">
+<parameter name="latitude" type="double">
+</parameter>
+<parameter name="longitude" type="double">
 </parameter>
 </method>
 <method name="putPrivate"
@@ -410,41 +644,17 @@
  return="com.usebutton.sdk.PlacementContext"
  abstract="false"
  native="false"
- synchronized="false"
+ synchronized="true"
  static="false"
  final="false"
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="location" type="android.location.Location">
+<parameter name="name" type="java.lang.String">
 </parameter>
-</method>
-<method name="withEndLocation"
- return="com.usebutton.sdk.PlacementContext"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="coordinate" type="com.usebutton.sdk.util.LatLngPair">
+<parameter name="latitude" type="double">
 </parameter>
-</method>
-<method name="withEndLocation"
- return="com.usebutton.sdk.PlacementContext"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="locationName" type="java.lang.String">
-</parameter>
-<parameter name="coordinate" type="com.usebutton.sdk.util.LatLngPair">
+<parameter name="longitude" type="double">
 </parameter>
 </method>
 <method name="withEndTime"
@@ -479,45 +689,17 @@
  return="com.usebutton.sdk.PlacementContext"
  abstract="false"
  native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="coordinate" type="com.usebutton.sdk.util.LatLngPair">
-</parameter>
-</method>
-<method name="withStartLocation"
- return="com.usebutton.sdk.PlacementContext"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="locationName" type="java.lang.String">
-</parameter>
-<parameter name="latitude" type="double">
-</parameter>
-<parameter name="longitude" type="double">
-</parameter>
-</method>
-<method name="withStartLocation"
- return="com.usebutton.sdk.PlacementContext"
- abstract="false"
- native="false"
  synchronized="true"
  static="false"
  final="false"
  deprecated="not deprecated"
  visibility="public"
 >
-<parameter name="locationName" type="java.lang.String">
+<parameter name="name" type="java.lang.String">
 </parameter>
-<parameter name="coordinate" type="com.usebutton.sdk.util.LatLngPair">
+<parameter name="latitude" type="double">
+</parameter>
+<parameter name="longitude" type="double">
 </parameter>
 </method>
 <method name="withStartTime"
@@ -715,59 +897,6 @@
 </parameter>
 <parameter name="rippleColor" type="int">
 </parameter>
-</method>
-</class>
-<class name="LatLngPair"
- extends="<any>"
- abstract="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<constructor name="LatLngPair"
- type="com.usebutton.sdk.util.LatLngPair"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="latitude" type="java.lang.Double">
-</parameter>
-<parameter name="longitude" type="java.lang.Double">
-</parameter>
-</constructor>
-<constructor name="LatLngPair"
- type="com.usebutton.sdk.util.LatLngPair"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-<parameter name="location" type="android.location.Location">
-</parameter>
-</constructor>
-<method name="getLatitude"
- return="double"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
-</method>
-<method name="getLongitude"
- return="double"
- abstract="false"
- native="false"
- synchronized="false"
- static="false"
- final="false"
- deprecated="not deprecated"
- visibility="public"
->
 </method>
 </class>
 <class name="LocationProvider"
