@@ -52,7 +52,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for Button DLC SDK for Android v2.0.0." />
+  <meta name="description" content="Javadoc API documentation for Button DLC SDK for Android v2.0.1." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
 <title>
@@ -60,7 +60,7 @@
   Button
 
 
-| Button DLC SDK for Android v2.0.0
+| Button DLC SDK for Android v2.0.1
 
 </title>
 <link href="../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -91,15 +91,15 @@
 
 <div id="header">
     <div id="headerLeft">
-
-      <span id="masthead-title">Button DLC SDK for Android v2.0.0</span>
-
+    
+      <span id="masthead-title">Button DLC SDK for Android v2.0.1</span>
+    
     </div>
     <div id="headerRight">
-
+      
   <div id="search" >
       <div id="searchForm">
-          <form accept-charset="utf-8" class="gsc-search-box"
+          <form accept-charset="utf-8" class="gsc-search-box" 
                 onsubmit="return submit_search()">
             <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
                 <tr>
@@ -127,7 +127,7 @@
           </form>
       </div><!-- searchForm -->
   </div><!-- search -->
-
+      
     </div>
 </div><!-- header -->
 
@@ -139,13 +139,11 @@
           <div id="resize-packages-nav">
             <div id="packages-nav">
               <div id="index-links"><nobr>
-                <a href="../../../packages.html"  >Package Index</a> |
+                <a href="../../../packages.html"  >Package Index</a> | 
                 <a href="../../../classes.html" >Class Index</a></nobr>
               </div>
               <ul>
-
-    <li class="api apilevel-">
-  <a href="../../../android/support/v4/view/package-summary.html">android.support.v4.view</a></li>
+                
     <li class="selected api apilevel-">
   <a href="../../../com/usebutton/sdk/package-summary.html">com.usebutton.sdk</a></li>
     <li class="api apilevel-">
@@ -155,13 +153,13 @@
           </div> <!-- end resize-packages -->
           <div id="classes-nav">
             <ul>
-
+              
     <li><h2>Interfaces</h2>
       <ul>
           <li class="api apilevel-"><a href="../../../com/usebutton/sdk/ButtonDropin.Listener.html">ButtonDropin.Listener</a></li>
       </ul>
     </li>
-
+              
     <li><h2>Classes</h2>
       <ul>
           <li class="selected api apilevel-"><a href="../../../com/usebutton/sdk/Button.html">Button</a></li>
@@ -169,16 +167,16 @@
           <li class="api apilevel-"><a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></li>
       </ul>
     </li>
-
-
-
-
+              
+              
+              
+              
             </ul><br/>
           </div><!-- end classes -->
         </div><!-- end nav-panels -->
         <div id="nav-tree" style="display:none">
           <div id="index-links"><nobr>
-            <a href="../../../packages.html"  >Package Index</a> |
+            <a href="../../../packages.html"  >Package Index</a> | 
             <a href="../../../classes.html" >Class Index</a></nobr>
           </div>
         </div><!-- end nav-tree -->
@@ -210,17 +208,17 @@
 
 
 
+  
+  
+  
+  
 
-
-
-
-
-
-
-
-
-
-
+  
+   
+  
+  
+  
+  
 
 
 <div class="sum-details-links">
@@ -239,7 +237,7 @@ Summary:
 
 
   <a href="#pubmethods">Methods</a>
-
+  
 
 
 
@@ -249,11 +247,11 @@ Summary:
 
 </div><!-- end sum-details-links -->
 <div class="api-level">
+  
 
 
-
-
-
+  
+  
 
 </div>
 </div><!-- end api-info-block -->
@@ -263,27 +261,27 @@ Summary:
 
 <div id="jd-header">
     public
-
-
-
+     
+     
+    
     class
 <h1>Button</h1>
 
 
 
+  
+  
+  
 
-
-
-
-
+  
     extends ButtonPrivate<br/>
+  
+  
+  
 
-
-
-
-
-
-
+  
+  
+  
 
 
 </div><!-- end header -->
@@ -295,28 +293,28 @@ Summary:
 
 
     <tr>
-
+         	
         <td colspan="3" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
     </tr>
-
+    
 
     <tr>
-
+        
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
-
+         	
         <td colspan="2" class="jd-inheritance-class-cell">ButtonPrivate</td>
     </tr>
-
+    
 
     <tr>
-
+        
             <td class="jd-inheritance-space">&nbsp;</td>
-
+        
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
-
+         	
         <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.Button</td>
     </tr>
-
+    
 
 </table>
 
@@ -342,6 +340,9 @@ Summary:
  public class SampleApplication extends android.app.Application {
   public void onCreate() {
       super.onCreate();
+      if (BuildConfig.DEBUG) {
+          Button.getButton(this).enableDebugLogging();
+      }
       Button.getButton(this).start();
   }
  }
@@ -405,199 +406,199 @@ Summary:
 
 
 
-
+	 
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
-
+            
+            
+            
             static
-
+            
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../com/usebutton/sdk/Button.html#disableDebugLogging()">disableDebugLogging</a></span>()</nobr>
-
+        
         <div class="jd-descrdiv">Disable SDK debug logging, see <code><a href="../../../com/usebutton/sdk/Button.html#enableDebugLogging()">enableDebugLogging()</a></code> for more details.</div>
-
+  
   </td></tr>
 
 
-
+	 
     <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
-
+            
+            
+            
             static
-
+            
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../com/usebutton/sdk/Button.html#enableDebugLogging()">enableDebugLogging</a></span>()</nobr>
-
-        <div class="jd-descrdiv">Will enable useful debug logging from the Button SDK (adb logcat ButtonSDK:D *:S).</div>
-
+        
+        <div class="jd-descrdiv">Will enable useful debug logging from the Button SDK (tag Button).</div>
+  
   </td></tr>
 
 
-
+	 
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
-
+            
             synchronized
-
+            
             static
-
+            
             <a href="../../../com/usebutton/sdk/Button.html">Button</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../com/usebutton/sdk/Button.html#getButton(android.content.Context)">getButton</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context)</nobr>
-
+        
         <div class="jd-descrdiv">Gets the shared Button instance & lazily instantiates if not yet created.</div>
-
+  
   </td></tr>
 
 
-
+	 
     <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
-
-
-
+            
+            
+            
+            
+            
             <a href="http://d.android.com/reference/java/lang/String.html">String</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../com/usebutton/sdk/Button.html#getReferrerToken()">getReferrerToken</a></span>()</nobr>
-
+        
         <div class="jd-descrdiv">You can use this method to check if the current user came in through a DLC deep link or not (null)</div>
-
+  
   </td></tr>
 
 
-
+	 
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
-
-
-
+            
+            
+            
+            
+            
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../com/usebutton/sdk/Button.html#handleIntent(android.content.Intent)">handleIntent</a></span>(<a href="http://d.android.com/reference/android/content/Intent.html">Intent</a> intent)</nobr>
-
+        
         <div class="jd-descrdiv">Record inbound deep link for attribution, currently based on <code><a href="null#getData()">getData()</a></code>.</div>
-
+  
   </td></tr>
 
 
-
+	 
     <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
-
+            
+            
+            
             static
-
+            
             boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../com/usebutton/sdk/Button.html#isStarted()">isStarted</a></span>()</nobr>
-
+        
   </td></tr>
 
 
-
+	 
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
-
-
-
+            
+            
+            
+            
+            
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../com/usebutton/sdk/Button.html#logout()">logout</a></span>()</nobr>
-
+        
         <div class="jd-descrdiv">Clears any session information and effectively creates a new customer.</div>
-
+  
   </td></tr>
 
 
-
+	 
     <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
-
-
-
+            
+            
+            
+            
+            
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../com/usebutton/sdk/Button.html#reportOrder(int, java.lang.String, java.lang.String)">reportOrder</a></span>(int valuePennies, <a href="http://d.android.com/reference/java/lang/String.html">String</a> currencyCode, <a href="http://d.android.com/reference/java/lang/String.html">String</a> orderId)</nobr>
-
+        
         <div class="jd-descrdiv">Will report an order attribution and its value & currency to the active referrer token <code><a href="../../../com/usebutton/sdk/Button.html#handleIntent(android.content.Intent)">handleIntent(Intent)</a></code></div>
-
+  
   </td></tr>
 
 
-
+	 
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
-
-
-
+            
+            
+            
+            
+            
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../com/usebutton/sdk/Button.html#start()">start</a></span>()</nobr>
-
+        
         <div class="jd-descrdiv">Initializes Button for your application, preferably called from <code>android.app.Application.onCreate()</code>.</div>
-
+  
   </td></tr>
 
 
-
+	 
     <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
-
-
-
+            
+            
+            
+            
+            
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../com/usebutton/sdk/Button.html#stop()">stop</a></span>()</nobr>
-
+        
         <div class="jd-descrdiv">Ceases all Button activity.</div>
-
+  
   </td></tr>
 
 
-
+	 
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
-
-
-
+            
+            
+            
+            
+            
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../com/usebutton/sdk/Button.html#willDisplayPromotion(java.lang.String, com.usebutton.sdk.PlacementContext, com.usebutton.sdk.ButtonDropin.Listener)">willDisplayPromotion</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> buttonId, <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a> context, <a href="../../../com/usebutton/sdk/ButtonDropin.Listener.html">ButtonDropin.Listener</a> listener)</nobr>
-
+        
         <div class="jd-descrdiv">Convenience method to check if a promotion will be filled given a placement ID and context.</div>
-
+  
   </td></tr>
 
 
@@ -634,182 +635,182 @@ From class
   </div>
   <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
     <table class="jd-sumtable-expando">
+    
 
 
-
-
+	 
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
-
-
-
+            
+            
+            
+            
+            
             <a href="http://d.android.com/reference/java/lang/Object.html">Object</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad">clone</span>()</nobr>
-
+        
   </td></tr>
 
 
-
+	 
     <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
-
-
-
+            
+            
+            
+            
+            
             boolean</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad">equals</span>(<a href="http://d.android.com/reference/java/lang/Object.html">Object</a> arg0)</nobr>
-
+        
   </td></tr>
 
 
-
+	 
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
-
-
-
+            
+            
+            
+            
+            
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad">finalize</span>()</nobr>
-
+        
   </td></tr>
 
 
-
+	 
     <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
+            
+            
             final
-
-
+            
+            
             <a href="http://d.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad">getClass</span>()</nobr>
-
+        
   </td></tr>
 
 
-
+	 
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
-
-
-
+            
+            
+            
+            
+            
             int</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad">hashCode</span>()</nobr>
-
+        
   </td></tr>
 
 
-
+	 
     <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
+            
+            
             final
-
-
+            
+            
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad">notify</span>()</nobr>
-
+        
   </td></tr>
 
 
-
+	 
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
+            
+            
             final
-
-
+            
+            
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad">notifyAll</span>()</nobr>
-
+        
   </td></tr>
 
 
-
+	 
     <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
-
-
-
+            
+            
+            
+            
+            
             <a href="http://d.android.com/reference/java/lang/String.html">String</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad">toString</span>()</nobr>
-
+        
   </td></tr>
 
 
-
+	 
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
+            
+            
             final
-
-
+            
+            
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
-
+        
   </td></tr>
 
 
-
+	 
     <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
+            
+            
             final
-
-
+            
+            
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad">wait</span>(long arg0)</nobr>
-
+        
   </td></tr>
 
 
-
+	 
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
-
-
+            
+            
             final
-
-
+            
+            
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad">wait</span>()</nobr>
-
+        
   </td></tr>
 
 
@@ -863,14 +864,14 @@ From class
 
 <A NAME="disableDebugLogging()"></A>
 
-<div class="jd-details api apilevel-">
+<div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
-        public
-        static
-
-
-
+        public 
+        static 
+         
+         
+         
         void
       </span>
       <span class="sympad">disableDebugLogging</span>
@@ -880,12 +881,12 @@ From class
         <div>
 
 </div>
-
-
+        
+  
 
       </div>
     <div class="jd-details-descr">
-
+      
   <div class="jd-tagdata jd-tagdescr"><p>Disable SDK debug logging, see <code><a href="../../../com/usebutton/sdk/Button.html#enableDebugLogging()">enableDebugLogging()</a></code> for more details.
 </p></div>
 
@@ -895,14 +896,14 @@ From class
 
 <A NAME="enableDebugLogging()"></A>
 
-<div class="jd-details api apilevel-">
+<div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
-        public
-        static
-
-
-
+        public 
+        static 
+         
+         
+         
         void
       </span>
       <span class="sympad">enableDebugLogging</span>
@@ -912,16 +913,16 @@ From class
         <div>
 
 </div>
-
-
+        
+  
 
       </div>
     <div class="jd-details-descr">
-
-  <div class="jd-tagdata jd-tagdescr"><p>Will enable useful debug logging from the Button SDK (adb logcat ButtonSDK:D *:S).
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Will enable useful debug logging from the Button SDK (tag Button).
 
  We recommend you call this function before <code><a href="../../../com/usebutton/sdk/Button.html#start()">start()</a></code>.
- Use <code>adb logcat Button:D *:S</code> to filter on Button log statements only.
+ Use <code>adb logcat ButtonSDK:D *:S</code> to filter on Button log statements only.
 </p></div>
 
     </div>
@@ -930,14 +931,14 @@ From class
 
 <A NAME="getButton(android.content.Context)"></A>
 
-<div class="jd-details api apilevel-">
+<div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
-        public
-        static
-
-
-        synchronized
+        public 
+        static 
+         
+         
+        synchronized 
         <a href="../../../com/usebutton/sdk/Button.html">Button</a>
       </span>
       <span class="sympad">getButton</span>
@@ -947,12 +948,12 @@ From class
         <div>
 
 </div>
-
-
+        
+  
 
       </div>
     <div class="jd-details-descr">
-
+      
   <div class="jd-tagdata jd-tagdescr"><p>Gets the shared Button instance & lazily instantiates if not yet created.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
@@ -966,14 +967,14 @@ From class
 
 <A NAME="getReferrerToken()"></A>
 
-<div class="jd-details api apilevel-">
+<div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
-        public
-
-
-
-
+        public 
+         
+         
+         
+         
         <a href="http://d.android.com/reference/java/lang/String.html">String</a>
       </span>
       <span class="sympad">getReferrerToken</span>
@@ -983,12 +984,12 @@ From class
         <div>
 
 </div>
-
-
+        
+  
 
       </div>
     <div class="jd-details-descr">
-
+      
   <div class="jd-tagdata jd-tagdescr"><p>You can use this method to check if the current user came in through a DLC deep link or not (null)</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
@@ -1002,14 +1003,14 @@ From class
 
 <A NAME="handleIntent(android.content.Intent)"></A>
 
-<div class="jd-details api apilevel-">
+<div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
-        public
-
-
-
-
+        public 
+         
+         
+         
+         
         void
       </span>
       <span class="sympad">handleIntent</span>
@@ -1019,12 +1020,12 @@ From class
         <div>
 
 </div>
-
-
+        
+  
 
       </div>
     <div class="jd-details-descr">
-
+      
   <div class="jd-tagdata jd-tagdescr"><p>Record inbound deep link for attribution, currently based on <code><a href="null#getData()">getData()</a></code>.
  Will see if <code><a href="null#getData()">getData()</a></code> has a <code>btn_ref=:referrerToken</code> URL parameter on the data provided
  and record this referrer token for future attribution through <code><a href="../../../com/usebutton/sdk/Button.html#reportOrder(int, java.lang.String, java.lang.String)">reportOrder(int, String, String)</a></code>,
@@ -1037,14 +1038,14 @@ From class
 
 <A NAME="isStarted()"></A>
 
-<div class="jd-details api apilevel-">
+<div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
-        public
-        static
-
-
-
+        public 
+        static 
+         
+         
+         
         boolean
       </span>
       <span class="sympad">isStarted</span>
@@ -1054,12 +1055,12 @@ From class
         <div>
 
 </div>
-
-
+        
+  
 
       </div>
     <div class="jd-details-descr">
-
+      
   <div class="jd-tagdata jd-tagdescr"><p></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
@@ -1073,14 +1074,14 @@ From class
 
 <A NAME="logout()"></A>
 
-<div class="jd-details api apilevel-">
+<div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
-        public
-
-
-
-
+        public 
+         
+         
+         
+         
         void
       </span>
       <span class="sympad">logout</span>
@@ -1090,12 +1091,12 @@ From class
         <div>
 
 </div>
-
-
+        
+  
 
       </div>
     <div class="jd-details-descr">
-
+      
   <div class="jd-tagdata jd-tagdescr"><p>Clears any session information and effectively creates a new customer.
  Use when e.g. the user logs out or changes in the host application.
 </p></div>
@@ -1106,14 +1107,14 @@ From class
 
 <A NAME="reportOrder(int, java.lang.String, java.lang.String)"></A>
 
-<div class="jd-details api apilevel-">
+<div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
-        public
-
-
-
-
+        public 
+         
+         
+         
+         
         void
       </span>
       <span class="sympad">reportOrder</span>
@@ -1123,12 +1124,12 @@ From class
         <div>
 
 </div>
-
-
+        
+  
 
       </div>
     <div class="jd-details-descr">
-
+      
   <div class="jd-tagdata jd-tagdescr"><p>Will report an order attribution and its value & currency to the active referrer token <code><a href="../../../com/usebutton/sdk/Button.html#handleIntent(android.content.Intent)">handleIntent(Intent)</a></code></p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
@@ -1155,14 +1156,14 @@ From class
 
 <A NAME="start()"></A>
 
-<div class="jd-details api apilevel-">
+<div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
-        public
-
-
-
-
+        public 
+         
+         
+         
+         
         void
       </span>
       <span class="sympad">start</span>
@@ -1172,12 +1173,12 @@ From class
         <div>
 
 </div>
-
-
+        
+  
 
       </div>
     <div class="jd-details-descr">
-
+      
   <div class="jd-tagdata jd-tagdescr"><p>Initializes Button for your application, preferably called from <code>android.app.Application.onCreate()</code>.
  Remember to add your application ID to your AndroidManifest.xml first, see <code><a href="../../../com/usebutton/sdk/Button.html">Button</a></code> for example
 </p></div>
@@ -1188,14 +1189,14 @@ From class
 
 <A NAME="stop()"></A>
 
-<div class="jd-details api apilevel-">
+<div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
-        public
-
-
-
-
+        public 
+         
+         
+         
+         
         void
       </span>
       <span class="sympad">stop</span>
@@ -1205,12 +1206,12 @@ From class
         <div>
 
 </div>
-
-
+        
+  
 
       </div>
     <div class="jd-details-descr">
-
+      
   <div class="jd-tagdata jd-tagdescr"><p>Ceases all Button activity.
 </p></div>
 
@@ -1220,14 +1221,14 @@ From class
 
 <A NAME="willDisplayPromotion(java.lang.String, com.usebutton.sdk.PlacementContext, com.usebutton.sdk.ButtonDropin.Listener)"></A>
 
-<div class="jd-details api apilevel-">
+<div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
-        public
-
-
-
-
+        public 
+         
+         
+         
+         
         void
       </span>
       <span class="sympad">willDisplayPromotion</span>
@@ -1237,12 +1238,12 @@ From class
         <div>
 
 </div>
-
-
+        
+  
 
       </div>
     <div class="jd-details-descr">
-
+      
   <div class="jd-tagdata jd-tagdescr"><p>Convenience method to check if a promotion will be filled given a placement ID and context. See <code><a href="../../../com/usebutton/sdk/ButtonDropin.html">ButtonDropin</a></code>
  for more information about context. You can use this to e.g. show/hide <code><a href="../../../com/usebutton/sdk/ButtonDropin.html">ButtonDropin</a></code>'s layout container.
  For instructions on finding your buttonId, see <code><a href="../../../com/usebutton/sdk/Button.html">Button</a></code>
@@ -1298,7 +1299,7 @@ Generated by <a href="http://code.google.com/p/doclava/">Doclava</a>.
 
 </div><!-- end doc-content -->
 
-</div> <!-- end body-content -->
+</div> <!-- end body-content --> 
 
 <script type="text/javascript">
 init(); /* initialize doclava-developer-docs.js */

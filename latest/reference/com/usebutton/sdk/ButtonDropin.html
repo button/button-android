@@ -52,7 +52,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for Button DLC SDK for Android v2.0.0." />
+  <meta name="description" content="Javadoc API documentation for Button DLC SDK for Android v2.0.1." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
 <title>
@@ -60,7 +60,7 @@
   ButtonDropin
 
 
-| Button DLC SDK for Android v2.0.0
+| Button DLC SDK for Android v2.0.1
 
 </title>
 <link href="../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -92,7 +92,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">Button DLC SDK for Android v2.0.0</span>
+      <span id="masthead-title">Button DLC SDK for Android v2.0.1</span>
     
     </div>
     <div id="headerRight">
@@ -144,8 +144,6 @@
               </div>
               <ul>
                 
-    <li class="api apilevel-">
-  <a href="../../../android/support/v4/view/package-summary.html">android.support.v4.view</a></li>
     <li class="selected api apilevel-">
   <a href="../../../com/usebutton/sdk/package-summary.html">com.usebutton.sdk</a></li>
     <li class="api apilevel-">
@@ -452,6 +450,8 @@ Summary:
        /&gt;
  </code></pre>
 
+ <h3>Prepare Button with context.</h3>
+
  You will have to prepare the button with some context, e.g. the location information for a start
  or end location as shown in this example of an <code><a href="null#onCreate(android.os.Bundle)">onCreate(Bundle)</a></code>
 
@@ -477,6 +477,28 @@ Summary:
           // Toggle visibility of UI items here if necessary
       }
    });
+ </pre>
+
+ <h3>Add a Button to your view with code.</h3>
+
+ <pre>
+     final ButtonDropin buttonDropin = new ButtonDropin(context);
+     // Important, you have to set the Button ID before calling any of the <code>prepareForDisplay</code> methods.
+     buttonDropin.setButtonId("your-button-id");
+     // Let's do some styling
+     Resources res = context.getResources();
+     buttonDropin.setTextSize_Button(res.getDimensionPixelSize(R.dimen.my_text_size));
+     buttonDropin.setTextColor_Button(Color.RED);
+
+
+     // Remember to set some layout params if you add the button to a ViewGroup that requires this.
+     final LayoutParams layoutParams = new LayoutParams(MATCH_PARENT, res.getDimensionPixelSize(R.dimen.button_height));
+     buttonDropin.setLayoutParams(layoutParams);
+     someParentView.addView(buttonDropin);
+
+     // Prepare the Button for display with a context.
+     final PlacementContext context = PlacementContext.forEndLocation("Button HQ", 40.732561,-73.988068);
+     buttonDropin.prepareForDisplayWithContext(context);
  </pre>
 </p>
 
@@ -1935,9 +1957,248 @@ android.view.View
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonDropin.html#setBackgroundColor_Button(int)">setBackgroundColor_Button</a></span>(int color)</nobr>
+        
+        <div class="jd-descrdiv">Set the background of the button to be a solid color.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonDropin.html#setBackgroundDrawable_Button(android.graphics.drawable.Drawable)">setBackgroundDrawable_Button</a></span>(<a href="http://d.android.com/reference/android/graphics/drawable/Drawable.html">Drawable</a> drawable)</nobr>
+        
+        <div class="jd-descrdiv">Set background for the button, you can use any Drawable object (9-patch, selector, solid color etc).</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonDropin.html#setButtonId(java.lang.String)">setButtonId</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> buttonId)</nobr>
+        
+        <div class="jd-descrdiv">Set the button Id for this instance.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonDropin.html#setDrawablePadding_Button(int)">setDrawablePadding_Button</a></span>(int paddingPixels)</nobr>
+        
+        <div class="jd-descrdiv">Padding around icon to surrounding text/button outline.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonDropin.html#setFont_Button(java.lang.String)">setFont_Button</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> font)</nobr>
+        
+        <div class="jd-descrdiv">Set the button's font.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonDropin.html#setIconSize_Button(int)">setIconSize_Button</a></span>(int iconSizePixels)</nobr>
+        
+        <div class="jd-descrdiv">Set the icon's size, use this to adjust the size of the icon so it suits your designs.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonDropin.html#setListener(com.usebutton.sdk.ButtonDropin.Listener)">setListener</a></span>(<a href="../../../com/usebutton/sdk/ButtonDropin.Listener.html">ButtonDropin.Listener</a> listener)</nobr>
         
         <div class="jd-descrdiv">Set a permanent listener to observe changes in visibility for this promotion.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonDropin.html#setPaddingBottom_Button(int)">setPaddingBottom_Button</a></span>(int paddingPixels)</nobr>
+        
+        <div class="jd-descrdiv">Set the bottom padding of the button in pixels.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonDropin.html#setPaddingLeft_Button(int)">setPaddingLeft_Button</a></span>(int paddingPixels)</nobr>
+        
+        <div class="jd-descrdiv">Set the left padding of the button in pixels.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonDropin.html#setPaddingRight_Button(int)">setPaddingRight_Button</a></span>(int paddingPixels)</nobr>
+        
+        <div class="jd-descrdiv">Set the right padding of the button in pixels.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonDropin.html#setPaddingTop_Button(int)">setPaddingTop_Button</a></span>(int paddingPixels)</nobr>
+        
+        <div class="jd-descrdiv">Set the top padding of the button in pixels.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonDropin.html#setPadding_Button(int)">setPadding_Button</a></span>(int paddingPixels)</nobr>
+        
+        <div class="jd-descrdiv">Set the padding of the button in pixels, this will set the same padding on all four sides of
+ the button, for controlling the individual sides, see <code><a href="../../../com/usebutton/sdk/ButtonDropin.html#setPaddingTop_Button(int)">setPaddingTop_Button(int)</a></code>, <code><a href="../../../com/usebutton/sdk/ButtonDropin.html#setPaddingRight_Button(int)">setPaddingRight_Button(int)</a></code>,
+ <code><a href="../../../com/usebutton/sdk/ButtonDropin.html#setPaddingBottom_Button(int)">setPaddingBottom_Button(int)</a></code>, <code><a href="../../../com/usebutton/sdk/ButtonDropin.html#setPaddingRight_Button(int)">setPaddingRight_Button(int)</a></code>
+
+ Equivalent to using the <code>button:btn_padding</code> attribute in a XML layout.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonDropin.html#setTextColorStates_Button(android.content.res.ColorStateList)">setTextColorStates_Button</a></span>(<a href="http://d.android.com/reference/android/content/res/ColorStateList.html">ColorStateList</a> textColorStates)</nobr>
+        
+        <div class="jd-descrdiv">Set text color of the button in the different states (normal, pressed etc), see ColorStateList
+ for more information on how to specify the color for each state.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonDropin.html#setTextSize_Button(int)">setTextSize_Button</a></span>(int textSizePixels)</nobr>
+        
+        <div class="jd-descrdiv">Set the text size inside the button.</div>
   
   </td></tr>
 
@@ -14336,6 +14597,254 @@ From interface
 </div>
 
 
+<A NAME="setBackgroundColor_Button(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setBackgroundColor_Button</span>
+      <span class="normal">(int color)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the background of the button to be a solid color.
+
+ Equivalent to using the <code>button:btn_backgroundColor</code> attribute in a XML layout.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>color</td>
+          <td>integer representing the background color, see android.graphics.Color.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setBackgroundDrawable_Button(android.graphics.drawable.Drawable)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setBackgroundDrawable_Button</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/graphics/drawable/Drawable.html">Drawable</a> drawable)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set background for the button, you can use any Drawable object (9-patch, selector, solid color etc).
+
+ Equivalent to using the <code>button:btn_backgroundDrawable</code> attribute in a XML layout.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>drawable</td>
+          <td>any drawable to be used as background.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setButtonId(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setButtonId</span>
+      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> buttonId)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the button Id for this instance. Equivalent to using the <code>button:btn_buttonId</code>
+ attribute in a XML layout.</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="setDrawablePadding_Button(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setDrawablePadding_Button</span>
+      <span class="normal">(int paddingPixels)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Padding around icon to surrounding text/button outline.
+
+ Equivalent to using the <code>button:btn_drawablePadding</code> attribute in a XML layout.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>paddingPixels</td>
+          <td>padding around icon in pixels, all four sides.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setFont_Button(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setFont_Button</span>
+      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> font)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the button's font.
+
+ Equivalent to using the <code>button:btn_font</code> attribute in a XML layout.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>font</td>
+          <td>name or relative path to font in /assets folder
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setIconSize_Button(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setIconSize_Button</span>
+      <span class="normal">(int iconSizePixels)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the icon's size, use this to adjust the size of the icon so it suits your designs.
+ Set to 0 to hide the icon.
+
+ Equivalent to using the <code>button:iconSize</code> attribute in a XML layout.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>iconSizePixels</td>
+          <td>height/width constraint for icon in pixels.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
 <A NAME="setListener(com.usebutton.sdk.ButtonDropin.Listener)"></A>
 
 <div class="jd-details api apilevel-"> 
@@ -14370,6 +14879,310 @@ From interface
         <tr>
           <th>listener</td>
           <td>will be called whenever a promotion change happens.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPaddingBottom_Button(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setPaddingBottom_Button</span>
+      <span class="normal">(int paddingPixels)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the bottom padding of the button in pixels.
+
+ Equivalent to using the <code>button:btn_paddingBottom</code> attribute in a XML layout.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>paddingPixels</td>
+          <td>bottom padding in pixels.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPaddingLeft_Button(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setPaddingLeft_Button</span>
+      <span class="normal">(int paddingPixels)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the left padding of the button in pixels.
+
+ Equivalent to using the <code>button:btn_paddingLeft</code> attribute in a XML layout.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>paddingPixels</td>
+          <td>left padding in pixels.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPaddingRight_Button(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setPaddingRight_Button</span>
+      <span class="normal">(int paddingPixels)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the right padding of the button in pixels.
+
+ Equivalent to using the <code>button:btn_paddingRight</code> attribute in a XML layout.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>paddingPixels</td>
+          <td>right padding in pixels.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPaddingTop_Button(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setPaddingTop_Button</span>
+      <span class="normal">(int paddingPixels)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the top padding of the button in pixels.
+
+ Equivalent to using the <code>button:btn_paddingTop</code> attribute in a XML layout.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>paddingPixels</td>
+          <td>top padding in pixels.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setPadding_Button(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setPadding_Button</span>
+      <span class="normal">(int paddingPixels)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the padding of the button in pixels, this will set the same padding on all four sides of
+ the button, for controlling the individual sides, see <code><a href="../../../com/usebutton/sdk/ButtonDropin.html#setPaddingTop_Button(int)">setPaddingTop_Button(int)</a></code>, <code><a href="../../../com/usebutton/sdk/ButtonDropin.html#setPaddingRight_Button(int)">setPaddingRight_Button(int)</a></code>,
+ <code><a href="../../../com/usebutton/sdk/ButtonDropin.html#setPaddingBottom_Button(int)">setPaddingBottom_Button(int)</a></code>, <code><a href="../../../com/usebutton/sdk/ButtonDropin.html#setPaddingRight_Button(int)">setPaddingRight_Button(int)</a></code>
+
+ Equivalent to using the <code>button:btn_padding</code> attribute in a XML layout.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>paddingPixels</td>
+          <td>padding in pixels, all four sides.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setTextColorStates_Button(android.content.res.ColorStateList)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setTextColorStates_Button</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/res/ColorStateList.html">ColorStateList</a> textColorStates)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set text color of the button in the different states (normal, pressed etc), see ColorStateList
+ for more information on how to specify the color for each state.
+
+ Equivalent to using the <code>button:btn_textColor</code> attribute in a XML layout.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>textColorStates</td>
+          <td>ColorStateList object representing the text color for each state.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setTextSize_Button(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setTextSize_Button</span>
+      <span class="normal">(int textSizePixels)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the text size inside the button.
+
+ Equivalent to using the <code>button:btn_textSize</code> attribute in a XML layout.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>textSizePixels</td>
+          <td>text size in pixels.
 </td>
         </tr>
       </table>
