@@ -59,6 +59,10 @@ You can find the full [SDK Documentation](http://building.usebutton.com/button-a
 You can find relevant example code and a fully working sample application in our [button-android-sample](https://github.com/usebutton/button-android-samples) repository.
 
 ## Release notes
+### [2.0.1 Docs](http://building.usebutton.com/button-android/history/2.0.1/reference/com/usebutton/sdk/Button.html)
+* Option to create, style and add a ButtonDropin by code instead of layout XML.
+* Misc bug fixes.
+
 ### [ Docs](http://building.usebutton.com/button-android/history//reference/com/usebutton/sdk/Button.html)
 * Some change
 * Other change
