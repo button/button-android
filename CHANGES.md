@@ -1,3 +1,9 @@
+### [2.1.0 Docs](http://building.usebutton.com/button-android/history/2.1.0/reference/com/usebutton/sdk/Button.html)
+* Dynamic inventory item cells
+* Support for 9-patch backgrounds
+* Support for gravity in Button
+* Misc bug fixes and performance improvements
+
 ### [2.0.1 Docs](http://building.usebutton.com/button-android/history/2.0.1/reference/com/usebutton/sdk/Button.html)
 * Option to create, style and add a ButtonDropin by code instead of layout XML.
 * Misc bug fixes.

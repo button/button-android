@@ -34,7 +34,7 @@ Latest version: ![Download](https://api.bintray.com/packages/button/Public/andro
 
 ```
 dependencies {
-    // Add the Button SDK dependency to the list of dependencies,
+    // Add the Button SDK dependency to the list of dependencies, 
     // you can see the latest version in the badge above
     // Replace + with this number, e.g. 1.0.0
     compile 'com.usebutton:android-sdk:+'
@@ -59,10 +59,21 @@ You can find the full [SDK Documentation](http://building.usebutton.com/button-a
 You can find relevant example code and a fully working sample application in our [button-android-sample](https://github.com/usebutton/button-android-samples) repository.
 
 ## Release notes
+### [2.1.0 Docs](http://building.usebutton.com/button-android/history/2.1.0/reference/com/usebutton/sdk/Button.html)
+* Dynamic inventory item cells
+* Support for 9-patch backgrounds
+* Support for gravity in Button
+* Misc bug fixes and performance improvements
+
+### [2.0.1 Docs](http://building.usebutton.com/button-android/history/2.0.1/reference/com/usebutton/sdk/Button.html)
+* Option to create, style and add a ButtonDropin by code instead of layout XML.
+* Misc bug fixes.
+
 ### [2.0.0 Docs](http://building.usebutton.com/button-android/history/2.0.0/reference/com/usebutton/sdk/Button.html)
 * Debug logging to verify & debug Button integration
 * Full support for grouped inventory, stay tuned for new integrations!
 * btn_ namespace on all attributes to avoid collision. Note: breaking change from 1.n.n, see [Integration Docs](https://www.usebutton.com/developers/deep-link-commerce-android/) for details.
+
 
 ### [1.5.0 Docs](http://building.usebutton.com/button-android/history/1.5.0/reference/com/usebutton/sdk/Button.html)
 * Grouped inventory commerce card support.
