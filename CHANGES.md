@@ -2,10 +2,6 @@
 * Option to create, style and add a ButtonDropin by code instead of layout XML.
 * Misc bug fixes.
 
-### [ Docs](http://building.usebutton.com/button-android/history//reference/com/usebutton/sdk/Button.html)
-* Some change
-* Other change
-
 ### [2.0.0 Docs](http://building.usebutton.com/button-android/history/2.0.0/reference/com/usebutton/sdk/Button.html)
 * Debug logging to verify & debug Button integration
 * Full support for grouped inventory, stay tuned for new integrations!
