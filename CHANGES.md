@@ -1,3 +1,7 @@
+### [2.2.0 Docs](http://building.usebutton.com/button-android/history/2.2.0/reference/com/usebutton/sdk/Button.html)
+* New card type
+* Button text styling
+
 ### [2.1.0 Docs](http://building.usebutton.com/button-android/history/2.1.0/reference/com/usebutton/sdk/Button.html)
 * Dynamic inventory item cells
 * Support for 9-patch backgrounds
