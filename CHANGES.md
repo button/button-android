@@ -1,3 +1,6 @@
+### [2.2.1 Docs](http://building.usebutton.com/button-android/history/2.2.1/reference/com/usebutton/sdk/Button.html)
+* Minor bug fix.
+
 ### [2.2.0 Docs](http://building.usebutton.com/button-android/history/2.2.0/reference/com/usebutton/sdk/Button.html)
 * New card type
 * Button text styling
