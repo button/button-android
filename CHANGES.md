@@ -1,5 +1,5 @@
 ### [2.3.0 Docs](http://building.usebutton.com/button-android/history/2.3.0/reference/com/usebutton/sdk/Button.html)
-* Added ability to set your own user ID via [setThirdPartyId](http://building.usebutton.com/button-android/history/2.3.0/reference/com/usebutton/sdk/Button.html#setThirdpartyId(java.lang.String).
+* Added ability to set your own user ID via [setThirdPartyId](http://building.usebutton.com/button-android/history/2.3.0/reference/com/usebutton/sdk/Button.html\#setThirdpartyId\(java.lang.String\)).
 * Improved caching and reduced network traffic
 
 ### [2.2.1 Docs](http://building.usebutton.com/button-android/history/2.2.1/reference/com/usebutton/sdk/Button.html)
