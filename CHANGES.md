@@ -1,3 +1,7 @@
+### [2.3.0 Docs](http://building.usebutton.com/button-android/history/2.3.0/reference/com/usebutton/sdk/Button.html)
+* Promotion caching
+* Event accuracy 
+
 ### [2.2.1 Docs](http://building.usebutton.com/button-android/history/2.2.1/reference/com/usebutton/sdk/Button.html)
 * Minor bug fix.
 
