@@ -34,7 +34,7 @@ Latest version: ![Download](https://api.bintray.com/packages/button/Public/andro
 
 ```
 dependencies {
-    // Add the Button SDK dependency to the list of dependencies,
+    // Add the Button SDK dependency to the list of dependencies, 
     // you can see the latest version in the badge above
     // Replace + with this number, e.g. 1.0.0
     compile 'com.usebutton:android-sdk:+'
@@ -59,6 +59,9 @@ You can find the full [SDK Documentation](http://building.usebutton.com/button-a
 You can find relevant example code and a fully working sample application in our [button-android-sample](https://github.com/usebutton/button-android-samples) repository.
 
 ## Release notes
+### [3.0.0 Docs](http://building.usebutton.com/button-android/history/3.0.0/reference/com/usebutton/sdk/Button.html)
+* Introduced new structured taxonomy for context
+
 ### [2.3.0 Docs](http://building.usebutton.com/button-android/history/2.3.0/reference/com/usebutton/sdk/Button.html)
 * Added ability to set your own user ID via [setThirdPartyId](http://building.usebutton.com/button-android/history/2.3.0/reference/com/usebutton/sdk/Button.html\#setThirdpartyId\(java.lang.String\)).
 * Improved caching and reduced network traffic
