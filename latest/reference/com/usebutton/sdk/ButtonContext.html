@@ -52,15 +52,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for Button DLC SDK for Android v2.3.0." />
+  <meta name="description" content="Javadoc API documentation for Button DLC SDK for Android v3.0.0." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
 <title>
 
-  PlacementContext
+  ButtonContext
 
 
-| Button DLC SDK for Android v2.3.0
+| Button DLC SDK for Android v3.0.0
 
 </title>
 <link href="../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -92,7 +92,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">Button DLC SDK for Android v2.3.0</span>
+      <span id="masthead-title">Button DLC SDK for Android v3.0.0</span>
     
     </div>
     <div id="headerRight">
@@ -147,6 +147,8 @@
     <li class="selected api apilevel-">
   <a href="../../../com/usebutton/sdk/package-summary.html">com.usebutton.sdk</a></li>
     <li class="api apilevel-">
+  <a href="../../../com/usebutton/sdk/context/package-summary.html">com.usebutton.sdk.context</a></li>
+    <li class="api apilevel-">
   <a href="../../../com/usebutton/sdk/util/package-summary.html">com.usebutton.sdk.util</a></li>
               </ul><br/>
             </div> <!-- end packages -->
@@ -163,8 +165,8 @@
     <li><h2>Classes</h2>
       <ul>
           <li class="api apilevel-"><a href="../../../com/usebutton/sdk/Button.html">Button</a></li>
+          <li class="selected api apilevel-"><a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a></li>
           <li class="api apilevel-"><a href="../../../com/usebutton/sdk/ButtonDropin.html">ButtonDropin</a></li>
-          <li class="selected api apilevel-"><a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></li>
       </ul>
     </li>
               
@@ -207,6 +209,11 @@
 <div id="api-info-block">
 
 
+
+  
+  
+  
+  
 
   
    
@@ -275,12 +282,16 @@ Summary:
      
     
     class
-<h1>PlacementContext</h1>
+<h1>ButtonContext</h1>
 
 
 
   
-    extends <a href="http://d.android.com/reference/java/lang/Object.html">Object</a><br/>
+  
+  
+
+  
+    extends BaseEntity<br/>
   
   
   
@@ -305,7 +316,7 @@ Summary:
 
     <tr>
          	
-        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
+        <td colspan="3" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
     </tr>
     
 
@@ -313,7 +324,17 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.PlacementContext</td>
+        <td colspan="2" class="jd-inheritance-class-cell">BaseEntity</td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;</td>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.ButtonContext</td>
     </tr>
     
 
@@ -329,9 +350,38 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p>Convenience class on top of JSONObject. Mutable key-value pairs with promotion relevant information.
- See <code><a href="../../../com/usebutton/sdk/ButtonDropin.html">ButtonDropin</a></code> for a full example of a location aware context.
- Context parameters provided to promotions.
+<p>This is the main class holding context information for the current screen of your application.
+ Create an instance of this class and set relevant information representing the information
+ presented to the user so the appropriate button can be created with as much information as
+ possible.
+
+ An instance of this class can be passed to <code><a href="../../../com/usebutton/sdk/Button.html#willDisplayButton(java.lang.String, com.usebutton.sdk.ButtonContext, com.usebutton.sdk.ButtonDropin.Listener)">willDisplayButton(String, ButtonContext, ButtonDropin.Listener)</a></code> or <code><a href="../../../com/usebutton/sdk/ButtonDropin.html#prepareForDisplay(com.usebutton.sdk.ButtonContext)">prepareForDisplay(ButtonContext)</a></code> to
+ respectively see if a button will be displayed and to actually prepare the button.
+ <br/><br/>
+ <b>Location Example</b> context for a screen showing information about a restaurant where
+ we want to provide the user with transportation methods from their location to the venue:
+
+ <pre>
+ final Location restaurant = new Location("Feast", 40.7325614, -73.988068);
+ final ButtonContext context = ButtonContext.withSubjectLocation(restaurant);
+ context.setUserLocation(new Location("Work", 40.7382869, -73.9823721));
+
+ ButtonDropin button = (ButtonDropin) findViewById(R.id.button);
+ button.prepareForDisplayWithContext(context);
+ </pre>
+
+ <br/>
+ <b>Event Example</b> context for a screen showing event information, for example a calendar event.
+ This context information can in turn be used for e.g. on demand parking or nearby restaurants
+ for when the show is over.
+
+ <pre>
+ final Event event = new Event("Concert at Madison Square Garden");
+ event.setStart(new Date());
+ event.setEnd(new Date(System.currentTimeMills() + 3*3600*1000));
+ final Location msg = new Location("Madison Square Garden", 40.7505045,-73.9956274);
+ event.setLocation(msg);
+ </pre>
 </p>
 
 
@@ -379,6 +429,8 @@ Summary:
 <table id="inhconstants" class="jd-sumtable"><tr><th>
   <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
   <div style="clear:left;">Inherited Constants</div></th></tr>
+
+
 
 
 
@@ -446,7 +498,7 @@ android.os.Parcelable
             </nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#PlacementContext()">PlacementContext</a></span>()</nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonContext.html#ButtonContext()">ButtonContext</a></span>()</nobr>
         
   </td></tr>
 
@@ -472,11 +524,14 @@ android.os.Parcelable
             
             
             
-            int</nobr>
+            <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#describeContents()">describeContents</a></span>()</nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonContext.html#addItem(com.usebutton.sdk.context.Item)">addItem</a></span>(<a href="../../../com/usebutton/sdk/context/Item.html">Item</a> item)</nobr>
         
+        <div class="jd-descrdiv">Add an item to the context, for example the items of a shopping cart or ingredients of
+ a recipe.</div>
+  
   </td></tr>
 
 
@@ -488,13 +543,162 @@ android.os.Parcelable
             
             static
             
-            <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
+            <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#forEndLocation(java.lang.String, double, double)">forEndLocation</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> locationName, double latitude, double longitude)</nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonContext.html#deepCopy(com.usebutton.sdk.ButtonContext)">deepCopy</a></span>(<a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a> context)</nobr>
         
-        <div class="jd-descrdiv">Creates a new PlacementContext object with a location, this can be used for transportation
- promotions to indicate the drop off location.</div>
+        <div class="jd-descrdiv">This method will create a new instance of context, creating a deep copy of all values.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonContext.html#setArtist(com.usebutton.sdk.context.MusicArtist)">setArtist</a></span>(<a href="../../../com/usebutton/sdk/context/MusicArtist.html">MusicArtist</a> artist)</nobr>
+        
+        <div class="jd-descrdiv">Sets an artist object represented by the current screen, for example for a streaming music
+ player you would here set the artist for the track currently playing.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonContext.html#setDate(java.util.Date)">setDate</a></span>(<a href="http://d.android.com/reference/java/util/Date.html">Date</a> date)</nobr>
+        
+        <div class="jd-descrdiv">Sets the time and date for the information represented on screen - the time of a reservation,
+ date of a hotel reservation or similar.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonContext.html#setDateRange(java.util.Date, java.util.Date)">setDateRange</a></span>(<a href="http://d.android.com/reference/java/util/Date.html">Date</a> startDate, <a href="http://d.android.com/reference/java/util/Date.html">Date</a> endDate)</nobr>
+        
+        <div class="jd-descrdiv">Sets the date range relevant to the current screen, for a concert this could be the start
+ and end time of the concert or the start and end time for a calendar event.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonContext.html#setEvent(com.usebutton.sdk.context.Event)">setEvent</a></span>(<a href="../../../com/usebutton/sdk/context/Event.html">Event</a> event)</nobr>
+        
+        <div class="jd-descrdiv">Sets an event to this context, an example would be a calendar reminder representing a
+ location and start & end time.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonContext.html#setJourney(com.usebutton.sdk.context.Journey)">setJourney</a></span>(<a href="../../../com/usebutton/sdk/context/Journey.html">Journey</a> journey)</nobr>
+        
+        <div class="jd-descrdiv">Sets a journey object to this context, this will represent for example a trip with a
+ start & end location, travel method and start & end time.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonContext.html#setSubjectLocation(com.usebutton.sdk.context.Location)">setSubjectLocation</a></span>(<a href="../../../com/usebutton/sdk/context/Location.html">Location</a> location)</nobr>
+        
+        <div class="jd-descrdiv">Sets the physical location represented by the current screen, this can have coordinates,
+ a structured address or simply just a name.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonContext.html#setUserLocation(com.usebutton.sdk.context.Location)">setUserLocation</a></span>(<a href="../../../com/usebutton/sdk/context/Location.html">Location</a> location)</nobr>
+        
+        <div class="jd-descrdiv">The current location of the user.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonContext.html#withArtist(com.usebutton.sdk.context.MusicArtist)">withArtist</a></span>(<a href="../../../com/usebutton/sdk/context/MusicArtist.html">MusicArtist</a> artist)</nobr>
+        
+        <div class="jd-descrdiv">Creates a new ButtonContext instance and calls <code><a href="../../../com/usebutton/sdk/ButtonContext.html#setArtist(com.usebutton.sdk.context.MusicArtist)">setArtist(MusicArtist)</a></code>.</div>
   
   </td></tr>
 
@@ -507,121 +711,12 @@ android.os.Parcelable
             
             static
             
-            <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
+            <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#forStartLocation(java.lang.String, double, double)">forStartLocation</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> locationName, double latitude, double longitude)</nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonContext.html#withDate(java.util.Date)">withDate</a></span>(<a href="http://d.android.com/reference/java/util/Date.html">Date</a> date)</nobr>
         
-        <div class="jd-descrdiv">Creates a new PlacementContext object with a location, this can be used for transportation
- promotions to indicate the pick up location.</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            synchronized
-            
-            
-            
-            <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#putPrivate(java.lang.String, java.lang.String)">putPrivate</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, <a href="http://d.android.com/reference/java/lang/String.html">String</a> value)</nobr>
-        
-        <div class="jd-descrdiv">Reserved for future proofing the SDK so new top level keys can be used by partners without
- SDK changes.</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            synchronized
-            
-            
-            
-            <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#with(java.lang.String, java.lang.String)">with</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, <a href="http://d.android.com/reference/java/lang/String.html">String</a> value)</nobr>
-        
-        <div class="jd-descrdiv">Add a String <code>value</code> to the context for key <code>name</code>, This will be added under
- the vendor top-level key.</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            synchronized
-            
-            
-            
-            <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#with(java.lang.String, org.json.JSONObject)">with</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, <a href="http://d.android.com/reference/org/json/JSONObject.html">JSONObject</a> value)</nobr>
-        
-        <div class="jd-descrdiv">Add an arbitrary org.json.JSONObject <code>value</code> to the context for key <code>name</code>.</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            synchronized
-            
-            
-            
-            <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#withEndLocation(java.lang.String, double, double)">withEndLocation</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, double latitude, double longitude)</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#withEndLocation(java.lang.String, android.location.Location)">withEndLocation</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, <a href="http://d.android.com/reference/android/location/Location.html">Location</a> location)</nobr>
-        
-        <div class="jd-descrdiv">Adds a named end location to this promotion context.</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            synchronized
-            
-            
-            
-            <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#withEndTime(java.util.Date)">withEndTime</a></span>(<a href="http://d.android.com/reference/java/util/Date.html">Date</a> endTime)</nobr>
-        
-        <div class="jd-descrdiv">Add a start time to the context, for example the end of a trip.</div>
+        <div class="jd-descrdiv">Creates a new ButtonContext instance and calls <code><a href="../../../com/usebutton/sdk/ButtonContext.html#setDate(java.util.Date)">setDate(Date)</a></code>.</div>
   
   </td></tr>
 
@@ -632,14 +727,14 @@ android.os.Parcelable
             
             
             
+            static
             
-            
-            <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
+            <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#withStartLocation(java.lang.String, android.location.Location)">withStartLocation</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, <a href="http://d.android.com/reference/android/location/Location.html">Location</a> location)</nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonContext.html#withDateRange(java.util.Date, java.util.Date)">withDateRange</a></span>(<a href="http://d.android.com/reference/java/util/Date.html">Date</a> startDate, <a href="http://d.android.com/reference/java/util/Date.html">Date</a> endDate)</nobr>
         
-        <div class="jd-descrdiv">Adds a start location to context.</div>
+        <div class="jd-descrdiv">Creates a new ButtonContext instance and calls <code><a href="../../../com/usebutton/sdk/ButtonContext.html#setDateRange(java.util.Date, java.util.Date)">setDateRange(Date, Date)</a></code>.</div>
   
   </td></tr>
 
@@ -648,53 +743,16 @@ android.os.Parcelable
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
             
-            synchronized
             
             
+            static
             
-            <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
+            <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#withStartLocation(java.lang.String, double, double)">withStartLocation</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, double latitude, double longitude)</nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonContext.html#withEvent(com.usebutton.sdk.context.Event)">withEvent</a></span>(<a href="../../../com/usebutton/sdk/context/Event.html">Event</a> event)</nobr>
         
-        <div class="jd-descrdiv">Adds a start location to context.</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            synchronized
-            
-            
-            
-            <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#withStartTime(java.util.Date)">withStartTime</a></span>(<a href="http://d.android.com/reference/java/util/Date.html">Date</a> startTime)</nobr>
-        
-        <div class="jd-descrdiv">Add a start time to the context, for example the start of a trip.</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            synchronized
-            
-            
-            
-            <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#withSubjectLocation(double, double)">withSubjectLocation</a></span>(double latitude, double longitude)</nobr>
-        
-        <div class="jd-descrdiv">Add a location representing the object the user is looking at, for a restaurant listing, it
- would be the location of the restaurant.</div>
+        <div class="jd-descrdiv">Creates a new ButtonContext instance and calls <code><a href="../../../com/usebutton/sdk/ButtonContext.html#setEvent(com.usebutton.sdk.context.Event)">setEvent(Event)</a></code>.</div>
   
   </td></tr>
 
@@ -705,14 +763,14 @@ android.os.Parcelable
             
             
             
+            static
             
-            
-            <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a></nobr>
+            <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#withUserLocation(double, double)">withUserLocation</a></span>(double latitude, double longitude)</nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonContext.html#withJourney(com.usebutton.sdk.context.Journey)">withJourney</a></span>(<a href="../../../com/usebutton/sdk/context/Journey.html">Journey</a> journey)</nobr>
         
-        <div class="jd-descrdiv">Add the user's location to the context, for example for interesting venues around the user.</div>
+        <div class="jd-descrdiv">Creates a new ButtonContext instance and calls <code><a href="../../../com/usebutton/sdk/ButtonContext.html#setJourney(com.usebutton.sdk.context.Journey)">setJourney(Journey)</a></code>.</div>
   
   </td></tr>
 
@@ -723,13 +781,33 @@ android.os.Parcelable
             
             
             
+            static
             
-            
-            void</nobr>
+            <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../com/usebutton/sdk/PlacementContext.html#writeToParcel(android.os.Parcel, int)">writeToParcel</a></span>(<a href="http://d.android.com/reference/android/os/Parcel.html">Parcel</a> dest, int flags)</nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonContext.html#withSubjectLocation(com.usebutton.sdk.context.Location)">withSubjectLocation</a></span>(<a href="../../../com/usebutton/sdk/context/Location.html">Location</a> location)</nobr>
         
+        <div class="jd-descrdiv">Creates a new ButtonContext instance and calls <code><a href="../../../com/usebutton/sdk/ButtonContext.html#setSubjectLocation(com.usebutton.sdk.context.Location)">setSubjectLocation(Location)</a></code>.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/usebutton/sdk/ButtonContext.html#withUserLocation(com.usebutton.sdk.context.Location)">withUserLocation</a></span>(<a href="../../../com/usebutton/sdk/context/Location.html">Location</a> location)</nobr>
+        
+        <div class="jd-descrdiv">Creates a new ButtonContext instance and calls <code><a href="../../../com/usebutton/sdk/ButtonContext.html#setUserLocation(com.usebutton.sdk.context.Location)">setUserLocation(Location)</a></code>.</div>
+  
   </td></tr>
 
 
@@ -746,6 +824,8 @@ android.os.Parcelable
 <table id="inhmethods" class="jd-sumtable"><tr><th>
   <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
   <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
 
 
 <tr class="api apilevel-" >
@@ -1041,7 +1121,7 @@ From interface
 
 
 
-<A NAME="PlacementContext()"></A>
+<A NAME="ButtonContext()"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1053,7 +1133,7 @@ From interface
          
         
       </span>
-      <span class="sympad">PlacementContext</span>
+      <span class="sympad">ButtonContext</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
@@ -1087,7 +1167,7 @@ From interface
 
 
 
-<A NAME="describeContents()"></A>
+<A NAME="addItem(com.usebutton.sdk.context.Item)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1097,10 +1177,10 @@ From interface
          
          
          
-        int
+        <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a>
       </span>
-      <span class="sympad">describeContents</span>
-      <span class="normal">()</span>
+      <span class="sympad">addItem</span>
+      <span class="normal">(<a href="../../../com/usebutton/sdk/context/Item.html">Item</a> item)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1112,13 +1192,19 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Add an item to the context, for example the items of a shopping cart or ingredients of
+ a recipe.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the same object for chaining calls.
+</li></ul>
+  </div>
 
     </div>
 </div>
 
 
-<A NAME="forEndLocation(java.lang.String, double, double)"></A>
+<A NAME="deepCopy(com.usebutton.sdk.ButtonContext)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1128,10 +1214,10 @@ From interface
          
          
          
-        <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a>
+        <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a>
       </span>
-      <span class="sympad">forEndLocation</span>
-      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> locationName, double latitude, double longitude)</span>
+      <span class="sympad">deepCopy</span>
+      <span class="normal">(<a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a> context)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1143,22 +1229,14 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Creates a new PlacementContext object with a location, this can be used for transportation
- promotions to indicate the drop off location.
+  <div class="jd-tagdata jd-tagdescr"><p>This method will create a new instance of context, creating a deep copy of all values.
+ If <code>context</code> is null, null is returned.
 
- Equivalent to <code>new PlacementContext().withEndLocation(...);</code>.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>locationName</td>
-          <td>for example "Pizza Restaurant"</td>
-        </tr>
-      </table>
-  </div>
+ JSONObject doesn't have a good method to do a deep copy without going to json string and back,
+ so this is not an ideal solution.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>the new context instance, for nested calls.
+      <ul class="nolist"><li>a deep copy of context or null.
 </li></ul>
   </div>
 
@@ -1166,7 +1244,263 @@ From interface
 </div>
 
 
-<A NAME="forStartLocation(java.lang.String, double, double)"></A>
+<A NAME="setArtist(com.usebutton.sdk.context.MusicArtist)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a>
+      </span>
+      <span class="sympad">setArtist</span>
+      <span class="normal">(<a href="../../../com/usebutton/sdk/context/MusicArtist.html">MusicArtist</a> artist)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets an artist object represented by the current screen, for example for a streaming music
+ player you would here set the artist for the track currently playing.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the same object for chaining calls.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setDate(java.util.Date)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a>
+      </span>
+      <span class="sympad">setDate</span>
+      <span class="normal">(<a href="http://d.android.com/reference/java/util/Date.html">Date</a> date)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the time and date for the information represented on screen - the time of a reservation,
+ date of a hotel reservation or similar.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the same object for chaining calls.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setDateRange(java.util.Date, java.util.Date)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a>
+      </span>
+      <span class="sympad">setDateRange</span>
+      <span class="normal">(<a href="http://d.android.com/reference/java/util/Date.html">Date</a> startDate, <a href="http://d.android.com/reference/java/util/Date.html">Date</a> endDate)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the date range relevant to the current screen, for a concert this could be the start
+ and end time of the concert or the start and end time for a calendar event.</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="setEvent(com.usebutton.sdk.context.Event)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a>
+      </span>
+      <span class="sympad">setEvent</span>
+      <span class="normal">(<a href="../../../com/usebutton/sdk/context/Event.html">Event</a> event)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets an event to this context, an example would be a calendar reminder representing a
+ location and start & end time.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the same object for chaining calls.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setJourney(com.usebutton.sdk.context.Journey)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a>
+      </span>
+      <span class="sympad">setJourney</span>
+      <span class="normal">(<a href="../../../com/usebutton/sdk/context/Journey.html">Journey</a> journey)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets a journey object to this context, this will represent for example a trip with a
+ start & end location, travel method and start & end time.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the same object for chaining calls.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setSubjectLocation(com.usebutton.sdk.context.Location)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a>
+      </span>
+      <span class="sympad">setSubjectLocation</span>
+      <span class="normal">(<a href="../../../com/usebutton/sdk/context/Location.html">Location</a> location)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the physical location represented by the current screen, this can have coordinates,
+ a structured address or simply just a name.
+ An example for this would be a restaurant listing or a venue for an event.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the same object for chaining calls.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setUserLocation(com.usebutton.sdk.context.Location)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a>
+      </span>
+      <span class="sympad">setUserLocation</span>
+      <span class="normal">(<a href="../../../com/usebutton/sdk/context/Location.html">Location</a> location)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>The current location of the user. Provide whatever level of granularity makes sense for the
+ context / that you have access to. You can use <code><a href="../../../com/usebutton/sdk/util/LocationProvider.html">LocationProvider</a></code>
+ to quickly get the user's last location if you have the correct permissions declared.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the same object for chaining calls.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="withArtist(com.usebutton.sdk.context.MusicArtist)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1176,10 +1510,10 @@ From interface
          
          
          
-        <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a>
+        <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a>
       </span>
-      <span class="sympad">forStartLocation</span>
-      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> locationName, double latitude, double longitude)</span>
+      <span class="sympad">withArtist</span>
+      <span class="normal">(<a href="../../../com/usebutton/sdk/context/MusicArtist.html">MusicArtist</a> artist)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1191,43 +1525,26 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Creates a new PlacementContext object with a location, this can be used for transportation
- promotions to indicate the pick up location.
-
- Equivalent to <code>new PlacementContext().withStartLocation(...);</code>.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>locationName</td>
-          <td>for example "Work"</td>
-        </tr>
-      </table>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>the new context instance, for nested calls.
-</li></ul>
-  </div>
+  <div class="jd-tagdata jd-tagdescr"><p>Creates a new ButtonContext instance and calls <code><a href="../../../com/usebutton/sdk/ButtonContext.html#setArtist(com.usebutton.sdk.context.MusicArtist)">setArtist(MusicArtist)</a></code>.</p></div>
 
     </div>
 </div>
 
 
-<A NAME="putPrivate(java.lang.String, java.lang.String)"></A>
+<A NAME="withDate(java.util.Date)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
+        static 
          
          
          
-        synchronized 
-        <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a>
+        <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a>
       </span>
-      <span class="sympad">putPrivate</span>
-      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, <a href="http://d.android.com/reference/java/lang/String.html">String</a> value)</span>
+      <span class="sympad">withDate</span>
+      <span class="normal">(<a href="http://d.android.com/reference/java/util/Date.html">Date</a> date)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1239,33 +1556,26 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Reserved for future proofing the SDK so new top level keys can be used by partners without
- SDK changes.
- You are probably looking for #putVendorValue(String, Object).</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>same object, for nesting.
-</li></ul>
-  </div>
+  <div class="jd-tagdata jd-tagdescr"><p>Creates a new ButtonContext instance and calls <code><a href="../../../com/usebutton/sdk/ButtonContext.html#setDate(java.util.Date)">setDate(Date)</a></code>.</p></div>
 
     </div>
 </div>
 
 
-<A NAME="with(java.lang.String, java.lang.String)"></A>
+<A NAME="withDateRange(java.util.Date, java.util.Date)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
+        static 
          
          
          
-        synchronized 
-        <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a>
+        <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a>
       </span>
-      <span class="sympad">with</span>
-      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, <a href="http://d.android.com/reference/java/lang/String.html">String</a> value)</span>
+      <span class="sympad">withDateRange</span>
+      <span class="normal">(<a href="http://d.android.com/reference/java/util/Date.html">Date</a> startDate, <a href="http://d.android.com/reference/java/util/Date.html">Date</a> endDate)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1277,28 +1587,26 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Add a String <code>value</code> to the context for key <code>name</code>, This will be added under
- the vendor top-level key. <code>{"vendor": {:name: :value</code>}
-</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Creates a new ButtonContext instance and calls <code><a href="../../../com/usebutton/sdk/ButtonContext.html#setDateRange(java.util.Date, java.util.Date)">setDateRange(Date, Date)</a></code>.</p></div>
 
     </div>
 </div>
 
 
-<A NAME="with(java.lang.String, org.json.JSONObject)"></A>
+<A NAME="withEvent(com.usebutton.sdk.context.Event)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
+        static 
          
          
          
-        synchronized 
-        <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a>
+        <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a>
       </span>
-      <span class="sympad">with</span>
-      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, <a href="http://d.android.com/reference/org/json/JSONObject.html">JSONObject</a> value)</span>
+      <span class="sympad">withEvent</span>
+      <span class="normal">(<a href="../../../com/usebutton/sdk/context/Event.html">Event</a> event)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1310,28 +1618,26 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Add an arbitrary org.json.JSONObject <code>value</code> to the context for key <code>name</code>. This will be added under
- the vendor top-level key. <code>{"vendor": {:name: :value</code>}
-</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Creates a new ButtonContext instance and calls <code><a href="../../../com/usebutton/sdk/ButtonContext.html#setEvent(com.usebutton.sdk.context.Event)">setEvent(Event)</a></code>.</p></div>
 
     </div>
 </div>
 
 
-<A NAME="withEndLocation(java.lang.String, double, double)"></A>
+<A NAME="withJourney(com.usebutton.sdk.context.Journey)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
+        static 
          
          
          
-        synchronized 
-        <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a>
+        <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a>
       </span>
-      <span class="sympad">withEndLocation</span>
-      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, double latitude, double longitude)</span>
+      <span class="sympad">withJourney</span>
+      <span class="normal">(<a href="../../../com/usebutton/sdk/context/Journey.html">Journey</a> journey)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1343,215 +1649,26 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Creates a new ButtonContext instance and calls <code><a href="../../../com/usebutton/sdk/ButtonContext.html#setJourney(com.usebutton.sdk.context.Journey)">setJourney(Journey)</a></code>.</p></div>
 
     </div>
 </div>
 
 
-<A NAME="withEndLocation(java.lang.String, android.location.Location)"></A>
+<A NAME="withSubjectLocation(com.usebutton.sdk.context.Location)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
+        static 
          
          
          
-         
-        <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a>
-      </span>
-      <span class="sympad">withEndLocation</span>
-      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, <a href="http://d.android.com/reference/android/location/Location.html">Location</a> location)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Adds a named end location to this promotion context.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>same object, for nested calls.
-</li></ul>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="withEndTime(java.util.Date)"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-        synchronized 
-        <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a>
-      </span>
-      <span class="sympad">withEndTime</span>
-      <span class="normal">(<a href="http://d.android.com/reference/java/util/Date.html">Date</a> endTime)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Add a start time to the context, for example the end of a trip.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>same object, for nested calls.
-</li></ul>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="withStartLocation(java.lang.String, android.location.Location)"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a>
-      </span>
-      <span class="sympad">withStartLocation</span>
-      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, <a href="http://d.android.com/reference/android/location/Location.html">Location</a> location)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Adds a start location to context.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>name</td>
-          <td>of start location, for example "Office"</td>
-        </tr>
-      </table>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>same object, for nested calls.
-</li></ul>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="withStartLocation(java.lang.String, double, double)"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-        synchronized 
-        <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a>
-      </span>
-      <span class="sympad">withStartLocation</span>
-      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name, double latitude, double longitude)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Adds a start location to context.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>same object, for nested calls.
-</li></ul>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="withStartTime(java.util.Date)"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-        synchronized 
-        <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a>
-      </span>
-      <span class="sympad">withStartTime</span>
-      <span class="normal">(<a href="http://d.android.com/reference/java/util/Date.html">Date</a> startTime)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Add a start time to the context, for example the start of a trip.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>same object, for nested calls.
-</li></ul>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="withSubjectLocation(double, double)"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-        synchronized 
-        <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a>
+        <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a>
       </span>
       <span class="sympad">withSubjectLocation</span>
-      <span class="normal">(double latitude, double longitude)</span>
+      <span class="normal">(<a href="../../../com/usebutton/sdk/context/Location.html">Location</a> location)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1563,33 +1680,26 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Add a location representing the object the user is looking at, for a restaurant listing, it
- would be the location of the restaurant. For a travel app, it would be the location of the
- destination.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>same object, for nested calls.
-</li></ul>
-  </div>
+  <div class="jd-tagdata jd-tagdescr"><p>Creates a new ButtonContext instance and calls <code><a href="../../../com/usebutton/sdk/ButtonContext.html#setSubjectLocation(com.usebutton.sdk.context.Location)">setSubjectLocation(Location)</a></code>.</p></div>
 
     </div>
 </div>
 
 
-<A NAME="withUserLocation(double, double)"></A>
+<A NAME="withUserLocation(com.usebutton.sdk.context.Location)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
+        static 
          
          
          
-         
-        <a href="../../../com/usebutton/sdk/PlacementContext.html">PlacementContext</a>
+        <a href="../../../com/usebutton/sdk/ButtonContext.html">ButtonContext</a>
       </span>
       <span class="sympad">withUserLocation</span>
-      <span class="normal">(double latitude, double longitude)</span>
+      <span class="normal">(<a href="../../../com/usebutton/sdk/context/Location.html">Location</a> location)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1601,43 +1711,7 @@ From interface
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Add the user's location to the context, for example for interesting venues around the user.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>same object, for nested calls
-</li></ul>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="writeToParcel(android.os.Parcel, int)"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        void
-      </span>
-      <span class="sympad">writeToParcel</span>
-      <span class="normal">(<a href="http://d.android.com/reference/android/os/Parcel.html">Parcel</a> dest, int flags)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Creates a new ButtonContext instance and calls <code><a href="../../../com/usebutton/sdk/ButtonContext.html#setUserLocation(com.usebutton.sdk.context.Location)">setUserLocation(Location)</a></code>.</p></div>
 
     </div>
 </div>
