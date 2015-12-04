@@ -1,3 +1,6 @@
+### [3.1.0 Docs](http://building.usebutton.com/button-android/history/3.1.0/reference/com/usebutton/sdk/Button.html)
+* Minor bug fixes and improvement
+
 ### [3.0.1 Docs](http://building.usebutton.com/button-android/history/3.0.1/reference/com/usebutton/sdk/Button.html)
 * Ability to report custom attribution events
 
