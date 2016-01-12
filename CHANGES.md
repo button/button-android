@@ -1,3 +1,7 @@
+### [3.2.0 Docs](http://building.usebutton.com/button-android/history/3.2.0/reference/com/usebutton/sdk/Button.html)
+* Improved network access
+* Misc improvements
+
 ### [3.1.0 Docs](http://building.usebutton.com/button-android/history/3.1.0/reference/com/usebutton/sdk/Button.html)
 * Minor bug fixes and improvement
 
