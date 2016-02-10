@@ -11,11 +11,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 -------------------------ACKNOWLEDGEMENTS--------------------------------------
+
 Portions of this Button Software may utilize the following copyrighted material,
 the use of which is hereby acknowledged.
 
-android.support.v4.view.PagerTabStripV22
-android.support.v4.view.PagerTitleStripV22
+* android.support.v4.view.PagerTabStripV22
+* android.support.v4.view.PagerTitleStripV22
 
 
 Copyright (C) 2012 The Android Open Source Project
@@ -33,9 +34,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 
- com.usebutton.sdk.internal.util.DiskLruCache
- com.usebutton.sdk.internal.util.Editor
- com.usebutton.sdk.internal.util.Entry
+ * com.usebutton.sdk.internal.util.DiskLruCache
+ * com.usebutton.sdk.internal.util.Editor
+ * com.usebutton.sdk.internal.util.Entry
 
 
 Copyright (C) 2011 The Android Open Source Project
