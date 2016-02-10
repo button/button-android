@@ -10,10 +10,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
--------------------------ACKNOWLEDGEMENTS--------------------------------------
-
-Portions of this Button Software may utilize the following copyrighted material,
-the use of which is hereby acknowledged.
+## Third-party components
 
 * android.support.v4.view.PagerTabStripV22
 * android.support.v4.view.PagerTitleStripV22
