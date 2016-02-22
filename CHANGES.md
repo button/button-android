@@ -1,3 +1,6 @@
+### [4.1.1 Docs](http://building.usebutton.com/button-android/history/4.1.1/reference/com/usebutton/sdk/Button.html)
+* Minor bug fix with regards to attribution
+
 ### [4.1.0 Docs](http://building.usebutton.com/button-android/history/4.1.0/reference/com/usebutton/sdk/Button.html)
 * Make your own buttons
 * Significant performance improvements
