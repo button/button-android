@@ -1,3 +1,7 @@
+### [4.1.5 Docs](http://building.usebutton.com/button-android/history/4.1.5/reference/com/usebutton/sdk/Button.html)
+* Removed backup attribute from AndroidManifest
+* Ability to disable interaction on the ButtonDropin
+
 ### [4.1.3 Docs](http://building.usebutton.com/button-android/history/4.1.3/reference/com/usebutton/sdk/Button.html)
 * Fixed attribution bug
 
