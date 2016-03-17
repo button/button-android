@@ -1,3 +1,6 @@
+### [4.2.0 Docs](http://building.usebutton.com/button-android/history/4.2.0/reference/com/usebutton/sdk/Button.html)
+* Removed dependency on CardView and compat-v7
+
 ### [4.1.5 Docs](http://building.usebutton.com/button-android/history/4.1.5/reference/com/usebutton/sdk/Button.html)
 * Removed backup attribute from AndroidManifest
 * Ability to disable interaction on the ButtonDropin
