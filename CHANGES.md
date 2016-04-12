@@ -1,3 +1,6 @@
+### [4.3.1 Docs](http://building.usebutton.com/button-android/history/4.3.1/reference/com/usebutton/sdk/Button.html)
+* Fixed bug when trying to install app on Genymotion (NPE)
+
 ### [4.3.0 Docs](http://building.usebutton.com/button-android/history/4.3.0/reference/com/usebutton/sdk/Button.html)
 * Reduced network usage for event reporting
 * Miscellaneous bug fixes
