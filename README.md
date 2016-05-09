@@ -59,6 +59,10 @@ You can find the full [SDK Documentation](http://building.usebutton.com/button-a
 You can find relevant example code and a fully working sample application in our [button-android-sample](https://github.com/usebutton/button-android-samples) repository.
 
 ## Release notes
+### [4.3.2 Docs](http://building.usebutton.com/button-android/history/4.3.2/reference/com/usebutton/sdk/Button.html)
+* Bug fixes
+* Preview heading
+
 ### [4.3.1 Docs](http://building.usebutton.com/button-android/history/4.3.1/reference/com/usebutton/sdk/Button.html)
 * Fixed bug when trying to install app on Genymotion (NPE)
 
