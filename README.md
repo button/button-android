@@ -59,6 +59,9 @@ You can find the full [SDK Documentation](http://building.usebutton.com/button-a
 You can find relevant example code and a fully working sample application in our [button-android-sample](https://github.com/usebutton/button-android-samples) repository.
 
 ## Release notes
+### [4.3.4 Docs](http://building.usebutton.com/button-android/history/4.3.4/reference/com/usebutton/sdk/Button.html)
+* Bug fixes related to handling incoming deep links and language change
+
 ### [4.3.2 Docs](http://building.usebutton.com/button-android/history/4.3.2/reference/com/usebutton/sdk/Button.html)
 * Bug fixes
 * Preview heading
