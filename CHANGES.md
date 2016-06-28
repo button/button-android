@@ -1,3 +1,7 @@
+### [5.0.0 Docs](http://building.usebutton.com/button-android/history/5.0.0/reference/com/usebutton/sdk/Button.html)
+* A number of performance improvements
+* Bug fixes
+
 ### [4.3.4 Docs](http://building.usebutton.com/button-android/history/4.3.4/reference/com/usebutton/sdk/Button.html)
 * Bug fixes related to handling incoming deep links and language change
 
