@@ -1,3 +1,6 @@
+### [5.0.1 Docs](http://building.usebutton.com/button-android/history/5.0.1/reference/com/usebutton/sdk/Button.html)
+* Fix for crash with support-v4:24.0.0 due to incorrect handling of decor views in [ViewPager](b.android.com/213359)
+
 ### [5.0.0 Docs](http://building.usebutton.com/button-android/history/5.0.0/reference/com/usebutton/sdk/Button.html)
 * A number of performance improvements
 * Bug fixes
