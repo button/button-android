@@ -1,3 +1,7 @@
+### [5.1.0 Docs](http://building.usebutton.com/button-android/history/5.1.0/reference/com/usebutton/sdk/Button.html)
+* Post-install notification to make the install process better
+* Deprecated SDK order reporting, please see our [developer docs](https://www.usebutton.com/developers/api-reference/).
+
 ### [5.0.1 Docs](http://building.usebutton.com/button-android/history/5.0.1/reference/com/usebutton/sdk/Button.html)
 * Fix for crash with support-v4:24.0.0 due to incorrect handling of decor views in [ViewPager](b.android.com/213359)
 
