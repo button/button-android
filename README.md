@@ -59,6 +59,10 @@ You can find the full [SDK Documentation](http://building.usebutton.com/button-a
 You can find relevant example code and a fully working sample application in our [button-android-sample](https://github.com/usebutton/button-android-samples) repository.
 
 ## Release notes
+### [4.3.5 Docs](http://building.usebutton.com/button-android/history/4.3.5/reference/com/usebutton/sdk/Button.html)
+* Bug fix related to persisted events
+* Fix for ViewPager and support-v4:24.0.0 crashing
+
 ### [5.1.0 Docs](http://building.usebutton.com/button-android/history/5.1.0/reference/com/usebutton/sdk/Button.html)
 * Post-install notification to make the install process better
 * Deprecated SDK order reporting, please see our [developer docs](https://www.usebutton.com/developers/api-reference/).
