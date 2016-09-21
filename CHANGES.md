@@ -1,3 +1,7 @@
+### [5.2.0 Docs](http://building.usebutton.com/button-android/history/5.2.0/reference/com/usebutton/sdk/Button.html)
+* A brand new Button - InteractiveButton
+* Misc bug fixes
+
 ### [5.1.1 Docs](http://building.usebutton.com/button-android/history/5.1.1/reference/com/usebutton/sdk/Button.html)
 * Bug fix related to persisted events
 
