@@ -1,3 +1,7 @@
+### [5.3.1 Docs](http://building.usebutton.com/button-android/history/5.3.1/reference/com/usebutton/sdk/Button.html)
+* New loading state
+* Fix for flicker in InteractiveButton
+
 ### [5.3.0 Docs](http://building.usebutton.com/button-android/history/5.3.0/reference/com/usebutton/sdk/Button.html)
 * Misc improvements & bug fixes
 
