@@ -59,6 +59,12 @@ You can find the full [SDK Documentation](http://building.usebutton.com/button-a
 You can find relevant example code and a fully working sample application in our [button-android-sample](https://github.com/usebutton/button-android-samples) repository.
 
 ## Release notes
+### [5.5.0 Docs](http://building.usebutton.com/button-android/history/5.5.0/reference/com/usebutton/sdk/Button.html)
+* New events persistence (from file to database)
+* Fix for stale intents in install notification
+* Viewed event for custom UI buttons
+* Fix for potential crash after attended install
+
 ### [5.3.1 Docs](http://building.usebutton.com/button-android/history/5.3.1/reference/com/usebutton/sdk/Button.html)
 * New loading state
 * Fix for flicker in InteractiveButton
