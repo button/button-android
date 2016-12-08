@@ -59,6 +59,9 @@ You can find the full [SDK Documentation](http://building.usebutton.com/button-a
 You can find relevant example code and a fully working sample application in our [button-android-sample](https://github.com/usebutton/button-android-samples) repository.
 
 ## Release notes
+### [5.3.0 Docs](http://building.usebutton.com/button-android/history/5.3.0/reference/com/usebutton/sdk/Button.html)
+* Misc improvements & bug fixes
+
 ### [5.2.0 Docs](http://building.usebutton.com/button-android/history/5.2.0/reference/com/usebutton/sdk/Button.html)
 * A brand new Button - InteractiveButton
 * Misc bug fixes
