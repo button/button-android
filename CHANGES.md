@@ -1,3 +1,7 @@
+### [5.6.0 Docs](http://building.usebutton.com/button-android/history/5.6.0/reference/com/usebutton/sdk/Button.html)
+* Support for getting action with merchant Id
+* Misc improvements
+
 ### [5.5.0 Docs](http://building.usebutton.com/button-android/history/5.5.0/reference/com/usebutton/sdk/Button.html)
 * New events persistence (from file to database)
 * Fix for stale intents in install notification
