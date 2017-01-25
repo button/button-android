@@ -1,17 +1,16 @@
-# Button Android Deep Link Commerce
-
-<p align="center"><img src="http://www.usebutton.com/img/sdk/img_dlc-preview.png" width="204"/>
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/1057077/11322171/de11ea38-90ac-11e5-9df6-4da8d87ef76e.png" width="204"/>
 </p>
 
-<h1 align="center">Button DeepLink Commerce</h1>
+<h1 align="center">Button SDK</h1>
+</p>
 
 ## Overview
 
-Button DeepLink Commerce enables rich cross-application functionality initiated from drop-in `Buttons`. Buttons act as the entry point to highly-contextual, fully attributed actions across apps.
+Buttons enable rich cross-application functionality initiated from drop-in UI components, called Buttons! Buttons act as the entry point to highly-contextual, fully attributed actions across apps.
 
-The DeepLink Commerce (DLC) SDK provides full functionality for both sending and receiving users, attributed within the DLC network.
+The Button SDK provides full functionality for both displaying Buttons and attributing incoming users from the Button marketplace.
 
-Add a `Button` to your app, pass it some `context` and it will render & display itself. e.g...
+Add a Button to your app, pass it some context and it will render & display itself. e.g... 
 
 <p align="center"><img src="http://www.usebutton.com/img/sdk/img_dlc-uber-button.png" width="300" />
 <br/>
