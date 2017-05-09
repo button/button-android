@@ -1,3 +1,7 @@
+### [5.7.0 Docs](http://building.usebutton.com/button-android/history/5.7.0/reference/com/usebutton/sdk/Button.html)
+* Adds support for publishers to pass through a value (e.g. click Id) to be associated with downstream merchant conversions
+* Fix to allow Merchants shown in an Android web view and using local storage to render correctly
+
 ### [5.6.0 Docs](http://building.usebutton.com/button-android/history/5.6.0/reference/com/usebutton/sdk/Button.html)
 * Support for getting action with merchant Id
 * Misc improvements

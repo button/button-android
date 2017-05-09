@@ -1,16 +1,17 @@
-<p align="center"><img src="https://cloud.githubusercontent.com/assets/1057077/11322171/de11ea38-90ac-11e5-9df6-4da8d87ef76e.png" width="204"/>
+# Button Android Deep Link Commerce
+
+<p align="center"><img src="http://www.usebutton.com/img/sdk/img_dlc-preview.png" width="204"/>
 </p>
 
-<h1 align="center">Button SDK</h1>
-</p>
+<h1 align="center">Button DeepLink Commerce</h1>
 
 ## Overview
 
-Buttons enable rich cross-application functionality initiated from drop-in UI components, called Buttons! Buttons act as the entry point to highly-contextual, fully attributed actions across apps.
+Button DeepLink Commerce enables rich cross-application functionality initiated from drop-in `Buttons`. Buttons act as the entry point to highly-contextual, fully attributed actions across apps.
 
-The Button SDK provides full functionality for both displaying Buttons and attributing incoming users from the Button marketplace.
+The DeepLink Commerce (DLC) SDK provides full functionality for both sending and receiving users, attributed within the DLC network.
 
-Add a Button to your app, pass it some context and it will render & display itself. e.g... 
+Add a `Button` to your app, pass it some `context` and it will render & display itself. e.g...
 
 <p align="center"><img src="http://www.usebutton.com/img/sdk/img_dlc-uber-button.png" width="300" />
 <br/>
@@ -58,6 +59,10 @@ You can find the full [SDK Documentation](http://building.usebutton.com/button-a
 You can find relevant example code and a fully working sample application in our [button-android-sample](https://github.com/usebutton/button-android-samples) repository.
 
 ## Release notes
+### [5.7.0 Docs](http://building.usebutton.com/button-android/history/5.7.0/reference/com/usebutton/sdk/Button.html)
+* Adds support for publishers to pass through a value (e.g. click Id) to be associated with downstream merchant conversions
+* Fix to allow Merchants shown in an Android web view and using local storage to render correctly
+
 ### [5.6.0 Docs](http://building.usebutton.com/button-android/history/5.6.0/reference/com/usebutton/sdk/Button.html)
 * Support for getting action with merchant Id
 * Misc improvements
