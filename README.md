@@ -59,6 +59,11 @@ You can find the full [SDK Documentation](http://building.usebutton.com/button-a
 You can find relevant example code and a fully working sample application in our [button-android-sample](https://github.com/usebutton/button-android-samples) repository.
 
 ## Release notes
+### [5.8.0 Docs](http://building.usebutton.com/button-android/history/5.8.0/reference/com/usebutton/sdk/Button.html)
+- Adds a method to detect whether a url can be exchanged for an app action
+- Adds a method to exchange a url for an app action
+- Fixes an intermittent web checkout issue where navigation chrome overlaps on-page controls
+
 ### [5.7.0 Docs](http://building.usebutton.com/button-android/history/5.7.0/reference/com/usebutton/sdk/Button.html)
 * Adds support for publishers to pass through a value (e.g. click Id) to be associated with downstream merchant conversions
 * Fix to allow Merchants shown in an Android web view and using local storage to render correctly
