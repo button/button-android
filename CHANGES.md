@@ -1,3 +1,6 @@
+### [5.9.0 Docs](http://building.usebutton.com/button-android/history/5.9.0/reference/com/usebutton/sdk/Button.html)
+* Adds support for offer auth challenge flow
+
 ### [5.8.0 Docs](http://building.usebutton.com/button-android/history/5.8.0/reference/com/usebutton/sdk/Button.html)
 - Adds a method to detect whether a url can be exchanged for an app action
 - Adds a method to exchange a url for an app action
