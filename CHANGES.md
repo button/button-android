@@ -1,3 +1,7 @@
+### [5.10.0 Docs](http://building.usebutton.com/button-android/history/5.10.0/reference/com/usebutton/sdk/Button.html)
+* Adds ability to prepare a  using an .
+* Fixes a web view content sizing issue in the authorization flow.
+
 ### [5.9.0 Docs](http://building.usebutton.com/button-android/history/5.9.0/reference/com/usebutton/sdk/Button.html)
 * Adds support for offer auth challenge flow
 
