@@ -9,9 +9,9 @@
 
 ## Overview
 
-Button enables rich cross-application functionality initiated from drop-in `Buttons`. Buttons act as the entry point to highly-contextual, fully attributed actions across apps.
+Button enables rich cross-application functionality initiated from drop-in UI components called Buttons! Buttons act as the entry point to highly-contextual, fully attributed actions across apps.
 
-The DeepLink Commerce (DLC) SDK provides full functionality for both sending and receiving users, attributed within the DLC network.
+The Button Android SDK provides full functionality for both sending and receiving users, attributed within the Button marketplace.
 
 Add a `Button` to your app, pass it some `context` and it will render & display itself. e.g...
 
@@ -22,43 +22,45 @@ Add a `Button` to your app, pass it some `context` and it will render & display 
 
 ## Getting started
 
-### Gradle integration
+### Gradle
 
-We highly recommend that you use our SDK with Gradle, all you need to do is make sure you have `jcenter()` as one of your app's repositories.
+We highly recommend that you use our SDK with Gradle.
 
+First, ensure that you have `jcenter()` included as one of your app's repositories.
+
+**build.gradle**
 ```
 repositories {
     jcenter()
 }
 ```
 
-Latest version: ![Download](https://api.bintray.com/packages/button/Public/android-sdk/images/download.svg).
+Then, add the Button Android SDK as a compile-time dependency.
 
+**build.gradle**
 ```
 dependencies {
-    // Add the Button SDK dependency to the list of dependencies, 
-    // you can see the latest version in the badge above
-    // Replace + with this number, e.g. 1.0.0
-    compile 'com.usebutton:android-sdk:+'
+    compile 'com.usebutton:android-sdk:[INSERT_LATEST_VERSION]'
+    // ...
 }
 ```
 
-### Manual integration
+### Downlaod
 
-But you can also include us manually by dropping our `aar` into you `/libs` folder, click [ ![Download](https://api.bintray.com/packages/button/Public/android-sdk/images/download.svg) ](https://bintray.com/button/Public/android-sdk/_latestVersion) to get the latest version.
+You can also include us downloading the latest `aar` and dropping it into the module `/libs` folder.
 
+[ ![Download](https://api.bintray.com/packages/button/Public/android-sdk/images/download.svg) ](https://bintray.com/button/Public/android-sdk/_latestVersion)
 
 ### Next Steps
 
-1. Get an Application ID by signing up here: [app.usebutton.com](https://app.usebutton.com/).
-2. Follow the [DeepLink Commerce Integration Guide](https://www.usebutton.com/sdk/deep-link-commerce-android/) to get DLC in your app!
-
+1. Get an Application ID by signing up on the [Button Dashboard](https://app.usebutton.com/).
+2. Follow the [Quick Start](https://developer.usebutton.com/guides/publishers/android/quick-start) guide to get Button in your app!
 
 You can find the full [SDK Documentation](http://building.usebutton.com/button-android/latest/reference/com/usebutton/sdk/Button.html) here.
 
 ## Samples
 
-You can find relevant example code and a fully working sample application in our [button-android-sample](https://github.com/usebutton/button-android-samples) repository.
+You can find relevant example code and a fully working sample application in our [button-android-samples](https://github.com/usebutton/button-android-samples) repository.
 
 ## Release notes
 ### [5.11.0 Docs](http://building.usebutton.com/button-android/history/5.11.0/reference/com/usebutton/sdk/Button.html)
