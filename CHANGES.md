@@ -1,3 +1,7 @@
+### [5.11.0 Docs](http://building.usebutton.com/button-android/history/5.11.0/reference/com/usebutton/sdk/Button.html)
+* Adds improved flow for url exchange including loading animation and redirect resolution
+* Minor bug fixes and improvements to interactive buttons
+
 ### [5.10.1 Docs](http://building.usebutton.com/button-android/history/5.10.1/reference/com/usebutton/sdk/Button.html)
 * Fixes a bug that would sometimes prevent automatic deep linking after successfully completing the authorization challenge.
 
