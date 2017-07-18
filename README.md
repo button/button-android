@@ -1,13 +1,15 @@
-# Button Android Deep Link Commerce
-
-<p align="center"><img src="http://www.usebutton.com/img/sdk/img_dlc-preview.png" width="204"/>
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/1057077/11322171/de11ea38-90ac-11e5-9df6-4da8d87ef76e.png" width="204"/>
 </p>
 
-<h1 align="center">Button DeepLink Commerce</h1>
+<h1 align="center">Button Android SDK</h1>
+
+<p align="center"><a href="https://bintray.com/button/Public/android-sdk/_latestVersion">
+  <img src="https://api.bintray.com/packages/button/Public/android-sdk/images/download.svg" />
+</a></p>
 
 ## Overview
 
-Button DeepLink Commerce enables rich cross-application functionality initiated from drop-in `Buttons`. Buttons act as the entry point to highly-contextual, fully attributed actions across apps.
+Button enables rich cross-application functionality initiated from drop-in `Buttons`. Buttons act as the entry point to highly-contextual, fully attributed actions across apps.
 
 The DeepLink Commerce (DLC) SDK provides full functionality for both sending and receiving users, attributed within the DLC network.
 
