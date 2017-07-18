@@ -13,11 +13,11 @@ Button enables rich cross-application functionality initiated from drop-in UI co
 
 The Button Android SDK provides full functionality for both sending and receiving users, attributed within the Button marketplace.
 
-Add a `Button` to your app, pass it some `context` and it will render & display itself. e.g...
+Add a Button to your app, pass it some context, and it will render & display itself. e.g...
 
 <p align="center"><img src="http://www.usebutton.com/img/sdk/img_dlc-uber-button.png" width="300" />
 <br/>
-<code>Ride</code> use-case with an <code>end-location</code>
+Ride use-case with a `SubjectLocation`.
 </p>
 
 ## Getting started
@@ -45,9 +45,9 @@ dependencies {
 }
 ```
 
-### Downlaod
+### Download
 
-You can also include us downloading the latest `aar` and dropping it into the module `/libs` folder.
+You can also include Button by downloading the latest `aar` and dropping it into the module `/libs` folder.
 
 [ ![Download](https://api.bintray.com/packages/button/Public/android-sdk/images/download.svg) ](https://bintray.com/button/Public/android-sdk/_latestVersion)
 
