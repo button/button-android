@@ -1,3 +1,7 @@
+### [5.12.0 Docs](http://building.usebutton.com/button-android/history/5.12.0/reference/com/usebutton/sdk/Button.html)
+* Adds an optional app install overlay to the web checkout flow
+* Minor bug fixes and improvements
+
 ### [5.11.0 Docs](http://building.usebutton.com/button-android/history/5.11.0/reference/com/usebutton/sdk/Button.html)
 * Adds improved flow for url exchange including loading animation and redirect resolution
 * Minor bug fixes and improvements to interactive buttons
