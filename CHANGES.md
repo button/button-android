@@ -1,3 +1,7 @@
+### [5.13.0 Docs](http://building.usebutton.com/button-android/history/5.13.0/reference/com/usebutton/sdk/Button.html)
+* Improvements to navigation in web checkout flow
+* Fixes issue with Facebook login in web checkout flow
+
 ### [5.12.0 Docs](http://building.usebutton.com/button-android/history/5.12.0/reference/com/usebutton/sdk/Button.html)
 * Adds an optional app install overlay to the web checkout flow
 * Minor bug fixes and improvements
