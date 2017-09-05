@@ -1,3 +1,7 @@
+### [5.14.0 Docs](http://building.usebutton.com/button-android/history/5.14.0/reference/com/usebutton/sdk/Button.html)
+* Adds support for Android Oreo (API 26)
+* Adds ability to register a callback for MerchantAction completion
+
 ### [5.13.1 Docs](http://building.usebutton.com/button-android/history/5.13.1/reference/com/usebutton/sdk/Button.html)
 * Enables SUBA
 
