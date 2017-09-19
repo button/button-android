@@ -1,3 +1,7 @@
+### [5.15.0 Docs](http://building.usebutton.com/button-android/history/5.15.0/reference/com/usebutton/sdk/Button.html)
+* Adds single sign-on merchant authorization challenge
+* In-app checkout bug fixes and improvements
+
 ### [5.14.0 Docs](http://building.usebutton.com/button-android/history/5.14.0/reference/com/usebutton/sdk/Button.html)
 * Adds support for Android Oreo (API 26)
 * Adds ability to register a callback for MerchantAction completion
