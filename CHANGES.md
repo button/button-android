@@ -3,6 +3,11 @@
 * Fixes app install notification bug when using SSO authentication
 * Minor networking improvements and enhanced debug logging when fetching app actions
 
+### [5.16.0 Docs](http://building.usebutton.com/button-android/history/5.16.0/reference/com/usebutton/sdk/Button.html)
+* Fixes web checkout bug that opened the Google Play store in a popup window instead of the native app for some websites when clicking an app install banner
+* Fixes app install notification bug when using SSO authentication
+* Minor networking improvements and enhanced debug logging when fetching app actions
+
 ### [5.15.0 Docs](http://building.usebutton.com/button-android/history/5.15.0/reference/com/usebutton/sdk/Button.html)
 * Adds single sign-on merchant authorization challenge
 * In-app checkout bug fixes and improvements
