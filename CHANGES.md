@@ -1,3 +1,8 @@
+### [5.17.0 Docs](http://building.usebutton.com/button-android/history/5.17.0/reference/com/usebutton/sdk/Button.html)
+* Deprecates  since it can lead to unexpected behavior when called externally. Apps should use  instead.
+* Deprecates  and . Apps should use  instead.
+* Minor bug fixes and improvements to app install flow.
+
 ### [5.16.0 Docs](http://building.usebutton.com/button-android/history/5.16.0/reference/com/usebutton/sdk/Button.html)
 * Fixes web checkout bug that opened the Google Play store in a popup window instead of the native app for some websites when clicking an app install banner
 * Fixes app install notification bug when using SSO authentication
