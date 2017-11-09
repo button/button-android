@@ -23,7 +23,7 @@ repositories {
 }
 ```
 #### Latest Version
-![Download](https://api.bintray.com/packages/button/Public/android-sdk/images/download.svg).
+![Download](https://api.bintray.com/packages/button/Public/android-sdk/images/download.svg)
 
 ```groovy
 dependencies {
