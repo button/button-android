@@ -3,9 +3,9 @@
 
 <h1 align="center">Button Android SDK</h1>
 
-## Overview
-
 Button is the partnerships platform for mobile commerce. Button powers mobile partnerships that are faster, simpler, and perform better.
+
+## Overview
 
 [Button Actions](https://developer.usebutton.com/guides/publishers/android/using-button-actions) provide relevant actions to your users, complete with a corresponding UI. Buttons can be configured with one or more Merchants that they can offer to your users.
 
