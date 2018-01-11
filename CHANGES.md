@@ -1,3 +1,8 @@
+### [5.18.0 Docs](http://building.usebutton.com/button-android/history/5.18.0/reference/com/usebutton/sdk/Button.html)
+* Adds support for app install banners using Chrome Intents for Android.
+* Bug fixes and improvements to authorization challenge flow.
+* Bug fixes and improvements to web view used for in-app checkout.
+
 ### [5.17.0 Docs](http://building.usebutton.com/button-android/history/5.17.0/reference/com/usebutton/sdk/Button.html)
 * Deprecates  since it can lead to unexpected behavior when called externally. Apps should use  instead.
 * Deprecates  and . Apps should use  instead.
