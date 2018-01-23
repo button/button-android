@@ -1,3 +1,8 @@
+### [5.19.0 Docs](http://building.usebutton.com/button-android/history/5.19.0/reference/com/usebutton/sdk/Button.html)
+* Purchase tracking improvements in the embedded browser 
+* Install sheet optimizations 
+* An embedded browser that no longer intermittently opens search results in a dialog window 
+
 ### [5.18.0 Docs](http://building.usebutton.com/button-android/history/5.18.0/reference/com/usebutton/sdk/Button.html)
 * Adds support for app install banners using Chrome Intents for Android.
 * Bug fixes and improvements to authorization challenge flow.
