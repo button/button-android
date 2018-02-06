@@ -1,3 +1,7 @@
+### [5.20.0 Docs](http://building.usebutton.com/button-android/history/5.20.0/reference/com/usebutton/sdk/Button.html)
+* NEW! Customize In-App Checkout with Checkout Extensions
+* Minor bug fixes and improvements
+
 ### [5.19.0 Docs](http://building.usebutton.com/button-android/history/5.19.0/reference/com/usebutton/sdk/Button.html)
 * Purchase tracking improvements in the embedded browser 
 * Install sheet optimizations 
