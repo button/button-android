@@ -1,3 +1,8 @@
+### [5.21.0 Docs](http://building.usebutton.com/button-android/history/5.21.0/reference/com/usebutton/sdk/Button.html)
+* Add custom views to In-App Checkout with a checkout extension
+* Prefix layout resources to avoid collision
+
+
 ### [5.20.0 Docs](http://building.usebutton.com/button-android/history/5.20.0/reference/com/usebutton/sdk/Button.html)
 * NEW! Customize In-App Checkout with Checkout Extensions
 * Minor bug fixes and improvements
