@@ -1,3 +1,6 @@
+### [5.22.0 Docs](http://building.usebutton.com/button-android/history/5.22.0/reference/com/usebutton/sdk/Button.html)
+Adds Checkout Extension callbacks for product viewed and checkout complete for select merchants
+
 ### [5.21.0 Docs](http://building.usebutton.com/button-android/history/5.21.0/reference/com/usebutton/sdk/Button.html)
 * Add custom views to In-App Checkout with a checkout extension
 * Prefix layout resources to avoid collision
