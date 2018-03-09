@@ -1,3 +1,6 @@
+### [5.22.1 Docs](http://building.usebutton.com/button-android/history/5.22.1/reference/com/usebutton/sdk/Button.html)
+Corrects package visibility for new checkout extensions classes
+
 ### [5.22.0 Docs](http://building.usebutton.com/button-android/history/5.22.0/reference/com/usebutton/sdk/Button.html)
 Adds Checkout Extension callbacks for product viewed and checkout complete for select merchants
 
