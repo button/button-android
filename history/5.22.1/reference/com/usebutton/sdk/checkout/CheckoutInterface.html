@@ -52,15 +52,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for Button DLC SDK for Android v5.22.0." />
+  <meta name="description" content="Javadoc API documentation for Button DLC SDK for Android v5.22.1." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
 <title>
 
-  Commission
+  CheckoutInterface
 
 
-| Button DLC SDK for Android v5.22.0
+| Button DLC SDK for Android v5.22.1
 
 </title>
 <link href="../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -92,7 +92,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">Button DLC SDK for Android v5.22.0</span>
+      <span id="masthead-title">Button DLC SDK for Android v5.22.1</span>
     
     </div>
     <div id="headerRight">
@@ -146,14 +146,12 @@
                 
     <li class="api apilevel-">
   <a href="../../../../com/usebutton/sdk/package-summary.html">com.usebutton.sdk</a></li>
-    <li class="api apilevel-">
+    <li class="selected api apilevel-">
   <a href="../../../../com/usebutton/sdk/checkout/package-summary.html">com.usebutton.sdk.checkout</a></li>
     <li class="api apilevel-">
   <a href="../../../../com/usebutton/sdk/context/package-summary.html">com.usebutton.sdk.context</a></li>
     <li class="api apilevel-">
   <a href="../../../../com/usebutton/sdk/models/package-summary.html">com.usebutton.sdk.models</a></li>
-    <li class="selected api apilevel-">
-  <a href="../../../../com/usebutton/sdk/pageview/package-summary.html">com.usebutton.sdk.pageview</a></li>
     <li class="api apilevel-">
   <a href="../../../../com/usebutton/sdk/util/package-summary.html">com.usebutton.sdk.util</a></li>
               </ul><br/>
@@ -162,19 +160,24 @@
           <div id="classes-nav">
             <ul>
               
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/checkout/CheckoutExtension.html">CheckoutExtension</a></li>
+          <li class="selected api apilevel-"><a href="../../../../com/usebutton/sdk/checkout/CheckoutInterface.html">CheckoutInterface</a></li>
+      </ul>
+    </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="selected api apilevel-"><a href="../../../../com/usebutton/sdk/pageview/Commission.html">Commission</a></li>
-          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/pageview/PageView.html">PageView</a></li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/checkout/Commission.html">Commission</a></li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/checkout/Product.html">Product</a></li>
       </ul>
     </li>
               
               
     <li><h2>Enums</h2>
       <ul>
-          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">Commission.CommissionType</a></li>
-          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/pageview/PageView.MatchType.html">PageView.MatchType</a></li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/checkout/Commission.CommissionType.html">Commission.CommissionType</a></li>
       </ul>
     </li>
               
@@ -216,43 +219,9 @@
 
 
 
-  
-   
-  
-  
-  
-  
-
 
 <div class="sum-details-links">
 
-
-Summary:
-
-  <a href="#nestedclasses">Nested Classes</a>
-  
-
-
-
-
-
-
-
-
-
-  &#124; <a href="#pubctors">Ctors</a>
-  
-
-
-
-  &#124; <a href="#pubmethods">Methods</a>
-  
-
-
-
-  &#124; <a href="#inhmethods">Inherited Methods</a>
-
-&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
 
 </div><!-- end sum-details-links -->
 <div class="api-level">
@@ -273,16 +242,10 @@ Summary:
      
      
     
-    class
-<h1>Commission</h1>
+    interface
+<h1>CheckoutInterface</h1>
 
 
-
-  
-    extends Object<br/>
-  
-  
-  
 
   
   
@@ -299,15 +262,7 @@ Summary:
 
     <tr>
          	
-        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Object</td>
-    </tr>
-    
-
-    <tr>
-        
-            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
-         	
-        <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.pageview.Commission</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.checkout.CheckoutInterface</td>
     </tr>
     
 
@@ -323,7 +278,7 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p>Commission Object representing the commissionablity of a product
+<p>Interface containing methods that a publisher can use to customize the experience of the
 </p>
 
 
@@ -354,24 +309,6 @@ Summary:
 
 
 
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<table id="nestedclasses" class="jd-sumtable"><tr><th colspan="12">Nested Classes</th></tr>
-
-
-  
-    <tr class="alt-color api apilevel-" >
-      <td class="jd-typecol"><nobr>
-        
-         
-         
-        
-        enum</nobr></td>
-      <td class="jd-linkcol"><a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">Commission.CommissionType</a></td>
-      <td class="jd-descrcol" width="100%">Enum Representing the values for "commissionType" in the commission object
-&nbsp;</td>
-    </tr>
-    
-    
 
 
 
@@ -390,55 +327,6 @@ Summary:
 
 
 
-
-
-
-
-
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
-
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            </nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/pageview/Commission.html#Commission()">Commission</a></span>()</nobr>
-        
-        <div class="jd-descrdiv">Default constructor
-</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            </nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/pageview/Commission.html#Commission(org.json.JSONObject)">Commission</a></span>(JSONObject json)</nobr>
-        
-        <div class="jd-descrdiv">Constructor</div>
-  
-  </td></tr>
-
-
-
-</table>
 
 
 
@@ -453,48 +341,165 @@ Summary:
 	 
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
+            abstract
             
             
             
             
-            
-            boolean</nobr>
+            RelativeLayout</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/pageview/Commission.html#equals(java.lang.Object)">equals</a></span>(Object obj)</nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/checkout/CheckoutInterface.html#getViewContainer()">getViewContainer</a></span>()</nobr>
         
+        <div class="jd-descrdiv">The view container can be used to add custom views to the checkout experience with
+ <code>LayoutInflater.from(viewContainer.getContext()).inflate(R.layout.layout_goes_here, viewContainer);</code>
+
+ The view must be inflated with the view container's context to avoid any memory leaks.</div>
+  
   </td></tr>
 
 
 	 
     <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
+            abstract
             
             
             
             
-            
-            <a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">Commission.CommissionType</a></nobr>
+            void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/pageview/Commission.html#getCommissionType()">getCommissionType</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/checkout/CheckoutInterface.html#setBottomBarColor(int)">setBottomBarColor</a></span>(int color)</nobr>
         
+        <div class="jd-descrdiv">Sets the primary color of the bottom bar in the checkout experience.</div>
+  
   </td></tr>
 
 
 	 
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol"><nobr>
+            abstract
             
             
             
             
-            
-            int</nobr>
+            void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/pageview/Commission.html#hashCode()">hashCode</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/checkout/CheckoutInterface.html#setBottomBarTintColor(int)">setBottomBarTintColor</a></span>(int color)</nobr>
         
+        <div class="jd-descrdiv">Sets the tint color of the bottom bar in the checkout experience.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/checkout/CheckoutInterface.html#setSubTitle(java.lang.String)">setSubTitle</a></span>(String subTitle)</nobr>
+        
+        <div class="jd-descrdiv">Sets the sub title of the checkout experience.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/checkout/CheckoutInterface.html#setSubTitleColor(int)">setSubTitleColor</a></span>(int color)</nobr>
+        
+        <div class="jd-descrdiv">Sets the color of the sub title of in the checkout experience.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/checkout/CheckoutInterface.html#setTitle(java.lang.String)">setTitle</a></span>(String title)</nobr>
+        
+        <div class="jd-descrdiv">Sets the main title of the checkout experience.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/checkout/CheckoutInterface.html#setTitleColor(int)">setTitleColor</a></span>(int color)</nobr>
+        
+        <div class="jd-descrdiv">Sets the color of the main title of in the checkout experience.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/checkout/CheckoutInterface.html#setTopBarColor(int)">setTopBarColor</a></span>(int color)</nobr>
+        
+        <div class="jd-descrdiv">Sets the primary color of the top bar in the checkout experience.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/checkout/CheckoutInterface.html#setTopBarTintColor(int)">setTopBarTintColor</a></span>(int color)</nobr>
+        
+        <div class="jd-descrdiv">Sets the tint color of the top bar in the checkout experience.</div>
+  
   </td></tr>
 
 
@@ -505,216 +510,6 @@ Summary:
 
 
 
-
-
-<!-- ========== METHOD SUMMARY =========== -->
-<table id="inhmethods" class="jd-sumtable"><tr><th>
-  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
-  <div style="clear:left;">Inherited Methods</div></th></tr>
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-java.lang.Object-trigger"
-          src="../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From class
-
-  java.lang.Object
-
-<div id="inherited-methods-java.lang.Object">
-  <div id="inherited-methods-java.lang.Object-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            Object</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">clone</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            boolean</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">equals</span>(Object arg0)</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            void</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">finalize</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            Class&lt;?&gt;</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getClass</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">hashCode</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            void</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">notify</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            void</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">notifyAll</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">toString</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            void</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            void</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>(long arg0)</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            void</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>()</nobr>
-        
-  </td></tr>
-
-
-</table>
-  </div>
-</div>
-</td></tr>
-
-
-</table>
 
 
 </div><!-- jd-descr (summary) -->
@@ -743,86 +538,6 @@ From class
 <!-- Public ctors -->
 
 
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<h2>Public Constructors</h2>
-
-
-
-<A NAME="Commission()"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        
-      </span>
-      <span class="sympad">Commission</span>
-      <span class="normal">()</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Default constructor
-</p></div>
-
-    </div>
-</div>
-
-
-<A NAME="Commission(org.json.JSONObject)"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        
-      </span>
-      <span class="sympad">Commission</span>
-      <span class="normal">(JSONObject json)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Constructor</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>json</td>
-          <td>JSONObject representing a commission object
-</td>
-        </tr>
-      </table>
-  </div>
-
-    </div>
-</div>
-
-
-
-
 
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <!-- Protected ctors -->
@@ -836,7 +551,7 @@ From class
 
 
 
-<A NAME="equals(java.lang.Object)"></A>
+<A NAME="getViewContainer()"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -844,42 +559,11 @@ From class
         public 
          
          
+        abstract 
          
-         
-        boolean
+        RelativeLayout
       </span>
-      <span class="sympad">equals</span>
-      <span class="normal">(Object obj)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
-
-    </div>
-</div>
-
-
-<A NAME="getCommissionType()"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        <a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">Commission.CommissionType</a>
-      </span>
-      <span class="sympad">getCommissionType</span>
+      <span class="sympad">getViewContainer</span>
       <span class="normal">()</span>
     </h4>
       <div class="api-level">
@@ -892,13 +576,21 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>The view container can be used to add custom views to the checkout experience with
+ <code>LayoutInflater.from(viewContainer.getContext()).inflate(R.layout.layout_goes_here, viewContainer);</code>
+
+ The view must be inflated with the view container's context to avoid any memory leaks.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>view container in the checkout experience.
+</li></ul>
+  </div>
 
     </div>
 </div>
 
 
-<A NAME="hashCode()"></A>
+<A NAME="setBottomBarColor(int)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -906,12 +598,12 @@ From class
         public 
          
          
+        abstract 
          
-         
-        int
+        void
       </span>
-      <span class="sympad">hashCode</span>
-      <span class="normal">()</span>
+      <span class="sympad">setBottomBarColor</span>
+      <span class="normal">(int color)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -923,7 +615,304 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the primary color of the bottom bar in the checkout experience.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>color</td>
+          <td><code>ColorInt</code> Color
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setBottomBarTintColor(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setBottomBarTintColor</span>
+      <span class="normal">(int color)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the tint color of the bottom bar in the checkout experience.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>color</td>
+          <td><code>ColorInt</code> Color
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setSubTitle(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setSubTitle</span>
+      <span class="normal">(String subTitle)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the sub title of the checkout experience.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>subTitle</td>
+          <td>The title
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setSubTitleColor(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setSubTitleColor</span>
+      <span class="normal">(int color)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the color of the sub title of in the checkout experience.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>color</td>
+          <td><code>ColorInt</code> Color
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setTitle(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setTitle</span>
+      <span class="normal">(String title)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the main title of the checkout experience.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>title</td>
+          <td>The title
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setTitleColor(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setTitleColor</span>
+      <span class="normal">(int color)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the color of the main title of in the checkout experience.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>color</td>
+          <td><code>ColorInt</code> Color
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setTopBarColor(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setTopBarColor</span>
+      <span class="normal">(int color)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the primary color of the top bar in the checkout experience.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>color</td>
+          <td><code>ColorInt</code> Color
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setTopBarTintColor(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">setTopBarTintColor</span>
+      <span class="normal">(int color)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the tint color of the top bar in the checkout experience.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>color</td>
+          <td><code>ColorInt</code> Color
+</td>
+        </tr>
+      </table>
+  </div>
 
     </div>
 </div>

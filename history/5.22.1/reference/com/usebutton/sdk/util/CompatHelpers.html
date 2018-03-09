@@ -52,15 +52,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for Button DLC SDK for Android v5.22.0." />
+  <meta name="description" content="Javadoc API documentation for Button DLC SDK for Android v5.22.1." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
 <title>
 
-  Commission.CommissionType
+  CompatHelpers
 
 
-| Button DLC SDK for Android v5.22.0
+| Button DLC SDK for Android v5.22.1
 
 </title>
 <link href="../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -92,7 +92,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">Button DLC SDK for Android v5.22.0</span>
+      <span id="masthead-title">Button DLC SDK for Android v5.22.1</span>
     
     </div>
     <div id="headerRight">
@@ -153,8 +153,6 @@
     <li class="api apilevel-">
   <a href="../../../../com/usebutton/sdk/models/package-summary.html">com.usebutton.sdk.models</a></li>
     <li class="selected api apilevel-">
-  <a href="../../../../com/usebutton/sdk/pageview/package-summary.html">com.usebutton.sdk.pageview</a></li>
-    <li class="api apilevel-">
   <a href="../../../../com/usebutton/sdk/util/package-summary.html">com.usebutton.sdk.util</a></li>
               </ul><br/>
             </div> <!-- end packages -->
@@ -162,22 +160,31 @@
           <div id="classes-nav">
             <ul>
               
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/Arrays.Emitter.html">Arrays.Emitter</a>&lt;In,&nbsp;Out&gt;</li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/Arrays.Sink.html">Arrays.Sink</a>&lt;Out&gt;</li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/Receiver.html">Receiver</a>&lt;T&gt;</li>
+      </ul>
+    </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/pageview/Commission.html">Commission</a></li>
-          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/pageview/PageView.html">PageView</a></li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/Arrays.html">Arrays</a></li>
+          <li class="selected api apilevel-"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.html">CompatHelpers</a></li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.RippleBackground.html">CompatHelpers.RippleBackground</a></li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/CookiesUtil.html">CookiesUtil</a></li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/LocationProvider.html">LocationProvider</a></li>
       </ul>
     </li>
               
               
-    <li><h2>Enums</h2>
+              
+    <li><h2>Exceptions</h2>
       <ul>
-          <li class="selected api apilevel-"><a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">Commission.CommissionType</a></li>
-          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/pageview/PageView.MatchType.html">PageView.MatchType</a></li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/InvalidCookieException.html">InvalidCookieException</a></li>
       </ul>
     </li>
-              
               
             </ul><br/>
           </div><!-- end classes -->
@@ -223,41 +230,25 @@
   
   
 
-  
-   
-  
-  
-  
-  
-
-  
-  
-  
-  
-
-  
-   
-  
-  
-  
-  
-
 
 <div class="sum-details-links">
 
 
 Summary:
 
-
-
-
-  <a href="#enumconstants">Enums</a>
+  <a href="#nestedclasses">Nested Classes</a>
   
 
 
 
 
 
+
+
+
+
+  &#124; <a href="#pubctors">Ctors</a>
+  
 
 
 
@@ -286,20 +277,16 @@ Summary:
 
 <div id="jd-header">
     public
-    static 
-    final 
+     
+     
     
-    enum
-<h1>Commission.CommissionType</h1>
+    class
+<h1>CompatHelpers</h1>
 
 
 
   
-  
-  
-
-  
-    extends Enum&lt;E&nbsp;extends&nbsp;Enum&lt;E&gt;&gt;<br/>
+    extends Object<br/>
   
   
   
@@ -319,7 +306,7 @@ Summary:
 
     <tr>
          	
-        <td colspan="3" class="jd-inheritance-class-cell">java.lang.Object</td>
+        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Object</td>
     </tr>
     
 
@@ -327,17 +314,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Enum&lt;E&nbsp;extends&nbsp;java.lang.Enum&lt;E&gt;&gt;</td>
-    </tr>
-    
-
-    <tr>
-        
-            <td class="jd-inheritance-space">&nbsp;</td>
-        
-            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
-         	
-        <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.pageview.Commission.CommissionType</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.util.CompatHelpers</td>
     </tr>
     
 
@@ -351,10 +328,6 @@ Summary:
 
 <div class="jd-descr">
 
-
-<h2>Class Overview</h2>
-<p>Enum Representing the values for "commissionType" in the commission object
-</p>
 
 
 
@@ -384,51 +357,69 @@ Summary:
 
 
 
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<table id="nestedclasses" class="jd-sumtable"><tr><th colspan="12">Nested Classes</th></tr>
 
 
-
-
-
-
-
-
-<!-- =========== ENUM CONSTANT SUMMARY =========== -->
-<table id="enumconstants" class="jd-sumtable"><tr><th colspan="12">Enum Values</th></tr>
-
-    
+  
     <tr class="alt-color api apilevel-" >
-        <td class="jd-descrcol"><a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">Commission.CommissionType</a>&nbsp;</td>
-        <td class="jd-linkcol">COMMISSIONABLE&nbsp;</td>
-        <td class="jd-descrcol" width="100%">&nbsp;</td>
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        class</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.RippleBackground.html">CompatHelpers.RippleBackground</a></td>
+      <td class="jd-descrcol" width="100%">&nbsp;</td>
     </tr>
     
     
-    <tr class=" api apilevel-" >
-        <td class="jd-descrcol"><a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">Commission.CommissionType</a>&nbsp;</td>
-        <td class="jd-linkcol">NON_COMMISSIONABLE&nbsp;</td>
-        <td class="jd-descrcol" width="100%">&nbsp;</td>
-    </tr>
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
+
+
+
+	 
     <tr class="alt-color api apilevel-" >
-        <td class="jd-descrcol"><a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">Commission.CommissionType</a>&nbsp;</td>
-        <td class="jd-linkcol">UNKNOWN&nbsp;</td>
-        <td class="jd-descrcol" width="100%">&nbsp;</td>
-    </tr>
-    
-    
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            </nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.html#CompatHelpers()">CompatHelpers</a></span>()</nobr>
+        
+  </td></tr>
 
 
 
-
-
-
-
-
-
-
-
-
+</table>
 
 
 
@@ -448,13 +439,11 @@ Summary:
             
             static
             
-            <a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">Commission.CommissionType</a></nobr>
+            Bundle</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html#getType(java.lang.String)">getType</a></span>(String commissionType)</nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.html#createSceneTransition(android.app.Activity, java.lang.String, android.view.View)">createSceneTransition</a></span>(Activity activity, String transitionName, View view)</nobr>
         
-        <div class="jd-descrdiv">Return the match type based on the string input</div>
-  
   </td></tr>
 
 
@@ -466,10 +455,10 @@ Summary:
             
             static
             
-            <a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">Commission.CommissionType</a></nobr>
+            int</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html#valueOf(java.lang.String)">valueOf</a></span>(String name)</nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.html#getColor(android.content.Context, int)">getColor</a></span>(Context context, int colorResource)</nobr>
         
   </td></tr>
 
@@ -479,13 +468,109 @@ Summary:
         <td class="jd-typecol"><nobr>
             
             
-            final
+            
             static
             
-            <a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">CommissionType[]</a></nobr>
+            Drawable</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html#values()">values</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.html#getDrawable(android.content.Context, int)">getDrawable</a></span>(Context context, int resource)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.html#getMinimumHeight(android.view.View)">getMinimumHeight</a></span>(View view)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.html#getMinimumWidth(android.view.View)">getMinimumWidth</a></span>(View view)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.html#setBackground(android.view.View, android.graphics.drawable.Drawable)">setBackground</a></span>(View view, Drawable drawable)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.html#setPriorityHigh(android.app.Notification.Builder)">setPriorityHigh</a></span>(Notification.Builder builder)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.html#setShowWhen(android.app.Notification.Builder)">setShowWhen</a></span>(Notification.Builder builder)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            ColorStateList</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.html#stateListFromPrimaryColor(int)">stateListFromPrimaryColor</a></span>(int primary)</nobr>
         
   </td></tr>
 
@@ -503,208 +588,6 @@ Summary:
 <table id="inhmethods" class="jd-sumtable"><tr><th>
   <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
   <div style="clear:left;">Inherited Methods</div></th></tr>
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Enum" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-java.lang.Enum-trigger"
-          src="../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From class
-
-  java.lang.Enum
-
-<div id="inherited-methods-java.lang.Enum">
-  <div id="inherited-methods-java.lang.Enum-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-java.lang.Enum-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            Object</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">clone</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">compareTo</span>(E arg0)</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">compareTo</span>(Object arg0)</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            boolean</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">equals</span>(Object arg0)</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            void</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">finalize</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            Class&lt;E&gt;</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">getDeclaringClass</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">hashCode</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">name</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            final
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">ordinal</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            String</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">toString</span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            static
-            &lt;T&nbsp;extends&nbsp;Enum&lt;T&gt;&gt;
-            T</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">valueOf</span>(Class&lt;T&gt; arg0, String arg1)</nobr>
-        
-  </td></tr>
-
-
-</table>
-  </div>
-</div>
-</td></tr>
-
 
 
 <tr class="api apilevel-" >
@@ -908,50 +791,6 @@ From class
 </td></tr>
 
 
-
-
-
-<tr class="api apilevel-" >
-<td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Comparable" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-java.lang.Comparable-trigger"
-          src="../../../../../assets/images/triangle-closed.png"
-          class="jd-expando-trigger-img" /></a>
-From interface
-
-  java.lang.Comparable
-
-<div id="inherited-methods-java.lang.Comparable">
-  <div id="inherited-methods-java.lang.Comparable-list"
-        class="jd-inheritedlinks">
-  </div>
-  <div id="inherited-methods-java.lang.Comparable-summary" style="display: none;">
-    <table class="jd-sumtable-expando">
-    
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            int</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">compareTo</span>(T arg0)</nobr>
-        
-  </td></tr>
-
-
-</table>
-  </div>
-</div>
-</td></tr>
-
-
 </table>
 
 
@@ -972,103 +811,6 @@ From interface
 <!-- Enum Values -->
 
 
-<!-- ========= ENUM CONSTANTS DETAIL ======== -->
-<h2>Enum Values</h2>
-
-
-
-
-<A NAME="COMMISSIONABLE"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">Commission.CommissionType</a>
-      </span>
-        COMMISSIONABLE
-    </h4>
-      <div class="api-level">
-        
-
-
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="NON_COMMISSIONABLE"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">Commission.CommissionType</a>
-      </span>
-        NON_COMMISSIONABLE
-    </h4>
-      <div class="api-level">
-        
-
-
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
-
-    
-    </div>
-</div>
-
-
-
-<A NAME="UNKNOWN"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-        final 
-        <a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">Commission.CommissionType</a>
-      </span>
-        UNKNOWN
-    </h4>
-      <div class="api-level">
-        
-
-
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
-
-    
-    </div>
-</div>
-
-
-
-
 <!-- Constants -->
 
 
@@ -1076,6 +818,44 @@ From interface
 
 
 <!-- Public ctors -->
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<h2>Public Constructors</h2>
+
+
+
+<A NAME="CompatHelpers()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">CompatHelpers</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
 
 
 
@@ -1091,7 +871,7 @@ From interface
 
 
 
-<A NAME="getType(java.lang.String)"></A>
+<A NAME="createSceneTransition(android.app.Activity, java.lang.String, android.view.View)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -1101,55 +881,10 @@ From interface
          
          
          
-        <a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">Commission.CommissionType</a>
+        Bundle
       </span>
-      <span class="sympad">getType</span>
-      <span class="normal">(String commissionType)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Return the match type based on the string input</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>commissionType</td>
-          <td>String representing of a <code><a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">Commission.CommissionType</a></code></td>
-        </tr>
-      </table>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li><code><a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">Commission.CommissionType</a></code>
-</li></ul>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="valueOf(java.lang.String)"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-        static 
-         
-         
-         
-        <a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">Commission.CommissionType</a>
-      </span>
-      <span class="sympad">valueOf</span>
-      <span class="normal">(String name)</span>
+      <span class="sympad">createSceneTransition</span>
+      <span class="normal">(Activity activity, String transitionName, View view)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -1167,20 +902,265 @@ From interface
 </div>
 
 
-<A NAME="values()"></A>
+<A NAME="getColor(android.content.Context, int)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
         static 
-        final 
          
          
-        <a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">CommissionType[]</a>
+         
+        int
       </span>
-      <span class="sympad">values</span>
-      <span class="normal">()</span>
+      <span class="sympad">getColor</span>
+      <span class="normal">(Context context, int colorResource)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the color value represented by <code>colorResource</code></li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th></td>
+            <td>if resource is not found
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getDrawable(android.content.Context, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        Drawable
+      </span>
+      <span class="sympad">getDrawable</span>
+      <span class="normal">(Context context, int resource)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the drawable from <code>resource</code></li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th></td>
+            <td>if resource is not found
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getMinimumHeight(android.view.View)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getMinimumHeight</span>
+      <span class="normal">(View view)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getMinimumWidth(android.view.View)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getMinimumWidth</span>
+      <span class="normal">(View view)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="setBackground(android.view.View, android.graphics.drawable.Drawable)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setBackground</span>
+      <span class="normal">(View view, Drawable drawable)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="setPriorityHigh(android.app.Notification.Builder)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setPriorityHigh</span>
+      <span class="normal">(Notification.Builder builder)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="setShowWhen(android.app.Notification.Builder)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setShowWhen</span>
+      <span class="normal">(Notification.Builder builder)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="stateListFromPrimaryColor(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        ColorStateList
+      </span>
+      <span class="sympad">stateListFromPrimaryColor</span>
+      <span class="normal">(int primary)</span>
     </h4>
       <div class="api-level">
         <div>

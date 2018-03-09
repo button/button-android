@@ -52,15 +52,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  <meta name="description" content="Javadoc API documentation for Button DLC SDK for Android v5.22.0." />
+  <meta name="description" content="Javadoc API documentation for Button DLC SDK for Android v5.22.1." />
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
 <title>
 
-  PageView
+  CookiesUtil
 
 
-| Button DLC SDK for Android v5.22.0
+| Button DLC SDK for Android v5.22.1
 
 </title>
 <link href="../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
@@ -92,7 +92,7 @@
 <div id="header">
     <div id="headerLeft">
     
-      <span id="masthead-title">Button DLC SDK for Android v5.22.0</span>
+      <span id="masthead-title">Button DLC SDK for Android v5.22.1</span>
     
     </div>
     <div id="headerRight">
@@ -153,8 +153,6 @@
     <li class="api apilevel-">
   <a href="../../../../com/usebutton/sdk/models/package-summary.html">com.usebutton.sdk.models</a></li>
     <li class="selected api apilevel-">
-  <a href="../../../../com/usebutton/sdk/pageview/package-summary.html">com.usebutton.sdk.pageview</a></li>
-    <li class="api apilevel-">
   <a href="../../../../com/usebutton/sdk/util/package-summary.html">com.usebutton.sdk.util</a></li>
               </ul><br/>
             </div> <!-- end packages -->
@@ -162,22 +160,31 @@
           <div id="classes-nav">
             <ul>
               
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/Arrays.Emitter.html">Arrays.Emitter</a>&lt;In,&nbsp;Out&gt;</li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/Arrays.Sink.html">Arrays.Sink</a>&lt;Out&gt;</li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/Receiver.html">Receiver</a>&lt;T&gt;</li>
+      </ul>
+    </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/pageview/Commission.html">Commission</a></li>
-          <li class="selected api apilevel-"><a href="../../../../com/usebutton/sdk/pageview/PageView.html">PageView</a></li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/Arrays.html">Arrays</a></li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.html">CompatHelpers</a></li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/CompatHelpers.RippleBackground.html">CompatHelpers.RippleBackground</a></li>
+          <li class="selected api apilevel-"><a href="../../../../com/usebutton/sdk/util/CookiesUtil.html">CookiesUtil</a></li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/LocationProvider.html">LocationProvider</a></li>
       </ul>
     </li>
               
               
-    <li><h2>Enums</h2>
+              
+    <li><h2>Exceptions</h2>
       <ul>
-          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/pageview/Commission.CommissionType.html">Commission.CommissionType</a></li>
-          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/pageview/PageView.MatchType.html">PageView.MatchType</a></li>
+          <li class="api apilevel-"><a href="../../../../com/usebutton/sdk/util/InvalidCookieException.html">InvalidCookieException</a></li>
       </ul>
     </li>
-              
               
             </ul><br/>
           </div><!-- end classes -->
@@ -229,8 +236,6 @@
 
 Summary:
 
-  <a href="#nestedclasses">Nested Classes</a>
-  
 
 
 
@@ -239,8 +244,7 @@ Summary:
 
 
 
-
-  &#124; <a href="#pubctors">Ctors</a>
+  <a href="#pubctors">Ctors</a>
   
 
 
@@ -274,7 +278,7 @@ Summary:
      
     
     class
-<h1>PageView</h1>
+<h1>CookiesUtil</h1>
 
 
 
@@ -307,7 +311,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.pageview.PageView</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.usebutton.sdk.util.CookiesUtil</td>
     </tr>
     
 
@@ -350,27 +354,6 @@ Summary:
 
 
 
-<!-- ======== NESTED CLASS SUMMARY ======== -->
-<table id="nestedclasses" class="jd-sumtable"><tr><th colspan="12">Nested Classes</th></tr>
-
-
-  
-    <tr class="alt-color api apilevel-" >
-      <td class="jd-typecol"><nobr>
-        
-         
-         
-        
-        enum</nobr></td>
-      <td class="jd-linkcol"><a href="../../../../com/usebutton/sdk/pageview/PageView.MatchType.html">PageView.MatchType</a></td>
-      <td class="jd-descrcol" width="100%">Enumeration Representing the MatchType object from response JSON
-&nbsp;</td>
-    </tr>
-    
-    
-
-
-
 
 
 
@@ -407,10 +390,8 @@ Summary:
             </nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/pageview/PageView.html#PageView(org.json.JSONObject)">PageView</a></span>(JSONObject response)</nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/CookiesUtil.html#CookiesUtil()">CookiesUtil</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Constructor</div>
-  
   </td></tr>
 
 
@@ -433,44 +414,12 @@ Summary:
             
             
             
+            static
             
-            
-            <a href="../../../../com/usebutton/sdk/pageview/Commission.html">Commission</a></nobr>
+            Map&lt;String,&nbsp;String&gt;</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/pageview/PageView.html#getCommission()">getCommission</a></span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            <a href="../../../../com/usebutton/sdk/checkout/Product.html">Product</a></nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/pageview/PageView.html#getProduct()">getProduct</a></span>()</nobr>
-        
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            <a href="../../../../com/usebutton/sdk/pageview/PageView.MatchType.html">PageView.MatchType</a></nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../com/usebutton/sdk/pageview/PageView.html#getType()">getType</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../com/usebutton/sdk/util/CookiesUtil.html#parseCookies(java.lang.String)">parseCookies</a></span>(String cookieString)</nobr>
         
   </td></tr>
 
@@ -725,7 +674,7 @@ From class
 
 
 
-<A NAME="PageView(org.json.JSONObject)"></A>
+<A NAME="CookiesUtil()"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -737,8 +686,8 @@ From class
          
         
       </span>
-      <span class="sympad">PageView</span>
-      <span class="normal">(JSONObject response)</span>
+      <span class="sympad">CookiesUtil</span>
+      <span class="normal">()</span>
     </h4>
       <div class="api-level">
         <div>
@@ -750,17 +699,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Constructor</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>response</td>
-          <td>JSON response from the page view api
-</td>
-        </tr>
-      </table>
-  </div>
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
 
     </div>
 </div>
@@ -781,20 +720,20 @@ From class
 
 
 
-<A NAME="getCommission()"></A>
+<A NAME="parseCookies(java.lang.String)"></A>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
+        static 
          
          
          
-         
-        <a href="../../../../com/usebutton/sdk/pageview/Commission.html">Commission</a>
+        Map&lt;String,&nbsp;String&gt;
       </span>
-      <span class="sympad">getCommission</span>
-      <span class="normal">()</span>
+      <span class="sympad">parseCookies</span>
+      <span class="normal">(String cookieString)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -807,68 +746,20 @@ From class
     <div class="jd-details-descr">
       
   <div class="jd-tagdata jd-tagdescr"><p></p></div>
-
-    </div>
-</div>
-
-
-<A NAME="getProduct()"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        <a href="../../../../com/usebutton/sdk/checkout/Product.html">Product</a>
-      </span>
-      <span class="sympad">getProduct</span>
-      <span class="normal">()</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
-
-    </div>
-</div>
-
-
-<A NAME="getType()"></A>
-
-<div class="jd-details api apilevel-"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        <a href="../../../../com/usebutton/sdk/pageview/PageView.MatchType.html">PageView.MatchType</a>
-      </span>
-      <span class="sympad">getType</span>
-      <span class="normal">()</span>
-    </h4>
-      <div class="api-level">
-        <div>
-
-</div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>Parsed map of cookie string. Key = CookieName Value = CookieValue
+</li></ul>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th><a href="../../../../com/usebutton/sdk/util/InvalidCookieException.html">InvalidCookieException</a></td>
+            <td></td>
+        </tr>
+      </table>
+  </div>
 
     </div>
 </div>
