@@ -1,3 +1,8 @@
+### [5.27.0 Docs](http://building.usebutton.com/button-android/history/5.27.0/reference/com/usebutton/sdk/Button.html)
+* Create and show a single Text Card with Checkout Extensions
+* In-App Checkout navigation buttons now respect custom color
+* Advances version number to 5.27.0 to synchronize with Button iOS SDK
+
 ### [5.22.1 Docs](http://building.usebutton.com/button-android/history/5.22.1/reference/com/usebutton/sdk/Button.html)
 Corrects package visibility for new checkout extensions classes
 
