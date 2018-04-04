@@ -1,3 +1,6 @@
+### [5.28.0 Docs](http://building.usebutton.com/button-android/history/5.28.0/reference/com/usebutton/sdk/Button.html)
+* Fixes an intermittent crash when the authorization challenge activity is destroyed during the auth flow
+
 ### [5.27.0 Docs](http://building.usebutton.com/button-android/history/5.27.0/reference/com/usebutton/sdk/Button.html)
 * Create and show a single Text Card with Checkout Extensions
 * In-App Checkout navigation buttons now respect custom color
