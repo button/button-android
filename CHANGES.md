@@ -1,3 +1,9 @@
+### [5.29.0 Docs](http://building.usebutton.com/button-android/history/5.29.0/reference/com/usebutton/sdk/Button.html)
+- Replaced beta API to show/hide checkout cards (API diff)
+- Add multiple cards to a Checkout Extension
+- Adds ability build custom cards for Checkout Extensions
+- Fixed a bug where elements at the bottom of the web view may be partially off screen
+
 ### [5.28.0 Docs](http://building.usebutton.com/button-android/history/5.28.0/reference/com/usebutton/sdk/Button.html)
 * Fixes an intermittent crash when the authorization challenge activity is destroyed during the auth flow
 
