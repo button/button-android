@@ -1,3 +1,7 @@
+### [5.29.1 Docs](http://building.usebutton.com/button-android/history/5.29.1/reference/com/usebutton/sdk/Button.html)
+Fix intermittent web checkout crash when viewing a product.
+
+
 ### [5.29.0 Docs](http://building.usebutton.com/button-android/history/5.29.0/reference/com/usebutton/sdk/Button.html)
 - Replaced beta API to show/hide checkout cards (API diff)
 - Add multiple cards to a Checkout Extension
