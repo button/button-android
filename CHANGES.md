@@ -1,3 +1,7 @@
+### [5.31.0 Docs](http://building.usebutton.com/button-android/history/5.31.0/reference/com/usebutton/sdk/Button.html)
+* Scrolling down in the web view now dismisses the displayed card
+* Checkout Extensions no longer receive  callback if product is null
+
 ### [5.30.0 Docs](http://building.usebutton.com/button-android/history/5.30.0/reference/com/usebutton/sdk/Button.html)
 - Limit Button SDK embedded web browser to only one instance at a time
 - Fix a potential crash when parsing null URLs on web view navigation
