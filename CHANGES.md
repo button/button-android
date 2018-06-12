@@ -1,3 +1,7 @@
+### [5.31.1 Docs](http://building.usebutton.com/button-android/history/5.31.1/reference/com/usebutton/sdk/Button.html)
+* Fixes issue that led to incorrect size and position for custom Checkout Cards.
+* Fixes issue where Checkout Extension navigation callbacks reported previous page url.
+
 ### [5.31.0 Docs](http://building.usebutton.com/button-android/history/5.31.0/reference/com/usebutton/sdk/Button.html)
 * Scrolling down in the web view now dismisses the displayed card
 * Checkout Extensions no longer receive  callback if product is null
