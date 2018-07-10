@@ -1,3 +1,6 @@
+### [5.32.0 Docs](http://building.usebutton.com/button-android/history/5.32.0/reference/com/usebutton/sdk/Button.html)
+- Adds automatic Predictable Rewards and Instant Rewards cards to In-App Checkout (disabled by default — reach out to your Partner Success representative for details)
+
 ### [5.31.1 Docs](http://building.usebutton.com/button-android/history/5.31.1/reference/com/usebutton/sdk/Button.html)
 * Fixes issue that led to incorrect size and position for custom Checkout Cards.
 * Fixes issue where Checkout Extension navigation callbacks reported previous page url.
