@@ -27,8 +27,8 @@ repositories {
 
 ```groovy
 dependencies {
-    // Replace 5+ with the latest SDK version found above
-    compile 'com.usebutton:android-sdk:5+'
+    // Replace 6+ with the latest SDK version found above
+    compile 'com.usebutton:android-sdk:6+'
 }
 ```
 
