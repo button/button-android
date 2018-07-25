@@ -1,3 +1,12 @@
+### [6.0.0 Docs](http://building.usebutton.com/button-android/history/6.0.0/reference/com/usebutton/sdk/Button.html)
+* Introduces a new single Purchase Path interface using fetch by URL
+* Introduces a new single Button Actions interface using ActionQuery
+* Replaces CheckoutExtension interface with improved PurchasePathExtension interface
+* New static Button API with PurchasePath, ButtonActions, User, and Debug modules
+* Removes all deprecated 5.x functionality
+* Removes all merchant functionality migrated to the Open Source Merchant Library
+* Updates minimum SDK version to 19 (Android 4.4 KitKat)
+
 ### [5.32.0 Docs](http://building.usebutton.com/button-android/history/5.32.0/reference/com/usebutton/sdk/Button.html)
 - Adds automatic Predictable Rewards and Instant Rewards cards to In-App Checkout (disabled by default — reach out to your Partner Success representative for details)
 
