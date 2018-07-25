@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0e0637"
+    android:padding="16dp"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp"
+        android:layout_toStartOf="@+id/image"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        tools:text="Card Title TextView"
+        />
+
+    <TextView
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="16dp"
+        android:layout_toStartOf="@+id/image"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="5sp"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        tools:text="Card Body TextView: this is where you can add a more detailed description of your card"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/body"
+        android:background="#1b84ff"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        tools:text="Card Action Title"
+        />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@null"
+        android:src="#ffffff"
+        />
+
+</RelativeLayout>

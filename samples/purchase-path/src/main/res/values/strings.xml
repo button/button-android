@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+    <string name="app_name">Purchase Path</string>
+    <string name="without_extension">Purchase Path</string>
+    <string name="with_extension">Purchase Path + Extension</string>
+    <string name="switch_to_java">Java Example</string>
+    <string name="switch_to_kotlin">Kotlin Example</string>
+</resources>
