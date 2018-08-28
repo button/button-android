@@ -1,3 +1,6 @@
+### [6.1.0 Docs](http://building.usebutton.com/button-android/history/6.1.0/reference/com/usebutton/sdk/Button.html)
+Compatible with Android 9 Pie
+
 ### [6.0.0 Docs](http://building.usebutton.com/button-android/history/6.0.0/reference/com/usebutton/sdk/Button.html)
 * Introduces a new single Purchase Path interface using fetch by URL
 * Introduces a new single Button Actions interface using ActionQuery
