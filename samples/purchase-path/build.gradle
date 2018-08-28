@@ -25,7 +25,7 @@ android {
 
 dependencies {
     /// Button SDK
-    implementation 'com.usebutton:android-sdk:6.0.0'
+    implementation 'com.usebutton:android-sdk:6.1.0'
     /// Jars
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     /// Kotlin
