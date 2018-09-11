@@ -1,3 +1,6 @@
+### [6.2.0 Docs](http://building.usebutton.com/button-android/history/6.2.0/reference/com/usebutton/sdk/Button.html)
+* Minor bugfixes and improvements
+
 ### [6.1.0 Docs](http://building.usebutton.com/button-android/history/6.1.0/reference/com/usebutton/sdk/Button.html)
 Compatible with Android 9 Pie
 
