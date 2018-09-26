@@ -1,3 +1,7 @@
+### [6.2.1 Docs](http://building.usebutton.com/button-android/history/6.2.1/reference/com/usebutton/sdk/Button.html)
+* Merchant app activities are now launched in a new task
+* Fixed an issue where the card peek height was incorrect after removing the top card from browser
+
 ### [6.2.0 Docs](http://building.usebutton.com/button-android/history/6.2.0/reference/com/usebutton/sdk/Button.html)
 * Minor bugfixes and improvements
 
