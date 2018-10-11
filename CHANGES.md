@@ -1,3 +1,6 @@
+### [6.3.0 Docs](http://building.usebutton.com/button-android/history/6.3.0/reference/com/usebutton/sdk/Button.html)
+We’re excited to announce our latest SDK feature, Autofill. With Autofill your web view users will be able to fill out a form once, save that profile information, and reuse it on all other merchant sites. Disabled by default – reach out to your Partner Success representative for details.
+
 ### [6.2.1 Docs](http://building.usebutton.com/button-android/history/6.2.1/reference/com/usebutton/sdk/Button.html)
 * Merchant app activities are now launched in a new task
 * Fixed an issue where the card peek height was incorrect after removing the top card from browser
