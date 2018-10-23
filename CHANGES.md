@@ -1,3 +1,7 @@
+### [6.4.0 Docs](http://building.usebutton.com/button-android/history/6.4.0/reference/com/usebutton/sdk/Button.html)
+* Top right custom button in the embedded WebView navbar is now customizable via purchase path extensions framework.
+* Added an additional click/tap callback to subtitle text in the embedded WebView via the purchase path extensions framework.
+
 ### [6.3.0 Docs](http://building.usebutton.com/button-android/history/6.3.0/reference/com/usebutton/sdk/Button.html)
 We’re excited to announce our latest SDK feature, Autofill. With Autofill your web view users will be able to fill out a form once, save that profile information, and reuse it on all other merchant sites. Disabled by default – reach out to your Partner Success representative for details.
 
