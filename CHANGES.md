@@ -1,3 +1,7 @@
+### [6.5.0 Docs](http://building.usebutton.com/button-android/history/6.5.0/reference/com/usebutton/sdk/Button.html)
+* Our automatic Instant and Predictable Rewards product can now be customized with unique copy, color, and images. 
+* Introducing a new and flexible way to prompt a user to install the app via an Install Card.
+
 ### [6.4.0 Docs](http://building.usebutton.com/button-android/history/6.4.0/reference/com/usebutton/sdk/Button.html)
 * Top right custom button in the embedded WebView navbar is now customizable via purchase path extensions framework.
 * Added an additional click/tap callback to subtitle text in the embedded WebView via the purchase path extensions framework.
