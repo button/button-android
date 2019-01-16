@@ -1,3 +1,7 @@
+### [6.5.2 Docs](http://building.usebutton.com/button-android/history/6.5.2/reference/com/usebutton/sdk/Button.html)
+* Autofill bug fixes & improvements
+* Fix for Instant Rewards
+
 ### [6.5.1 Docs](http://building.usebutton.com/button-android/history/6.5.1/reference/com/usebutton/sdk/Button.html)
 * Minor Button Actions improvements
 
