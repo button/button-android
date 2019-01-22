@@ -1,3 +1,7 @@
+### [6.6.0 Docs](http://building.usebutton.com/button-android/history/6.6.0/reference/com/usebutton/sdk/Button.html)
+* New forward and back navigation style — an option for our Web View to transition in from the right side of the screen. Helpful if your app has this style and you don’t want to detach from it.
+* Bug fixes & improvements
+
 ### [6.5.2 Docs](http://building.usebutton.com/button-android/history/6.5.2/reference/com/usebutton/sdk/Button.html)
 * Autofill bug fixes & improvements
 * Fix for Instant Rewards
