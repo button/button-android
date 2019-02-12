@@ -1,3 +1,6 @@
+### [6.7.0 Docs](http://building.usebutton.com/button-android/history/6.7.0/reference/com/usebutton/sdk/Button.html)
+Major improvements to our Autofill product. You will see a materially improved experience where we identify, save, and fill form fields frequently and accurately.
+
 ### [6.6.0 Docs](http://building.usebutton.com/button-android/history/6.6.0/reference/com/usebutton/sdk/Button.html)
 * New forward and back navigation style — an option for our Web View to transition in from the right side of the screen. Helpful if your app has this style and you don’t want to detach from it.
 * Bug fixes & improvements
