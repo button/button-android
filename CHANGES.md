@@ -1,3 +1,7 @@
+### [6.8.0 Docs](http://building.usebutton.com/button-android/history/6.8.0/reference/com/usebutton/sdk/Button.html)
+* Added support for billing address to our Autofill product
+* Bug fixes & performance improvements
+
 ### [6.7.0 Docs](http://building.usebutton.com/button-android/history/6.7.0/reference/com/usebutton/sdk/Button.html)
 Major improvements to our Autofill product. You will see a materially improved experience where we identify, save, and fill form fields frequently and accurately.
 
