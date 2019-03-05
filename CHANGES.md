@@ -1,3 +1,6 @@
+### [6.9.0 Docs](http://building.usebutton.com/button-android/history/6.9.0/reference/com/usebutton/sdk/Button.html)
+* Autofill improvements & bug fixes
+
 ### [6.8.0 Docs](http://building.usebutton.com/button-android/history/6.8.0/reference/com/usebutton/sdk/Button.html)
 * Added support for billing address to our Autofill product
 * Bug fixes & performance improvements
