@@ -1,3 +1,6 @@
+### [6.10.0 Docs](http://building.usebutton.com/button-android/history/6.10.0/reference/com/usebutton/sdk/Button.html)
+* You can now prompt a user to download the merchant app after they’ve made a purchase in the webview
+
 ### [6.9.0 Docs](http://building.usebutton.com/button-android/history/6.9.0/reference/com/usebutton/sdk/Button.html)
 * Autofill improvements & bug fixes
 
