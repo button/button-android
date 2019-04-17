@@ -1,3 +1,7 @@
+### [6.12.0 Docs](http://building.usebutton.com/button-android/history/6.12.0/reference/com/usebutton/sdk/Button.html)
+* Autofill improvements
+
+
 ### [6.11.0 Docs](http://building.usebutton.com/button-android/history/6.11.0/reference/com/usebutton/sdk/Button.html)
 * Our biggest update to Autofill yet. We’ve improved how and when a user sees the option to Autofill by moving away from the card system and attaching the CTA to the top of the keyboard. This makes Autofill as contextually relevant as possible — only when a keyboard shows, Autofill will show.
 * Bug fixes & improvements
