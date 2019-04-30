@@ -1,3 +1,7 @@
+### [6.13.0 Docs](http://building.usebutton.com/button-android/history/6.13.0/reference/com/usebutton/sdk/Button.html)
+* A new and more prominent app install page for brands who want to primarily drive installs
+* A healthy dose of performance improvements
+
 ### [6.12.0 Docs](http://building.usebutton.com/button-android/history/6.12.0/reference/com/usebutton/sdk/Button.html)
 * Autofill improvements
 
