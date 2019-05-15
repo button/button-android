@@ -1,3 +1,7 @@
+### [6.14.0 Docs](http://building.usebutton.com/button-android/history/6.14.0/reference/com/usebutton/sdk/Button.html)
+* Fixed a latency bug with Autofill to improve UX during weak network connections
+* Fixed an intermittent crash on web view resume that could occur if the system shutdown the activity while in the background
+
 ### [6.13.0 Docs](http://building.usebutton.com/button-android/history/6.13.0/reference/com/usebutton/sdk/Button.html)
 * A new and more prominent app install page for brands who want to primarily drive installs
 * A healthy dose of performance improvements
