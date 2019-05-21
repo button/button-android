@@ -1,3 +1,6 @@
+### [6.14.1 Docs](http://building.usebutton.com/button-android/history/6.14.1/reference/com/usebutton/sdk/Button.html)
+* Fixes an Autofill bug that affords us brand-by-brand control
+
 ### [6.14.0 Docs](http://building.usebutton.com/button-android/history/6.14.0/reference/com/usebutton/sdk/Button.html)
 * Fixed a latency bug with Autofill to improve UX during weak network connections
 * Fixed an intermittent crash on web view resume that could occur if the system shutdown the activity while in the background
