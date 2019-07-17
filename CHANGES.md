@@ -1,3 +1,6 @@
+### [6.15.0 Docs](http://building.usebutton.com/button-android/history/6.15.0/reference/com/usebutton/sdk/Button.html)
+* A healthy dose of bug fixes & improvements
+
 ### [6.14.1 Docs](http://building.usebutton.com/button-android/history/6.14.1/reference/com/usebutton/sdk/Button.html)
 * Fixes an Autofill bug that affords us brand-by-brand control
 
