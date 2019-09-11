@@ -1,3 +1,7 @@
+### [6.17.0 Docs](http://building.usebutton.com/button-android/history/6.17.0/reference/com/usebutton/sdk/Button.html)
+* Updated app install flow for Android 10
+* Bug fixes and improvements
+
 ### [6.15.0 Docs](http://building.usebutton.com/button-android/history/6.15.0/reference/com/usebutton/sdk/Button.html)
 * A healthy dose of bug fixes & improvements
 
