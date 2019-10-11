@@ -1,3 +1,7 @@
+### [6.18.0 Docs](http://building.usebutton.com/button-android/history/6.18.0/reference/com/usebutton/sdk/Button.html)
+* Resolves intermittent issue causing  callback to not be invoked for some  and  flows.
+
+
 ### [6.17.0 Docs](http://building.usebutton.com/button-android/history/6.17.0/reference/com/usebutton/sdk/Button.html)
 * Updated app install flow for Android 10
 * Bug fixes and improvements
