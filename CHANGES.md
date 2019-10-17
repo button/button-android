@@ -1,3 +1,6 @@
+### [6.18.1 Docs](http://building.usebutton.com/button-android/history/6.18.1/reference/com/usebutton/sdk/Button.html)
+* Universal webview support for opening affiliate links that redirect to merchant links without a Button Purchase Path
+
 ### [6.18.0 Docs](http://building.usebutton.com/button-android/history/6.18.0/reference/com/usebutton/sdk/Button.html)
 * Resolves intermittent issue causing  callback to not be invoked for some  and  flows.
 
