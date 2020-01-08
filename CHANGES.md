@@ -1,3 +1,6 @@
+### [6.20.0 Docs](http://building.usebutton.com/button-android/history/6.20.0/reference/com/usebutton/sdk/Button.html)
+* Adds Autofill support for additional brands.
+
 ### [6.19.0 Docs](http://building.usebutton.com/button-android/history/6.19.0/reference/com/usebutton/sdk/Button.html)
 Button SDK v6.19.0 contains two exciting developments for the Button Universal Webview:
 
