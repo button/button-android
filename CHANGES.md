@@ -1,3 +1,7 @@
+### [6.21.0 Docs](http://building.usebutton.com/button-android/history/6.21.0/reference/com/usebutton/sdk/Button.html)
+* Introduces a more concise and flexible API for the Button Browser
+* Bug fixes and optimizations
+
 ### [6.20.0 Docs](http://building.usebutton.com/button-android/history/6.20.0/reference/com/usebutton/sdk/Button.html)
 * Adds Autofill support for additional brands.
 
