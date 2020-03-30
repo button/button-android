@@ -1,3 +1,8 @@
+### [6.22.0 Docs](http://building.usebutton.com/button-android/history/6.22.0/reference/com/usebutton/sdk/Button.html)
+* Support for opening merchant links from within a Button Browser instance
+* Bug fixes & improvements
+
+
 ### [6.21.0 Docs](http://building.usebutton.com/button-android/history/6.21.0/reference/com/usebutton/sdk/Button.html)
 * Introduces a more concise and flexible API for the Button Browser
 * Bug fixes and optimizations
