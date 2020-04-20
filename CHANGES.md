@@ -1,3 +1,6 @@
+### [6.22.1 Docs](http://building.usebutton.com/button-android/history/6.22.1/reference/com/usebutton/sdk/Button.html)
+* Developers may now provide an Offer ID when opening a URL.
+
 ### [6.22.0 Docs](http://building.usebutton.com/button-android/history/6.22.0/reference/com/usebutton/sdk/Button.html)
 * Support for opening merchant links from within a Button Browser instance
 * Bug fixes & improvements
