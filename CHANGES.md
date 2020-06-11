@@ -1,3 +1,7 @@
+### [6.23.0 Docs](http://building.usebutton.com/button-android/history/6.23.0/reference/com/usebutton/sdk/Button.html)
+* Adds an interface to manually track a viewable impression
+* Redirects all HTTP traffic to HTTPs
+
 ### [6.22.1 Docs](http://building.usebutton.com/button-android/history/6.22.1/reference/com/usebutton/sdk/Button.html)
 * Developers may now provide an Offer ID when opening a URL.
 
