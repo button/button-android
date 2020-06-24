@@ -1,3 +1,6 @@
+### [6.24.0 Docs](http://building.usebutton.com/button-android/history/6.24.0/reference/com/usebutton/sdk/Button.html)
+* Enhanced browser experiences
+
 ### [6.23.0 Docs](http://building.usebutton.com/button-android/history/6.23.0/reference/com/usebutton/sdk/Button.html)
 * Adds an interface to manually track a viewable impression
 * Redirects all HTTP traffic to HTTPs
