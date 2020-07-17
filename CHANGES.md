@@ -1,3 +1,7 @@
+### [6.25.0 Docs](http://building.usebutton.com/button-android/history/6.25.0/reference/com/usebutton/sdk/Button.html)
+* Adds a new API for configuring impression views.
+* Adds a new API for visual debugging of impression tracking.
+
 ### [6.24.0 Docs](http://building.usebutton.com/button-android/history/6.24.0/reference/com/usebutton/sdk/Button.html)
 * Enhanced browser experiences
 
