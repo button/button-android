@@ -7,8 +7,6 @@ Button is the partnerships platform for mobile commerce. Button powers mobile pa
 
 ## Overview
 
-[Button Actions](https://developer.usebutton.com/guides/publishers/android/using-button-actions) provide relevant actions to your users, complete with a corresponding UI. Buttons can be configured with one or more Merchants that they can offer to your users.
-
 [Button Purchase Path](https://developer.usebutton.com/guides/publishers/android/create-a-button-purchase-path) takes regular Merchant URLs to products, categories or just the homepage and replaces them with a fully attributed Button Purchase Path, optimized for both conversion and user experience.
 
 ## Getting started
@@ -28,14 +26,14 @@ repositories {
 ```groovy
 dependencies {
     // Replace 6+ with the latest SDK version found above
-    compile 'com.usebutton:android-sdk:6+'
+    implementation 'com.usebutton:android-sdk:6+'
 }
 ```
 
 ### Next Steps
 
 1. Get an Application ID by signing up on the [developer dashboard](https://app.usebutton.com/).
-2. Follow the getting started guide for [publishers](https://developer.usebutton.com/publishers) or [merchants](https://developer.usebutton.com/merchants).
+2. Follow the getting started guide for [Publishers](https://developer.usebutton.com/publishers) or [Brands](https://developer.usebutton.com/brands).
 
 ### Questions
 
