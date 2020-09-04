@@ -1,3 +1,7 @@
+### [6.27.0 Docs](http://building.usebutton.com/button-android/history/6.27.0/reference/com/usebutton/sdk/Button.html)
+* Deprecating support for KitKat ( is still )
+* Bug fixes & improvements
+
 ### [6.26.0 Docs](http://building.usebutton.com/button-android/history/6.26.0/reference/com/usebutton/sdk/Button.html)
 * Support for Android 11
 * Even smaller size — a 20% reduction!
