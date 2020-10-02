@@ -1,3 +1,6 @@
+### [6.28.0 Docs](http://building.usebutton.com/button-android/history/6.28.0/reference/com/usebutton/sdk/Button.html)
+* Various Button Browser fixes & improvements
+
 ### [6.27.0 Docs](http://building.usebutton.com/button-android/history/6.27.0/reference/com/usebutton/sdk/Button.html)
 * Deprecating support for KitKat ( is still )
 * Bug fixes & improvements
