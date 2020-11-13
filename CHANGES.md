@@ -1,3 +1,7 @@
+### [6.29.0 Docs](http://building.usebutton.com/button-android/history/6.29.0/reference/com/usebutton/sdk/Button.html)
+* Updates to the Browser user agent
+* Better support for MMP links
+
 ### [6.28.0 Docs](http://building.usebutton.com/button-android/history/6.28.0/reference/com/usebutton/sdk/Button.html)
 * Various Button Browser fixes & improvements
 
