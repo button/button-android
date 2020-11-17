@@ -1,3 +1,6 @@
+### [6.29.1 Docs](http://building.usebutton.com/button-android/history/6.29.1/reference/com/usebutton/sdk/Button.html)
+* Minor bug fixes & updates
+
 ### [6.29.0 Docs](http://building.usebutton.com/button-android/history/6.29.0/reference/com/usebutton/sdk/Button.html)
 * Improves support for certain brand websites in the Button Browser
 * Improves support for maintaining attribution through MMP links in the Button Browser
