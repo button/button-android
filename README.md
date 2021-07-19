@@ -17,7 +17,7 @@ We highly recommend that you use our SDK with Gradle, all you need to do is make
 
 ```groovy
 repositories {
-    mavenCentral
+    mavenCentral()
 }
 ```
 #### Latest Version
