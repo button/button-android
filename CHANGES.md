@@ -1,3 +1,10 @@
+### [6.30.0 Docs](http://building.usebutton.com/button-android/history/6.30.0/reference/com/usebutton/sdk/Button.html)
+* Adds attributedURL to PurchasePath
+* Adds navigateTo(url) to BrowserInterface
+* Marks Boost APIs as deprecated
+* Various bug fixes
+* Release repository migrated to Maven Central
+
 ### [6.29.1 Docs](http://building.usebutton.com/button-android/history/6.29.1/reference/com/usebutton/sdk/Button.html)
 * Minor bug fixes & updates
 
