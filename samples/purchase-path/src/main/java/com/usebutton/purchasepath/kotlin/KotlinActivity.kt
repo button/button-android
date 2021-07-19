@@ -1,10 +1,10 @@
 package com.usebutton.purchasepath.kotlin
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.View
 import android.widget.ImageView
@@ -23,7 +23,7 @@ import com.usebutton.sdk.purchasepath.PurchasePath
 import com.usebutton.sdk.purchasepath.PurchasePathExtension
 import com.usebutton.sdk.purchasepath.PurchasePathRequest
 
-class KotlinActivity : AppCompatActivity() {
+class KotlinActivity : Activity() {
 
     companion object {
         val TAG = KotlinActivity::class.simpleName
