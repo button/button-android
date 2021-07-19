@@ -13,15 +13,15 @@ Button is the partnerships platform for mobile commerce. Button powers mobile pa
 
 ### Gradle
 
-We highly recommend that you use our SDK with Gradle, all you need to do is make sure you have `jcenter()` as one of your app's repositories.
+We highly recommend that you use our SDK with Gradle, all you need to do is make sure you have `mavenCentral()` as one of your app's repositories.
 
 ```groovy
 repositories {
-    jcenter()
+    mavenCentral
 }
 ```
 #### Latest Version
-![Download](https://api.bintray.com/packages/button/Public/android-sdk/images/download.svg)
+[![Maven Central](https://img.shields.io/maven-central/v/com.usebutton/android-sdk.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.usebutton%22%20AND%20a:%22android-sdk%22)
 
 ```groovy
 dependencies {
