@@ -1,7 +1,6 @@
 package com.usebutton.purchasepath.custom;
 
 import android.graphics.Color;
-import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +13,7 @@ import com.usebutton.sdk.purchasepath.BrowserInterface;
 import com.usebutton.sdk.purchasepath.CallToAction;
 import com.usebutton.sdk.purchasepath.Card;
 
+import androidx.annotation.NonNull;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 

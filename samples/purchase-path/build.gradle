@@ -10,7 +10,7 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
         release {
@@ -26,10 +26,10 @@ android {
 
 dependencies {
     // Button SDK
-    implementation 'com.usebutton:android-sdk:6.30.0'
+    implementation 'com.usebutton:android-sdk:7.0.0'
 
     // Other dependencies
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.21"
-    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'com.squareup.picasso:picasso:2.71828'
 }
