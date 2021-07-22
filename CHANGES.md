@@ -1,3 +1,6 @@
+### [7.0.0 Docs](http://building.usebutton.com/button-android/history/7.0.0/reference/com/usebutton/sdk/Button.html)
+* Migrates the SDK from Android Support Library to AndroidX
+
 ### [6.30.0 Docs](http://building.usebutton.com/button-android/history/6.30.0/reference/com/usebutton/sdk/Button.html)
 * Adds attributedURL to PurchasePath
 * Adds navigateTo(url) to BrowserInterface
