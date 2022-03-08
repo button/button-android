@@ -37,4 +37,4 @@ dependencies {
 
 ### Questions
 
-Check out out the [full SDK documentation](https://developer.usebutton.com/) or drop us a line at developers@usebutton.com.
+Check out out the [full SDK documentation](https://developer.usebutton.com/) or drop us a line at support@usebutton.com.
